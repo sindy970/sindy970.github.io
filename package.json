@@ -8,9 +8,13 @@
     "@testing-library/user-event": "^13.2.1",
     "cra-template": "1.2.0",
     "gh-pages": "^6.3.0",
+    "jquery": "^3.7.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.1",
     "react-scripts": "5.0.1",
+    "react-snowfall": "^2.2.0",
+    "react-spring": "^9.7.5",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -38,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://sindy.githup.io/mobilewebbing"
+  "homepage": "https://sindy970.github.io/mobilewedding/"
 }
