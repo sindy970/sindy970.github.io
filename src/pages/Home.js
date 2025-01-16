@@ -1,12 +1,9 @@
 import React from "react";
-import Flowerfall from "../components/Flowerfall";
 
 //함수형 컴포넌트
 function Home(){
 
-    return (
-        <Flowerfall />
-    );
+    return <h1>Home 화면 입닏.</h1>;
 }
 export default Home;
 
