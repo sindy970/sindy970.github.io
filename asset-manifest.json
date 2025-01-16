@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mobilewedding/static/css/main.f855e6bc.css",
+    "main.js": "/mobilewedding/static/js/main.0c09f0e6.js",
+    "static/js/453.b62465ec.chunk.js": "/mobilewedding/static/js/453.b62465ec.chunk.js",
+    "static/media/logo.svg": "/mobilewedding/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/mobilewedding/index.html",
+    "main.f855e6bc.css.map": "/mobilewedding/static/css/main.f855e6bc.css.map",
+    "main.0c09f0e6.js.map": "/mobilewedding/static/js/main.0c09f0e6.js.map",
+    "453.b62465ec.chunk.js.map": "/mobilewedding/static/js/453.b62465ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.0c09f0e6.js"
+  ]
+}
