@@ -19,6 +19,45 @@ code {
   padding: 20px;
 }
 
+.expanding-door-container {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.door {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #b12f2f;
+  border: 2px solid #222;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+  transform-origin: center;
+}
+
+.left-door {
+  left: 0;
+  transform-origin: left;
+}
+
+.right-door {
+  right: 0;
+  transform-origin: right;
+}
+
+.open.left-door {
+  transform: rotateY(90deg) translateX(-50%) scale(1.5);
+  opacity: 0;
+}
+
+.open.right-door {
+  transform: rotateY(-90deg) translateX(50%) scale(1.5);
+  opacity: 0;
+}
+
 .cherry_blossom {
   overflow: hidden;
   position: relative;

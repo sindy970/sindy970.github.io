@@ -5,6 +5,7 @@
     * githup pages를 사용하기 위해 설치
   * react-snowfall
     * 벛꽃 내리는 효과 사용을 위해 설치
+    * 이미지 변경이 안돼서 삭제함
   * npm install react-router-dom@6
     * 6버전 설치
     * 메뉴나 특정 주소를 이동할때 화면전환할때 사용됨

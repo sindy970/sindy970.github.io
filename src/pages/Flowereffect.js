@@ -17,7 +17,7 @@
 import React, { useEffect } from "react";
 import $ from "jquery"; // jQuery import
 
-const About = () => {
+const Flowereffect = () => {
     useEffect(() => {
         // 기본 값 설정
         const defaults = {
@@ -112,4 +112,4 @@ const About = () => {
     return <div className="cherry_blossom"></div>;
 };
 
-export default About;
+export default Flowereffect;
