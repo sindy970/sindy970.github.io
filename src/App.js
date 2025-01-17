@@ -3,6 +3,7 @@ import {Routes, Route, Link} from "react-router-dom";
 import Home from "./pages/Home";
 import Flowereffect from "./pages/Flowereffect";
 import Counter from "./pages/Counter";
+import Snow from "./pages/Snow";
 function App() {
   return ( // JSX ==> xml 코드
       // class === className
@@ -16,13 +17,14 @@ function App() {
       // link에서 to로 정의한 경로와 같은 route path를 찾음
     <div className="App">
         <nav>
-            <Link to={"/"}>Home</Link> | <Link to={"/flower"}>Flowereffect</Link>  | <Link to={"/counter"}>Counter</Link>
+            <Link to={"/home"}>Home</Link> | <Link to={"/flower"}>Flowereffect</Link>  | <Link to={"/counter"}>Counter</Link>  | <Link to={"/snow"}>Snow</Link>
 
         </nav>
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/flower" element={<Flowereffect />} />
             <Route path="/counter" element={<Counter />} />
+            <Route path="/snow" element={<Snow />} />
         </Routes>
     </div>
   );
