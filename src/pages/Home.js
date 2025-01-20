@@ -22,7 +22,6 @@
                 <img className={`door left-door ${isOpen ? 'open' : ''}`} src={Left} alt='Left' />
                 <img className={`door right-door ${isOpen ? 'open' : ''}`} src={Right} alt='Right' />
             </div>
-
         );
     };
 export default Home;

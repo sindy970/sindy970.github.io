@@ -32,7 +32,6 @@ code {
   position: absolute;
   width: 50%;
   height: 100%;
-  border: 2px solid #222;
   transition: transform 2s ease-in-out, opacity 2s ease-in-out;
   transform-origin: center;
 }

@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Flowereffect from "./pages/Flowereffect";
 import Counter from "./pages/Counter";
 import Snow from "./pages/Snow";
+import Navermaps from "./pages/Navermaps";
+
 function App() {
   return ( // JSX ==> xml 코드
       // class === className
@@ -17,10 +19,11 @@ function App() {
       // link에서 to로 정의한 경로와 같은 route path를 찾음
     <div className="App">
         <nav>
-            <Link to={"/home"}>Home</Link> | <Link to={"/flower"}>Flowereffect</Link>  | <Link to={"/counter"}>Counter</Link>  | <Link to={"/snow"}>Snow</Link>
+            <Link to={"/navermaps"}>Navermaps</Link> | <Link to={"/home"}>Home</Link> | <Link to={"/flower"}>Flowereffect</Link>  | <Link to={"/counter"}>Counter</Link>  | <Link to={"/snow"}>Snow</Link>
 
         </nav>
         <Routes>
+            <Route path="/navermaps" element={<Navermaps />} />
             <Route path="/home" element={<Home />} />
             <Route path="/flower" element={<Flowereffect />} />
             <Route path="/counter" element={<Counter />} />
