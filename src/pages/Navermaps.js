@@ -26,6 +26,7 @@ const Navermaps = () => {
                 lng: 126.72252151890174,
             }}
             image={{
+                // 이미지 경로가 string타입이여야 해서 {}를 넣으면 인식 안됨
                 src: Lovelocation, // 마커이미지의 주소입니다
                 size: {
                     width: 45,
