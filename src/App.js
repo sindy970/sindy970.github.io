@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes, Route, Link} from "react-router-dom";
-import Work from "./pages/Work"
+// import Work from "./pages/Work"
 // import Counter from "./pages/Counter";
 import Home from "./pages/Home";
 // import Flowereffect from "./pages/Flowereffect";
