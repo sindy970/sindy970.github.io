@@ -1,10 +1,11 @@
 import React from "react";
 import {Routes, Route, Link} from "react-router-dom";
-import Home from "./pages/Home";
-import Flowereffect from "./pages/Flowereffect";
+import Work from "./pages/Work"
 import Counter from "./pages/Counter";
-import Snow from "./pages/Snow";
-import Navermaps from "./pages/Navermaps";
+// import Home from "./pages/Home";
+// import Flowereffect from "./pages/Flowereffect";
+// import Snow from "./pages/Snow";
+// import Navermaps from "./pages/Navermaps";
 
 function App() {
   return ( // JSX ==> xml 코드
@@ -17,18 +18,23 @@ function App() {
       // <Routes> ==> 화면이 전환 될때마다 어떤 컴포넌트를 보여줄지 정의하기 위해 사용함
       //        <Routes>는 <Route>의 묶음이다.
       // link에서 to로 정의한 경로와 같은 route path를 찾음
+      //   <nav>
+      //       <Link to={"/navermaps"}>Navermaps</Link> | <Link to={"/home"}>Home</Link> | <Link to={"/flower"}>Flowereffect</Link>  | <Link to={"/counter"}>Counter</Link>  | <Link to={"/snow"}>Snow</Link>
+      //
+      //   </nav>
+      //   <Routes>
+      //       <Route path="/navermaps" element={<Navermaps />} />
+      //       <Route path="/home" element={<Home />} />
+      //       <Route path="/flower" element={<Flowereffect />} />
+      //       <Route path="/counter" element={<Counter />} />
+      //       <Route path="/snow" element={<Snow />} />
+      //   </Routes>
     <div className="App">
-        <nav>
-            <Link to={"/navermaps"}>Navermaps</Link> | <Link to={"/home"}>Home</Link> | <Link to={"/flower"}>Flowereffect</Link>  | <Link to={"/counter"}>Counter</Link>  | <Link to={"/snow"}>Snow</Link>
-
-        </nav>
-        <Routes>
-            <Route path="/navermaps" element={<Navermaps />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/flower" element={<Flowereffect />} />
-            <Route path="/counter" element={<Counter />} />
-            <Route path="/snow" element={<Snow />} />
-        </Routes>
+        <div>
+            <h1>Scroll Down to Start Animation</h1>
+            <Work />
+            <Counter />
+        </div>
     </div>
   );
 }

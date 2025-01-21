@@ -1,6 +1,8 @@
 import React from "react"
 import { Mobile, PC } from "../hook/Mediaquery"
 import Maps from "./Navermaps"
+import Snow from "./Snow"
+import Home from "./Home"
 
 const Counter = () => {
     return (
@@ -9,7 +11,9 @@ const Counter = () => {
                 <Mobile>
                     <div className="mobile_container">
                         이건 모바일 !!
-                        <Maps />
+                        <Home />
+                        <Snow />
+                        <Maps media="mobile_container" />
                     </div>
                 </Mobile>
             </div>
@@ -17,7 +21,9 @@ const Counter = () => {
             <div className="pc_container">
                 <PC >
                     요건 PC !!!
-                    <Maps />
+                    <Home />
+                    <Snow />
+                    <Maps media="pc_container"/>
                 </PC>
             </div>
         </>

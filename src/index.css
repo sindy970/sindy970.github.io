@@ -29,6 +29,47 @@ code {
   color: #FFF9BF;
 }
 
+/* 걷는 애니메이션 */
+.animation-container {
+  position: relative;
+  height: 200vh; /* 스크롤을 유도하기 위한 높이 */
+  background: #f0f0f0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  position: fixed;
+  top: 50%; /* 화면 중앙에 고정 */
+  font-size: 3rem;
+  transition: transform 0.1s ease-out;
+}
+
+.person.left {
+  left: 10%; /* 왼쪽 시작 위치 */
+}
+
+.person.right {
+  right: 10%; /* 오른쪽 시작 위치 */
+}
+
+.scroll-hint {
+  position: fixed;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #888;
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
 .expanding-door-container {
   position: relative;
   width: 500px;
@@ -101,5 +142,8 @@ code {
     top: 100%;
     opacity: 0.2;
   }
+
+
+
 }
 
