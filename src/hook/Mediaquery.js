@@ -8,4 +8,11 @@ const Mobile :React.FC = ({children}) => {
     return <React.Fragment>{isMobile && children}</React.Fragment>
 }
 
-export default Mobile;
+const PC :React.FC = ({children}) => {
+    const isPc = useMediaQuery({
+        query : "(min-width:768px) "
+    });
+    return <React.Fragment>{isPc && children}</React.Fragment>
+}
+
+export  {Mobile,PC};

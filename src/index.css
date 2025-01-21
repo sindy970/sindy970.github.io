@@ -24,6 +24,11 @@ code {
   color: #CB9DF0;
 }
 
+.pc_container {
+  background: #FDDBBB;
+  color: #FFF9BF;
+}
+
 .expanding-door-container {
   position: relative;
   width: 500px;
