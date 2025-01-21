@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mobilewedding/static/css/main.3838a07f.css",
-    "main.js": "/mobilewedding/static/js/main.83b8f3cc.js",
+    "main.css": "/mobilewedding/static/css/main.ed7c3037.css",
+    "main.js": "/mobilewedding/static/js/main.a9c79781.js",
     "static/js/453.b62465ec.chunk.js": "/mobilewedding/static/js/453.b62465ec.chunk.js",
     "static/media/bloom1.jpg": "/mobilewedding/static/media/bloom1.312601b78a58a849d48c.jpg",
     "static/media/Default.png": "/mobilewedding/static/media/Default.6ecda7fdfb061f2e5886.png",
@@ -9,12 +9,12 @@
     "static/media/bloom2.png": "/mobilewedding/static/media/bloom2.ae21a55aa018578259a5.png",
     "static/media/lovelocation.png": "/mobilewedding/static/media/lovelocation.383ef700c2356d8f3a6a.png",
     "index.html": "/mobilewedding/index.html",
-    "main.3838a07f.css.map": "/mobilewedding/static/css/main.3838a07f.css.map",
-    "main.83b8f3cc.js.map": "/mobilewedding/static/js/main.83b8f3cc.js.map",
+    "main.ed7c3037.css.map": "/mobilewedding/static/css/main.ed7c3037.css.map",
+    "main.a9c79781.js.map": "/mobilewedding/static/js/main.a9c79781.js.map",
     "453.b62465ec.chunk.js.map": "/mobilewedding/static/js/453.b62465ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3838a07f.css",
-    "static/js/main.83b8f3cc.js"
+    "static/css/main.ed7c3037.css",
+    "static/js/main.a9c79781.js"
   ]
 }
