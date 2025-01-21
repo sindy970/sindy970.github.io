@@ -31,7 +31,7 @@
         }, [isOpen]);
 
         return (
-            <div className="expanding-door-container">
+            <div className="expanding-door-container mobile_container">
                 <img className={`door left-door ${isOpen ? 'open' : ''}`} src={Left} alt='Left' />
                 <img className={`door right-door ${isOpen ? 'open' : ''}`} src={Right} alt='Right' />
                 {showNextComponent && <Counter />}
