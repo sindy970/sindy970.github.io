@@ -1,8 +1,8 @@
 import React from "react";
 import {Routes, Route, Link} from "react-router-dom";
 import Work from "./pages/Work"
-import Counter from "./pages/Counter";
-// import Home from "./pages/Home";
+// import Counter from "./pages/Counter";
+import Home from "./pages/Home";
 // import Flowereffect from "./pages/Flowereffect";
 // import Snow from "./pages/Snow";
 // import Navermaps from "./pages/Navermaps";
@@ -32,8 +32,7 @@ function App() {
     <div className="App">
         <div>
             <h1>Scroll Down to Start Animation</h1>
-            <Work />
-            <Counter />
+            <Home />
         </div>
     </div>
   );
