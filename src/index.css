@@ -19,6 +19,11 @@ code {
   padding: 20px;
 }
 
+.mobile_container {
+  background: #CB9DF0;
+  color: #CB9DF0;
+}
+
 .expanding-door-container {
   position: relative;
   width: 500px;
