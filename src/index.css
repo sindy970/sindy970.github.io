@@ -7,10 +7,13 @@ footer, header, section, summary, video,input {
   /*  sans-serif;*/
   /*-webkit-font-smoothing: antialiased;*/
   /*-moz-osx-font-smoothing: grayscale;*/
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing:border-box;
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*border: 0;*/
+  /*box-sizing:border-box;*/
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 code {
@@ -23,12 +26,18 @@ code {
 */
 .App{
   padding: 20px;
+  background-color: #FFFFFF;
+  opacity: 60%;
+}
+
+.text{
+  color: #AAD9BB;
+  text-align: center;
 }
 
 .mobile_container {
   background: #FFFDEC;
   color: #CB9DF0;
-  box-sizing:border-box;
 }
 
 /* 걷는 애니메이션 */

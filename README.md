@@ -9,7 +9,8 @@
   * npm install react-router-dom@6
     * 6버전 설치
     * 메뉴나 특정 주소를 이동할때 화면전환할때 사용됨
-  * ㅓ
+  * npm install firebase
+    * firebase 연동
 
 결국엔 index.html 파일로 실행함
 src폴더에 코드작업

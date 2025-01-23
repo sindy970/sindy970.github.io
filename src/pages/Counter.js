@@ -2,7 +2,6 @@ import React, { useEffect, useState }from "react"
 import { Mobile, PC } from "../hook/Mediaquery"
 import Sun from "../sun.png"
 import Maps from "./Navermaps"
-import Work from "./Work"
 import Snow from "./Snow"
 import "../index.css";
 // import Home from "./Home"

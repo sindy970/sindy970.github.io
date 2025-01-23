@@ -1,8 +1,10 @@
 
 //함수형 컴포넌트
 
-    import React, { useState, useEffect } from 'react';
+    import React, {useState, useEffect, useRef} from 'react';
     import Counter from './Counter'
+    import Numbercount from "./Numbercount";
+    import Audio from "./Audio";
     import Left from '../Default.png';
     import Right from '../image 2.png';
     import '../index.css';
@@ -31,11 +33,19 @@
         }, [isOpen]);
 
         return (
-            <div className="expanding-door-container mobile_container">
-                <img className={`door left-door ${isOpen ? 'open' : ''}`} src={Left} alt='Left' />
-                <img className={`door right-door ${isOpen ? 'open' : ''}`} src={Right} alt='Right' />
-                {showNextComponent && <Counter />}
-            </div>
+            <>
+                <div>
+                    <Audio />
+                </div>
+                <div className="text">
+                    <h2> 우리가 함께한 시간 <Numbercount/></h2>
+                </div>
+                <div className="expanding-door-container mobile_container">
+                    <img className={`door left-door ${isOpen ? 'open' : ''}`} src={Left} alt='Left'/>
+                    <img className={`door right-door ${isOpen ? 'open' : ''}`} src={Right} alt='Right'/>
+                    {showNextComponent && <Counter/>}
+                </div>
+            </>
         );
     };
 export default Home;
