@@ -4,7 +4,8 @@
     import React, {useState, useEffect, useRef} from 'react';
     import Counter from './Counter'
     import Numbercount from "./Numbercount";
-    import Audio from "./Audio";
+    import Music from '../music1.mp3';
+    // import Audio from "./Audio";
     import Left from '../Default.png';
     import Right from '../image 2.png';
     import '../index.css';
@@ -13,39 +14,37 @@
         const [isOpen, setIsOpen] = useState(false);
         const [showNextComponent, setShowNextComponent] = useState(false);
 
-        useEffect(() => {
-            const timer = setTimeout(() => {
-                setIsOpen(true);
-            }, 1000); // 1초 후 애니메이션 실행
+        const audio = new Audio(Music);
 
-            return () => clearTimeout(timer); // 컴포넌트 언마운트 시 타이머 정리
-        }, []);
+        // const playButton = document.getElementById('play-button');
+        //
+        // playButton.addEventListener('click', function() {
+        //     audio.play();
+        // });
 
-        // 다른 컴포넌트를 호출하기 위한 effect
-        useEffect(() => {
-            if (isOpen) {
-                const nextTimer = setTimeout(() => {
-                    setShowNextComponent(true);
-                }, 2000); // 문 열리는 애니메이션 이후 2초 후 다른 컴포넌트 표시
-
-                return () => clearTimeout(nextTimer);
-            }
-        }, [isOpen]);
+        // useEffect(() => {
+        //     const timer = setTimeout(() => {
+        //         setIsOpen(true);
+        //     }, 1000); // 1초 후 애니메이션 실행
+        //
+        //     return () => clearTimeout(timer); // 컴포넌트 언마운트 시 타이머 정리
+        // }, []);
+        //
+        // // 다른 컴포넌트를 호출하기 위한 effect
+        // useEffect(() => {
+        //     if (isOpen) {
+        //         const nextTimer = setTimeout(() => {
+        //             setShowNextComponent(true);
+        //         }, 2000); // 문 열리는 애니메이션 이후 2초 후 다른 컴포넌트 표시
+        //
+        //         return () => clearTimeout(nextTimer);
+        //     }
+        // }, [isOpen]);
 
         return (
-            <>
                 <div>
-                    <Audio />
+                    <audio src={Music} loop autoplay></audio>
                 </div>
-                <div className="text">
-                    <h2> 우리가 함께한 시간 <Numbercount/></h2>
-                </div>
-                <div className="expanding-door-container mobile_container">
-                    <img className={`door left-door ${isOpen ? 'open' : ''}`} src={Left} alt='Left'/>
-                    <img className={`door right-door ${isOpen ? 'open' : ''}`} src={Right} alt='Right'/>
-                    {showNextComponent && <Counter/>}
-                </div>
-            </>
         );
     };
 export default Home;
@@ -62,3 +61,11 @@ export default Home;
 // }
 //
 // export default Home;
+// <div className="text">
+//     <h2> 우리가 함께한 시간 <Numbercount/></h2>
+// </div>
+// <div className="expanding-door-container mobile_container">
+//     <img className={`door left-door ${isOpen ? 'open' : ''}`} src={Left} alt='Left'/>
+//     <img className={`door right-door ${isOpen ? 'open' : ''}`} src={Right} alt='Right'/>
+//     {showNextComponent && <Counter/>}
+// </div>

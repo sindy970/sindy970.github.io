@@ -1,6 +1,6 @@
 import React, { useEffect, useState }from "react"
 import { Mobile, PC } from "../hook/Mediaquery"
-import Sun from "../sun.png"
+import Sun from "../sun2.png"
 import Maps from "./Navermaps"
 import Snow from "./Snow"
 import "../index.css";

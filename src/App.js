@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import {Routes, Route, Link} from "react-router-dom";
 // import Work from "./pages/Work"
-// import Counter from "./pages/Counter";
+import Counter from "./pages/Counter";
+import Numbercount from "./pages/Numbercount";
 import Home from "./pages/Home";
-// import Flowereffect from "./pages/Flowereffect";
-// import Snow from "./pages/Snow";
-// import Navermaps from "./pages/Navermaps";
+import Audioplay from "./pages/Audio";
+import Music from './music1.mp3';
+import Sun from "./sun2.png"
+import Flowereffect from "./pages/Flowereffect";
+import Snow from "./pages/Snow";
+import Maps from "./pages/Navermaps";
 
 function App() {
+
+    const [showNextComponent, setShowNextComponent] = useState(false);
+    const audioRef = useRef(null);
+
+    // useEffect(() => {
+    //     // 컴포넌트가 렌더링된 후 버튼을 자동으로 클릭
+    //     if (audioRef.current) {
+    //         audioRef.current.play();
+    //         setShowNextComponent(true);
+    //     }
+    // }, []);
+
   return ( // JSX ==> xml 코드
       // class === className
       // 싱글페이지 어플리케이션(SPA)
@@ -31,11 +47,21 @@ function App() {
       //   </Routes>
     <div className="App">
         <div>
-            <h1>Scroll Down to Start Animation</h1>
-            <Home />
+            <Audioplay clickEvent="play" />
+        </div>
+        <div className="text">
+            <h2> 우리가 함께한 시간 <Numbercount/></h2>
+            <Snow />
+            <img src = {Sun} />
+            <Maps media="mobile_container" />
         </div>
     </div>
   );
 }
 
 export default App;
+//
+// {/*<div className="audio-player">*/}
+// {/*    <audio ref={audioRef} src={Music} preload="auto" />*/}
+// {/*    /!*<button onClick={toggleAudio} style={{display: 'none'}}></button>*!/*/}
+// {/*</div>*/}
