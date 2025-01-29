@@ -1,6 +1,7 @@
 import React from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk"
 import Lovelocation from "../lovelocation.png";
+import Car from "../car.webp"
 
 function Navermaps(props) {
 
@@ -39,6 +40,17 @@ function Navermaps(props) {
                     }}
                 />
             </Map>
+        </div>
+        <div>
+            <spen>대중교통</spen>
+            <button onClick={() => window.open('https://map.naver.com/p/directions/-/14106688.7027539,4511257.1399913,%EC%9B%A8%EC%8A%A4%ED%84%B4%ED%8C%B0%EB%A6%AC%EC%8A%A4%EC%9B%A8%EB%94%A9,1832003609,PLACE_POI/-/transit?c=15.00,0,0,0,dh', '_blank')}>
+                네이버 빠른길찾기
+            </button>
+            <spen>자가용</spen>
+            <button onClick={() => window.open('https://map.naver.com/p/directions/-/14106688.7027539,4511257.1399913,%EC%9B%A8%EC%8A%A4%ED%84%B4%ED%8C%B0%EB%A6%AC%EC%8A%A4%EC%9B%A8%EB%94%A9,1832003609,PLACE_POI/-/car?c=15.00,0,0,0,dh', '_blank')}>
+                네이버 빠른길찾기
+            </button>
+            <img src={Car} />
         </div>
     </>
     )
