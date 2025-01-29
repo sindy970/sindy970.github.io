@@ -8,7 +8,8 @@ const Audioplay = (props) => {
     useEffect(() => {
         // 컴포넌트가 렌더링된 후 버튼을 자동으로 클릭
         if (props.clickEvent) {
-            audio.play();
+            toggleAudio;
+            // audio.play();
             // setShowNextComponent(true);
         }
     }, []);

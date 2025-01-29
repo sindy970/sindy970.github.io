@@ -6,7 +6,8 @@ import Numbercount from "./pages/Numbercount";
 import Home from "./pages/Home";
 import Audioplay from "./pages/Audio";
 import Music from './music1.mp3';
-import Sun from "./sun2.png"
+import Sun2 from "./sun2.png"
+import Sun from "./sun.png"
 import Flowereffect from "./pages/Flowereffect";
 import Snow from "./pages/Snow";
 import Maps from "./pages/Navermaps";
@@ -53,6 +54,7 @@ function App() {
             <h2> 우리가 함께한 시간 <Numbercount/></h2>
             <Snow />
             <img src = {Sun} />
+            <h1> 이제 저희 결혼 합니다 </h1>
             <Maps media="mobile_container" />
         </div>
     </div>

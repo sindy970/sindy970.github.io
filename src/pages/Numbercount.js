@@ -13,7 +13,7 @@ const Numbercount = () => {
     const rounded = useTransform(() => Math.round(count.get()))
 
     useEffect(() => {
-        const controls = animate(count, 2231, { duration: 2 })
+        const controls = animate(count, 2231, { duration: 5 })
         return () => controls.stop()
     }, [])
 
