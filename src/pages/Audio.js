@@ -2,25 +2,40 @@ import React, { useEffect, useRef, useState } from "react";
 import Music from '../music1.mp3';
 
 const Audioplay = (props) => {
-    const audioRef = useRef(null);
+    const audioRef = useRef(new Audio(Music));
     const audio = new Audio(Music);
+
+    // const audioRef = useRef(new Audio("your-audio-file.mp3")); // 오디오 객체 생성
 
     useEffect(() => {
         // 컴포넌트가 렌더링된 후 버튼을 자동으로 클릭
         if (props.clickEvent) {
-            toggleAudio;
-            // audio.play();
-            // setShowNextComponent(true);
+            toggleAudio();
         }
-    }, []);
+    }, [props.clickEvent]); // props.clickEvent가 변경될 때마다 실행되도록 의존성 추가
 
     const toggleAudio = () => {
-        audio.play();
+        if (audioRef.current) {
+            audioRef.current.play();
+        }
     };
+
+    // useEffect(() => {
+    //     // 컴포넌트가 렌더링된 후 버튼을 자동으로 클릭
+    //     if (props.clickEvent) {
+    //         toggleAudio();
+    //         // audio.play();
+    //         // setShowNextComponent(true);
+    //     }
+    // }, []);
+    //
+    // const toggleAudio = () => {
+    //     audio.play();
+    // };
 
     return (
         <div>
-            <audio src={Music} loop style={{background: 'none'}}></audio>
+            <audio ref={audioRef} src={Music} loop style={{background: 'none'}}></audio>
             <button onClick={() => {
                 if (props.clickEvent) {
                     audioRef.current.play(); // 버튼 클릭 시 음악 재생
