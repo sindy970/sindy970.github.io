@@ -6,6 +6,7 @@ import Numbercount from "./pages/Numbercount";
 import Home from "./pages/Home";
 import Audioplay from "./pages/Audio";
 import Music from './music1.mp3';
+import Sun3 from "./sun3.jpg"
 import Sun2 from "./sun2.png"
 import Sun from "./sun.png"
 import Flowereffect from "./pages/Flowereffect";
@@ -13,17 +14,7 @@ import Snow from "./pages/Snow";
 import Maps from "./pages/Navermaps";
 
 function App() {
-
-    const [showNextComponent, setShowNextComponent] = useState(false);
     const audioRef = useRef(null);
-
-    // useEffect(() => {
-    //     // 컴포넌트가 렌더링된 후 버튼을 자동으로 클릭
-    //     if (audioRef.current) {
-    //         audioRef.current.play();
-    //         setShowNextComponent(true);
-    //     }
-    // }, []);
 
   return ( // JSX ==> xml 코드
       // class === className
@@ -48,11 +39,15 @@ function App() {
       //   </Routes>
     <div className="App">
         <div>
+            <Snow />
             <Audioplay clickEvent="play" />
+        </div>
+        <div className="engText">
+            <h1>Wedding Ceremony</h1>
+            <img src ={Sun3} />
         </div>
         <div className="text">
             <h1> 우리가 함께한 시간 <Numbercount/></h1>
-            <Snow />
             <img src = {Sun} />
             <h1> 이제 저희 결혼 합니다 </h1>
             <Maps media="mobile_container" />

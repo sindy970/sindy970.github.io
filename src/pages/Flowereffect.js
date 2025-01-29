@@ -1,19 +1,3 @@
-// import React from "react";
-//
-// //함수형 컴포넌트
-// // function About(){
-// //     return <h1>Home 화면 입니다.</h1>;
-// // }
-// // export default About;
-//
-// // LO 함수 === 화살표 함수형 컴포넌트
-// const About = () => {
-//     return <div className="cherry_blossom"></div>;
-// };
-//
-// export default About;
-//
-
 import React, { useEffect } from "react";
 import $ from "jquery"; // jQuery import
 
