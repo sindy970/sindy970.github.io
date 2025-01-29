@@ -25,30 +25,23 @@ code {
   font-family: 'eng';
   text-align: center;
   color: #00ADB5;
-  /*color: #FFB1B1;*/
   margin: 0;
   position: absolute;
-  top: 13%; /* 원하는 위치 조절 */
-  left: 18%;
-  /*transform: translate(-50%, -50%); !* 정중앙 정렬 *!*/
   font-size: 2rem; /* 글씨 크기 */
   font-weight: bold;
   white-space: nowrap;
+  top: 16%; /* 핵심코드 */
+  left: 71%; /* 핵심코드 */
+  transform: translate( -84%, -29%); /* 핵심코드 */
 }
 
-/*.engText .married {*/
-/*  font-family: 'kr';*/
-/*  text-align: center;*/
-/*  color: #FFB1B1;*/
-/*  margin: 0;*/
-/*  position: relative;*/
-/*  font-size: 2rem; !* 글씨 크기 *!*/
-/*  font-weight: bold;*/
-/*  white-space: nowrap;*/
-/*}*/
+.engImg{
+  background-size: cover; /* 핵심코드 */
+  position: relative; /* 핵심코드 */
+  background-repeat :no-repeat;
+}
 
-.engText img{
-  /*position: relative;*/
+.engImg img{
   border-radius: 50% 50% 0% 0%;
   width: -webkit-fill-available;
   image-rendering:-webkit-optimize-contrast;

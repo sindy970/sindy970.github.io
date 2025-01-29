@@ -40,11 +40,11 @@ function App() {
             <Audioplay clickEvent="play" />
             <Snow />
         </div>
-        <div className="engText">
-            {/*<h1 className="married"> We Are Getting Married. </h1>*/}
-            {/*<h1 className="married"> 우리 결혼 합니다 </h1>*/}
-            <h1 className="wedding">Wedding Ceremony</h1>
+        <div className="engImg">
             <img src ={Sun5} loading="lazy" />
+        </div>
+        <div className="engText">
+            <h1 className="wedding">Wedding Ceremony</h1>
         </div>
         <div className="text">
             <br /><spen>2025.04.12 PM 01:30 </spen><br />
