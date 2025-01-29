@@ -36,17 +36,19 @@ const Audioplay = (props) => {
     return (
         <div>
             <audio ref={audioRef} src={Music} loop style={{background: 'none'}}></audio>
-            <button onClick={() => {
-                if (props.clickEvent) {
-                    audioRef.current.play(); // 버튼 클릭 시 음악 재생
-                }
-            }} >
-            </button>
+
         </div>
     );
 
 };
 export default Audioplay;
+
+// <button onClick={() => {
+//     if (props.clickEvent) {
+//         audioRef.current.play(); // 버튼 클릭 시 음악 재생
+//     }
+// }} >
+// </button>
 
 //
 // <audio
