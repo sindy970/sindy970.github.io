@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/mobilewedding/static/css/main.4e1b2d7c.css",
-    "main.js": "/mobilewedding/static/js/main.56a4651a.js",
+    "main.css": "/mobilewedding/static/css/main.14b52f7d.css",
+    "main.js": "/mobilewedding/static/js/main.7f60e9eb.js",
     "static/js/453.b62465ec.chunk.js": "/mobilewedding/static/js/453.b62465ec.chunk.js",
     "static/media/music1.mp3": "/mobilewedding/static/media/music1.40c7e6be01d3a3405e48.mp3",
-    "static/media/sun3.jpg": "/mobilewedding/static/media/sun3.5439cf967b658a200a28.jpg",
+    "static/media/Adultkid.otf": "/mobilewedding/static/media/Adultkid.0afabc31016792824660.otf",
     "static/media/bloom1.jpg": "/mobilewedding/static/media/bloom1.312601b78a58a849d48c.jpg",
     "static/media/Default.png": "/mobilewedding/static/media/Default.6ecda7fdfb061f2e5886.png",
     "static/media/image 2.png": "/mobilewedding/static/media/image 2.a1029f28adcab8ad705c.png",
-    "static/media/sun2.png": "/mobilewedding/static/media/sun2.04f3d140e0da7e9fd963.png",
-    "static/media/sun.png": "/mobilewedding/static/media/sun.5ebd230575ae068ea7c2.png",
+    "static/media/sun5.webp": "/mobilewedding/static/media/sun5.f781ab8e3b8c658f323d.webp",
     "static/media/Permatha Signature.otf": "/mobilewedding/static/media/Permatha Signature.8037420ac0e372274d0d.otf",
     "static/media/bloom2.png": "/mobilewedding/static/media/bloom2.ae21a55aa018578259a5.png",
     "static/media/lovelocation.png": "/mobilewedding/static/media/lovelocation.383ef700c2356d8f3a6a.png",
     "index.html": "/mobilewedding/index.html",
-    "main.4e1b2d7c.css.map": "/mobilewedding/static/css/main.4e1b2d7c.css.map",
-    "main.56a4651a.js.map": "/mobilewedding/static/js/main.56a4651a.js.map",
+    "main.14b52f7d.css.map": "/mobilewedding/static/css/main.14b52f7d.css.map",
+    "main.7f60e9eb.js.map": "/mobilewedding/static/js/main.7f60e9eb.js.map",
     "453.b62465ec.chunk.js.map": "/mobilewedding/static/js/453.b62465ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e1b2d7c.css",
-    "static/js/main.56a4651a.js"
+    "static/css/main.14b52f7d.css",
+    "static/js/main.7f60e9eb.js"
   ]
 }
