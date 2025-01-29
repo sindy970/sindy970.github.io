@@ -33,10 +33,15 @@ code {
 .text{
   color: #AAD9BB;
   text-align: center;
+  margin: 0;
+}
+
+.text pre{
+  margin: 0;
 }
 
 .mobile_container {
-  background: #FFFDEC;
+  /*background: #FFFDEC;*/
   color: #CB9DF0;
 }
 

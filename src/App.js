@@ -51,7 +51,7 @@ function App() {
             <Audioplay clickEvent="play" />
         </div>
         <div className="text">
-            <h2> 우리가 함께한 시간 <Numbercount/></h2>
+            <h1> 우리가 함께한 시간 <Numbercount/></h1>
             <Snow />
             <img src = {Sun} />
             <h1> 이제 저희 결혼 합니다 </h1>

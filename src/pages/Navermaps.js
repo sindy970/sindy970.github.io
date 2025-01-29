@@ -6,6 +6,9 @@ function Navermaps(props) {
 
     return (
     <>
+        <div>
+            <h2> 오시는 길<br /> </h2>
+        </div>
         <div className ={props.media}>
             <Map // 지도를 표시할 Container
                 center={{
@@ -15,8 +18,8 @@ function Navermaps(props) {
                 }}
                 style={{
                     // 지도의 크기
-                    width: "240px",
-                    height: "120px",
+                    width: "300px",
+                    height: "240px",
                 }}
                 level={3} // 지도의 확대 레벨
             >
