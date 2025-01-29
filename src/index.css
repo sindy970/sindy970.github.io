@@ -1,16 +1,6 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, del, em, img, ins, small, strong, sub, sup,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, figcaption,
 footer, header, section, summary, video,input {
-  /*margin: 0;*/
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
-  /*  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
-  /*  sans-serif;*/
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*border: 0;*/
-  /*box-sizing:border-box;*/
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -27,35 +17,71 @@ code {
 */
 .App{
   padding: 20px;
-  background-color: #FFFFFF;
-  opacity: 60%;
+  background-color: #EEEEEE;
+  /*opacity: 60%; 투명도 설정 */
 }
 
-.engText h1{
+.engText .wedding{
   font-family: 'eng';
   text-align: center;
-  /*position: relative;*/
-  color: #AAD9BB;
+  color: #00ADB5;
+  /*color: #FFB1B1;*/
   margin: 0;
   position: absolute;
-  top: 15%; /* 원하는 위치 조절 */
-  left: 50%;
-  transform: translate(-50%, -50%); /* 정중앙 정렬 */
+  top: 13%; /* 원하는 위치 조절 */
+  left: 18%;
+  /*transform: translate(-50%, -50%); !* 정중앙 정렬 *!*/
   font-size: 2rem; /* 글씨 크기 */
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   white-space: nowrap;
 }
 
+/*.engText .married {*/
+/*  font-family: 'kr';*/
+/*  text-align: center;*/
+/*  color: #FFB1B1;*/
+/*  margin: 0;*/
+/*  position: relative;*/
+/*  font-size: 2rem; !* 글씨 크기 *!*/
+/*  font-weight: bold;*/
+/*  white-space: nowrap;*/
+/*}*/
+
 .engText img{
   /*position: relative;*/
+  border-radius: 50% 50% 0% 0%;
   width: -webkit-fill-available;
+  image-rendering:-webkit-optimize-contrast;
 }
 
 .text{
-  color: #AAD9BB;
+  color: #222831;
   text-align: center;
   margin: 0;
+  /*font-family: 'establishRoomNo703OTF';*/
+}
+
+.text spen{
+  color: #222831;
+  text-align: center;
+  font-size: small;
+  margin: 0;
+  /*font-family: 'establishRoomNo703OTF';*/
+}
+
+.text p{
+  color: #222831;
+  text-align: center;
+  margin: 0;
+  font-size: x-small;
+  /*font-family: 'establishRoomNo703OTF';*/
+}
+
+.text h1{
+  color: #00ADB5;
+  text-align: center;
+  margin: 0;
+  font-size: x-large;
   /*font-family: 'establishRoomNo703OTF';*/
 }
 
@@ -110,6 +136,14 @@ code {
   font-family: 'eng';
   /*src: url('./Permatha Signature.otf') format('woff');*/
   src: url('./Permatha Signature.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kr';
+  /*src: url('./Permatha Signature.otf') format('woff');*/
+  src: url('./Adultkid.otf');
   font-weight: normal;
   font-style: normal;
 }

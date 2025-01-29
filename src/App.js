@@ -6,9 +6,7 @@ import Numbercount from "./pages/Numbercount";
 import Home from "./pages/Home";
 import Audioplay from "./pages/Audio";
 import Music from './music1.mp3';
-import Sun3 from "./sun3.jpg"
-import Sun2 from "./sun2.png"
-import Sun from "./sun.png"
+import Sun5 from "./sun5.webp"
 import Flowereffect from "./pages/Flowereffect";
 import Snow from "./pages/Snow";
 import Maps from "./pages/Navermaps";
@@ -39,17 +37,29 @@ function App() {
       //   </Routes>
     <div className="App">
         <div>
-            <Snow />
             <Audioplay clickEvent="play" />
+            <Snow />
         </div>
         <div className="engText">
-            <h1>Wedding Ceremony</h1>
-            <img src ={Sun3} />
+            {/*<h1 className="married"> We Are Getting Married. </h1>*/}
+            {/*<h1 className="married"> 우리 결혼 합니다 </h1>*/}
+            <h1 className="wedding">Wedding Ceremony</h1>
+            <img src ={Sun5} loading="lazy" />
         </div>
         <div className="text">
+            <br /><spen>2025.04.12 PM 01:30 </spen><br />
+            <spen> 한승수 ♥ 김송이 </spen><br /><br />
+            <spen> 웨스턴팰리스웨딩 </spen><br />
+            <p>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</p><br/><br/>
+
+            <h1> 소중한 분들을 초대합니다.</h1><br/>
+            <spen> ohohohohohoh </spen><br />
+            <spen> ohohohohohoh </spen><br />
+            <spen> ohohohohohoh </spen><br />
+            <spen> ohohohohohoh </spen><br />
+
+            
             <h1> 우리가 함께한 시간 <Numbercount/></h1>
-            <img src = {Sun} />
-            <h1> 이제 저희 결혼 합니다 </h1>
             <Maps media="mobile_container" />
         </div>
     </div>

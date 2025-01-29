@@ -1,6 +1,5 @@
 import React, { useEffect, useState }from "react"
 import { Mobile, PC } from "../hook/Mediaquery"
-import Sun from "../sun2.png"
 import Maps from "./Navermaps"
 import Snow from "./Snow"
 import "../index.css";
@@ -32,7 +31,6 @@ const Counter = () => {
                         <div className="animation-container">
                             이건 모바일 !!
                             <Snow />
-                            <img src = {Sun} />
                             <Maps media="mobile_container" />
                         </div>
                     </div>
