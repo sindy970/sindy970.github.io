@@ -9,10 +9,29 @@ const Togglebutton = (props) => {
     } else {
         res = "987-654-432";
     }
+
+    const handleCopyUrl = (res) => {
+        // navigator.clipboard.writeText(res)
+        //     .then(() => {
+        //         alert('클립보드에 복사되었습니다');
+        //     })
+        //     .catch((error) => {
+        //         console.error('클립보드 복사 실패!');
+        //     });
+    };
+
+
     return(
-      <div>
-          <spen>{res}</spen>
-      </div>
+        <>
+            <div>
+                <div>
+                    <spen>{res}</spen>
+                    <button onClick={handleCopyUrl(res)}>계좌 복사</button>
+                </div>
+                <div>
+                </div>
+            </div>
+        </>
     );
 }
 
