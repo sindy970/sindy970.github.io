@@ -1,7 +1,7 @@
 import React from "react";
 import {Snowfall} from "react-snowfall";
-import Bloom1 from "../bloom1.jpg";
-import Bloom2 from "../bloom2.png";
+import Bloom1 from "../bloom1.webp";
+import Bloom2 from "../bloom2.webp";
 
 //react-snowfall 라이브러리 사용
 const Snow = () => {

@@ -1,18 +1,19 @@
 import React, { useRef, useEffect, useState } from "react";
 import {Routes, Route, Link} from "react-router-dom";
-// import Work from "./pages/Work"
-import Counter from "./pages/Counter";
 import Numbercount from "./pages/Numbercount";
-import Home from "./pages/Home";
 import Audioplay from "./pages/Audio";
-import Music from './music1.mp3';
 import Sun5 from "./sun5.webp"
-import Flowereffect from "./pages/Flowereffect";
 import Snow from "./pages/Snow";
 import Maps from "./pages/Navermaps";
+import Togglebutton from "./pages/Togglebutton";
+import Share from "./pages/Share";
+import LinkImg from "./link.webp";
+import KakaoImg from "./kakao.webp";
 
 function App() {
     const audioRef = useRef(null);
+    const [isManButtonClick, setIsManButtonClick] = useState(false);
+    const [isWomButtonClick, setIsWomButtonClick] = useState(false);
 
   return ( // JSX ==> xml 코드
       // class === className
@@ -56,7 +57,22 @@ function App() {
             <spen> ohohohohohoh </spen><br />
             <spen> ohohohohohoh </spen><br />
             <spen> ohohohohohoh </spen><br />
-            <spen> ohohohohohoh </spen><br />
+            <spen> ohohohohohoh </spen><br /><br />
+
+            <h1> 마음 전하실 곳 </h1><br />
+            <div>
+                <button onClick={() => {
+                    setIsManButtonClick(!isManButtonClick)
+                }}>{isManButtonClick? " 신랑측  ▲ " : " 신랑측  ▼ "} </button><br />
+                {isManButtonClick && <Togglebutton gubun={"man"}/>}
+                <button onClick={() => {
+                    setIsWomButtonClick(!isWomButtonClick)
+                }}>{isWomButtonClick? " 신부측  ▲ " : " 신부측  ▼ "} </button><br />
+                {isWomButtonClick && <Togglebutton gubun={"wom"}/>}<br /><br />
+            </div>
+
+            <h1> 공유하기 </h1>
+            <Share />
 
             
             <h1> 우리가 함께한 시간 <Numbercount/></h1>

@@ -83,6 +83,32 @@ code {
   /*font-family: 'establishRoomNo703OTF';*/
 }
 
+.sns-area{
+  background-color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.3% 12%;
+}
+
+
+.sns-area ul{
+  display: contents;
+  align-items: center;
+  gap: max(min(3.4vw, 22px), 14px);
+  justify-content: flex-end;
+}
+
+.sns-area li{
+  list-style-type: none;
+  align-items: center;
+}
+
+.sns-area li button{
+  border: none;
+  background-color: #EEEEEE;
+}
+
 .mobile_container {
   /*background: #FFFDEC;*/
   color: #CB9DF0;

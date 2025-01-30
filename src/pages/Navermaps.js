@@ -1,6 +1,6 @@
 import React from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk"
-import Lovelocation from "../lovelocation.png";
+import Lovelocation from "../lovelocation.webp";
 import Car from "../car.webp"
 
 function Navermaps(props) {
