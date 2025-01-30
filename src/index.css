@@ -43,23 +43,27 @@ img {
 .imgSliderDiv .imageA .preNext .pre{
   position: absolute;
   top: 45%;
-  left: 0%;
+  left: -5%;
   transform:  translateY(-55%);
   width: 50px;
   height: 50px;
   line-height: 50px;
   text-align: center;
+  border: none;
+  background: none;
 }
 
 .imgSliderDiv .imageA .preNext .next{
   position: absolute;
   top: 45%;
-  right: 0%;
+  right: -5%;
   transform:  translateY(-55%);
   width: 50px;
   height: 50px;
   line-height: 50px;
   text-align: center;
+  border: none;
+  background: none;
 }
 
 .imgSliderDiv .imageA .imgbox {

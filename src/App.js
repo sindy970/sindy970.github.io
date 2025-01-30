@@ -61,7 +61,7 @@ function App() {
             </div>
             <br /><br />
 
-            <h1> 우리가 함께한 시간 <Numbercount/></h1><br /><br />
+            <h1> 함께한 시간 <Numbercount/></h1><br /><br />
             <Maps media="mobile_container" />
         </div>
     </div>

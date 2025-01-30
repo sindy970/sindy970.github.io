@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import LinkImg from "../link.webp";
-import KakaoImg from "../kakao.webp";
 import Sun5 from "../sun5.webp";
+import Sun3 from "../sun3.webp";
+import Sun2 from "../sun2.webp";
+import Sun1 from "../sun1.webp";
+import Sun from "../sun.webp";
 
 const Imgslider = () => {
-    const imgArr = [LinkImg, KakaoImg, Sun5];
+    const imgArr = [Sun, Sun1, Sun2, Sun3, Sun5];
     const [currentIndex, setIndex] = useState(0);
 
     useEffect(() => {
@@ -38,10 +40,10 @@ const Imgslider = () => {
             <div className="preNext">
                 <button className="pre" onClick={() => {
                     mButton(currentIndex)
-                }}> 이전 </button>
+                }}> ◀ </button>
                 <button className="next" onClick={() => {
                     pButton(currentIndex)
-                }}> 다음 </button>
+                }}> ▶ </button>
             </div>
         </div>
     );
