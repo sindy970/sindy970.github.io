@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import LinkImg from "../link.webp";
 import KakaoImg from "../kakao.webp";
+import Sun5 from "../sun5.webp"
+
 // kakao 기능 동작을 위해 넣어준다.
 const { Kakao } = window;
 
@@ -27,8 +29,7 @@ const Share = () =>{
             content: {
                 title: '우리 결혼해요~♥',
                 description: '새로운 시작을 응원해 주세요~',
-                imageUrl:
-                    'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+                imageUrl: Sun5,
                 link: {
                     mobileWebUrl: realUrl,
                 },
