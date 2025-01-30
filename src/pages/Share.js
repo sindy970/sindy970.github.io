@@ -29,7 +29,7 @@ const Share = () =>{
             content: {
                 title: '우리 결혼해요~♥',
                 description: '새로운 시작을 응원해 주세요~',
-                imageUrl: Sun5,
+                imageUrl: '../sun5.webp',
                 link: {
                     mobileWebUrl: realUrl,
                 },

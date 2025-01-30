@@ -26,6 +26,46 @@ img {
   image-rendering:-webkit-optimize-contrast;
 }
 
+.imgSliderDiv{
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgSliderDiv .imageA {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.imgSliderDiv .imageA .preNext .pre{
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  transform:  translateY(-55%);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.imgSliderDiv .imageA .preNext .next{
+  position: absolute;
+  top: 45%;
+  right: 0%;
+  transform:  translateY(-55%);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.imgSliderDiv .imageA .imgbox {
+  width: 300px;
+}
+
 .engText .wedding{
   font-family: 'eng';
   text-align: center;

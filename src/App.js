@@ -7,6 +7,7 @@ import Snow from "./pages/Snow";
 import Maps from "./pages/Navermaps";
 import Togglebutton from "./pages/Togglebutton";
 import Share from "./pages/Share";
+import Imgslider from "./pages/Imgslider";
 import LinkImg from "./link.webp";
 import KakaoImg from "./kakao.webp";
 
@@ -53,7 +54,13 @@ function App() {
             <h1> 공유하기 </h1>
             <Share />
 
-            
+            <br />
+            <br />
+            <div className="imgSliderDiv">
+                <Imgslider />
+            </div>
+            <br /><br />
+
             <h1> 우리가 함께한 시간 <Numbercount/></h1><br /><br />
             <Maps media="mobile_container" />
         </div>
