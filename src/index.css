@@ -21,6 +21,11 @@ code {
   /*opacity: 60%; 투명도 설정 */
 }
 
+img {
+  width: -webkit-fill-available;
+  image-rendering:-webkit-optimize-contrast;
+}
+
 .engText .wedding{
   font-family: 'eng';
   text-align: center;
