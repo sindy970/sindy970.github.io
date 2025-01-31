@@ -30,34 +30,40 @@ function App() {
             </div>
         </div>
         <div className="text">
-            <br /><spen>2025.04.12 PM 01:30 </spen><br />
-            <spen> 한승수 ♥ 김송이 </spen><br /><br />
-            <spen> 웨스턴팰리스웨딩 </spen><br />
+            <br /><span>2025.04.12 PM 01:30 </span><br />
+            <span> 한승수 ♥ 김송이 </span><br /><br />
+            <span> 웨스턴팰리스웨딩 </span><br />
             <p>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</p><br/><br/>
 
             <h1> 소중한 분들을 초대합니다.</h1><br/>
-            <spen> ohohohohohoh </spen><br />
-            <spen> ohohohohohoh </spen><br />
-            <spen> ohohohohohoh </spen><br />
-            <spen> ohohohohohoh </spen><br /><br />
+            <span> ohohohohohoh </span><br />
+            <span> ohohohohohoh </span><br />
+            <span> ohohohohohoh </span><br />
+            <span> ohohohohohoh </span><br /><br />
 
             <h1> 마음 전하실 곳 </h1><br />
             <div>
-                <button onClick={() => {
+                <button className="accountButton" onClick={() => {
                     setIsManButtonClick(!isManButtonClick)
-                }}>{isManButtonClick? " 신랑측  ▲ " : " 신랑측  ▼ "} </button><br />
-                {isManButtonClick && <Togglebutton gubun={"man"}/>}
-                <button onClick={() => {
+                }}>{isManButtonClick ? " 신랑측  ▲ " : " 신랑측  ▼ "} </button>
+                <br/>
+                <span  className="accountSpen">
+                    {isManButtonClick && <Togglebutton gubun={"man"}/>}
+                </span><br/><br/>
+                <button className="accountButton" onClick={() => {
                     setIsWomButtonClick(!isWomButtonClick)
-                }}>{isWomButtonClick? " 신부측  ▲ " : " 신부측  ▼ "} </button><br />
-                {isWomButtonClick && <Togglebutton gubun={"wom"}/>}<br /><br />
+                }}>{isWomButtonClick ? " 신부측  ▲ " : " 신부측  ▼ "} </button>
+                <br/>
+                <span  className="accountSpen">
+                    {isWomButtonClick && <Togglebutton gubun={"wom"}/>}
+                </span><br/><br/>
             </div>
 
             <h1> 공유하기 </h1>
-            <Share />
+            <Share/>
 
-            <br />
-            <br />
+            <br/>
+            <br/>
             <div className="imgSliderDiv">
                 <Imgslider />
             </div>

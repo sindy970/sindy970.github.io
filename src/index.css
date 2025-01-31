@@ -5,6 +5,9 @@ footer, header, section, summary, video,input {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+  text-align: center;
+  font-family: 'BinggraeSamanco-Bold';
+  color: #222831;
 }
 
 code {
@@ -25,6 +28,8 @@ img {
   width: -webkit-fill-available;
   image-rendering:-webkit-optimize-contrast;
 }
+
+/* 사진 슬라이더 영역 */
 
 .imgSliderDiv{
   width: -webkit-fill-available;
@@ -70,6 +75,7 @@ img {
   width: 300px;
 }
 
+/* main 이미지 css */
 .mainImgDiv {
   width: -webkit-fill-available;
   position: relative;
@@ -102,19 +108,27 @@ img {
   image-rendering:-webkit-optimize-contrast;
 }
 
-.text{
-  color: #222831;
-  text-align: center;
-  margin: 0;
-  /*font-family: 'establishRoomNo703OTF';*/
+/* 계좌번호 영역 */
+
+.accountSpen {
+  width: -webkit-fill-available;
 }
+
+.accountButton {
+  width: -webkit-fill-available;
+  font-family: 'BinggraeSamanco-Bold';
+  border: none;
+}
+
+
+/* 글자 설정 */
 
 .text spen{
   color: #222831;
   text-align: center;
   font-size: small;
+  font-weight: 400;
   margin: 0;
-  /*font-family: 'establishRoomNo703OTF';*/
 }
 
 .text p{
@@ -122,7 +136,7 @@ img {
   text-align: center;
   margin: 0;
   font-size: x-small;
-  /*font-family: 'establishRoomNo703OTF';*/
+  font-weight: 400;
 }
 
 .text h1{
@@ -130,13 +144,14 @@ img {
   text-align: center;
   margin: 0;
   font-size: x-large;
-  /*font-family: 'establishRoomNo703OTF';*/
+  font-weight: 700;
 }
 
 .text pre{
   margin: 0;
-  /*font-family: 'establishRoomNo703OTF';*/
 }
+
+/* 공유하기 */
 
 .sns-area{
   background-color: #EEEEEE;
@@ -164,60 +179,18 @@ img {
   background-color: #EEEEEE;
 }
 
-.mobile_container {
-  /*background: #FFFDEC;*/
-  color: #CB9DF0;
-}
-
-.cherry_blossom {
-  overflow: hidden;
-  position: relative;
-  width: 600px;
-  height: 600px;
-  /*background: url('sakura.png') center center no-repeat;*/
-  background-size: cover;
-  perspective: 1000px;
-}
-
-.cherry_blossom .petal {
-  position: absolute;
-  background: linear-gradient(-45deg, #ffb6c1 0%, #ffc5d0 40%, #ffdfe6 80%);
-  border-radius: 10% 50% 40% 50%;
-  z-index: 1;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  pointer-events: none;
-  transform-style: preserve-3d;
-  transition: transform 1000ms linear;
-}
-
-@keyframes fall {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  100% {
-    top: 100%;
-    opacity: 0.2;
-  }
-}
+/* font 적용 영역 */
 
 @font-face {
   font-family: 'eng';
-  /*src: url('./Permatha Signature.otf') format('woff');*/
   src: url('./Permatha Signature.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'kr';
-  /*src: url('./Permatha Signature.otf') format('woff');*/
-  src: url('./Adultkid.otf');
+  font-family: 'BinggraeSamanco-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
