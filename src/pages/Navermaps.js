@@ -43,6 +43,8 @@ function Navermaps(props) {
                     />
                 </Map>
             </div>
+            <br/>
+            <br/>
             <div className="mapAll">
                 <div className="mapLeft">
                     <span>대중교통</span><br/>
