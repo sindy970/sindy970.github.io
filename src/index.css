@@ -70,7 +70,13 @@ img {
   width: 300px;
 }
 
-.engText .wedding{
+.mainImgDiv {
+  width: -webkit-fill-available;
+  position: relative;
+  background-size: cover;
+}
+
+.mainText .wedding{
   font-family: 'eng';
   text-align: center;
   color: #00ADB5;
@@ -79,18 +85,18 @@ img {
   font-size: 2rem; /* 글씨 크기 */
   font-weight: bold;
   white-space: nowrap;
-  top: 16%; /* 핵심코드 */
-  left: 71%; /* 핵심코드 */
-  transform: translate( -84%, -29%); /* 핵심코드 */
+  top: 100px; /* 핵심코드 */
+  left: 300px; /* 핵심코드 */
+  transform: translate( -245px, -50px);
 }
 
-.engImg{
+.mainImg{
   background-size: cover; /* 핵심코드 */
   position: relative; /* 핵심코드 */
   background-repeat :no-repeat;
 }
 
-.engImg img{
+.mainImg img{
   border-radius: 50% 50% 0% 0%;
   width: -webkit-fill-available;
   image-rendering:-webkit-optimize-contrast;

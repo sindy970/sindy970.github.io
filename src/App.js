@@ -21,11 +21,13 @@ function App() {
             <Audioplay clickEvent="play" />
             <Snow />
         </div>
-        <div className="engImg">
-            <img src ={Sun5} loading="lazy" />
-        </div>
-        <div className="engText">
-            <h1 className="wedding">Wedding Ceremony</h1>
+        <div className="mainImgDiv">
+            <div className="mainImg">
+                <img src ={Sun5} loading="lazy" />
+            </div>
+            <div className="mainText">
+                <h1 className="wedding">Wedding Ceremony</h1>
+            </div>
         </div>
         <div className="text">
             <br /><spen>2025.04.12 PM 01:30 </spen><br />
