@@ -4,7 +4,6 @@ import { useEffect } from "react"
 const Numbercount = () => {
 
     const numCount = {
-        textAlign: "center",
         fontSize: 45,
         color: "#80BCBD",
     }

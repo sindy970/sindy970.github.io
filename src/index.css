@@ -24,7 +24,44 @@ code {
   /*opacity: 60%; 투명도 설정 */
 }
 
+.gubunLine {
+  color: #112D4E;
+}
+
 img {
+  width: -webkit-fill-available;
+  image-rendering:-webkit-optimize-contrast;
+}
+
+/* main 이미지 css */
+.mainImgDiv {
+  width: -webkit-fill-available;
+  position: relative;
+  background-size: cover;
+}
+
+.mainText .wedding{
+  font-family: 'eng';
+  text-align: center;
+  color: #00ADB5;
+  margin: 0;
+  position: absolute;
+  font-size: 2rem; /* 글씨 크기 */
+  font-weight: bold;
+  white-space: nowrap;
+  top: 100px; /* 핵심코드 */
+  left: 300px; /* 핵심코드 */
+  transform: translate( -245px, -50px);
+}
+
+.mainImg{
+  background-size: cover; /* 핵심코드 */
+  position: relative; /* 핵심코드 */
+  background-repeat :no-repeat;
+}
+
+.mainImg img{
+  border-radius: 50% 50% 0% 0%;
   width: -webkit-fill-available;
   image-rendering:-webkit-optimize-contrast;
 }
@@ -75,39 +112,6 @@ img {
   width: 300px;
 }
 
-/* main 이미지 css */
-.mainImgDiv {
-  width: -webkit-fill-available;
-  position: relative;
-  background-size: cover;
-}
-
-.mainText .wedding{
-  font-family: 'eng';
-  text-align: center;
-  color: #00ADB5;
-  margin: 0;
-  position: absolute;
-  font-size: 2rem; /* 글씨 크기 */
-  font-weight: bold;
-  white-space: nowrap;
-  top: 100px; /* 핵심코드 */
-  left: 300px; /* 핵심코드 */
-  transform: translate( -245px, -50px);
-}
-
-.mainImg{
-  background-size: cover; /* 핵심코드 */
-  position: relative; /* 핵심코드 */
-  background-repeat :no-repeat;
-}
-
-.mainImg img{
-  border-radius: 50% 50% 0% 0%;
-  width: -webkit-fill-available;
-  image-rendering:-webkit-optimize-contrast;
-}
-
 /* 계좌번호 영역 */
 
 .accountSpen {
@@ -118,6 +122,41 @@ img {
   width: -webkit-fill-available;
   font-family: 'BinggraeSamanco-Bold';
   border: none;
+}
+
+
+.toggleCopy button{
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+/* 지도 */
+
+.mapAll {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.mapLeft {
+  text-align: left;
+}
+
+.mapRight {
+  text-align: right;
+}
+
+.mapAll span {
+  display: flow;
+}
+
+.mapAll button{
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+.mapAll img{
+  image-rendering:-webkit-optimize-contrast;
+  width: 12px;
+  height: 12px;
 }
 
 
@@ -177,6 +216,21 @@ img {
 .sns-area li button{
   border: none;
   background-color: #EEEEEE;
+}
+
+/* count */
+
+.countSize {
+  position: relative;
+  height: 50px;
+}
+
+.countAll {
+  position: absolute;
+  display: flex;
+  justify-self: anchor-center;
+  width: auto;
+  height: auto;
 }
 
 /* font 적용 영역 */
