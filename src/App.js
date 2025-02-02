@@ -13,6 +13,8 @@ import Share from "./pages/Share";
 import Imgslider from "./pages/Imgslider";
 import LinkImg from "./link.webp";
 import KakaoImg from "./kakao.webp";
+import Tel from "./tel.webp";
+import Message from "./message.webp";
 
 function App() {
     const [isManButtonClick, setIsManButtonClick] = useState(false);
@@ -81,13 +83,35 @@ console.log(accountNumber);
                 <div className="accountMan">
                     <span> 신랑측 </span><br /><br />
                     <div>
-                        <p> 신랑 <span> 한승수 </span></p>
+                        <p> 신랑 <span> 한승수 </span>&nbsp;
+                            <a href="tel:전화번호">
+                                <img className="phoneNumber" src={Tel} />
+                            </a>&nbsp;&nbsp;&nbsp;
+                            <a href="sms:전화번호">
+                                <img className="phoneNumber" src={Message} />
+                            </a>
+                        </p>
+
                         <span id="man"> 00은행 &nbsp;&nbsp; 123-456-789  </span><br />
                         <button onClick={() => { handleCopyUrl("man"); }}>계좌 복사</button><br /><br />
-                        <p> 아버지 <span> 한 철 </span></p>
+                        <p> 아버지 <span> 한 철 </span>&nbsp;
+                            <a href="tel:전화번호">
+                                <img className="phoneNumber" src={Tel} />
+                            </a>&nbsp;&nbsp;&nbsp;
+                            <a href="sms:전화번호">
+                                <img className="phoneNumber" src={Message} />
+                            </a>
+                        </p>
                         <span id="manF"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
                         <button onClick={() => { handleCopyUrl("manF"); }}>계좌 복사</button><br /><br />
-                        <p> 어머니 <span> 김회정 </span></p>
+                        <p> 어머니 <span> 김회정 </span>&nbsp;
+                            <a href="tel:전화번호">
+                                <img className="phoneNumber" src={Tel} />
+                            </a>&nbsp;&nbsp;&nbsp;
+                            <a href="sms:전화번호">
+                                <img className="phoneNumber" src={Message} />
+                            </a>
+                        </p>
                         <span id="manM"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
                         <button onClick={() => { handleCopyUrl("manM"); }}>계좌 복사</button><br /><br />
                     </div>
@@ -95,13 +119,34 @@ console.log(accountNumber);
                 <div className="accountWom">
                     <span> 신부측 </span><br /><br />
                     <div>
-                        <p> 신부 <span> 김송이 </span></p>
+                        <p> 신부 <span> 김송이 </span>&nbsp;
+                            <a href="tel:전화번호">
+                                <img className="phoneNumber" src={Tel} />
+                            </a>&nbsp;&nbsp;&nbsp;
+                            <a href="sms:전화번호">
+                                <img className="phoneNumber" src={Message} />
+                            </a>
+                        </p>
                         <span id="wom"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
                         <button onClick={() => { handleCopyUrl("wom"); }}>계좌 복사</button><br /><br />
-                        <p> 아버지 <span> 아버님 </span></p>
+                        <p> 아버지 <span> 아버님 </span>&nbsp;
+                            <a href="tel:전화번호">
+                                <img className="phoneNumber" src={Tel} />
+                            </a>&nbsp;&nbsp;&nbsp;
+                            <a href="sms:전화번호">
+                                <img className="phoneNumber" src={Message} />
+                            </a>
+                        </p>
                         <span id="womF"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
                         <button onClick={() => { handleCopyUrl("womF"); }}>계좌 복사</button><br /><br />
-                        <p> 어머니 <span> 어미님 </span></p>
+                        <p> 어머니 <span> 어미님 </span>&nbsp;
+                            <a href="tel:전화번호">
+                                <img className="phoneNumber" src={Tel} />
+                            </a>&nbsp;&nbsp;&nbsp;
+                            <a href="sms:전화번호">
+                                <img className="phoneNumber" src={Message} />
+                            </a>
+                        </p>
                         <span id="womM"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
                         <button onClick={() => { handleCopyUrl("womM"); }}>계좌 복사</button><br /><br />
                     </div>
