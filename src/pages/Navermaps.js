@@ -3,7 +3,7 @@ import { Map, MapMarker } from "react-kakao-maps-sdk"
 import Lovelocation from "../lovelocation.webp";
 import Car from "../car.webp"
 import LocationLogo from "../locationLogo.webp"
-// import { ReactComponent as LocationLogo } from "../locationLogo.svg"
+import { isSafari, isFirefox } from 'react-device-detect';
 
 function Navermaps(props) {
 
@@ -66,7 +66,9 @@ function Navermaps(props) {
             <br/><br/><br/>
             <div>
                 <h1> 주차장 지도 </h1><br/>
-                <img src={Car}/>
+                <img
+                    className={isSafari || isFirefox ? "imagefile" : undefined}
+                    src={Car}/>
 
             </div>
         </>

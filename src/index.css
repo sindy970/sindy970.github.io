@@ -67,6 +67,45 @@ img {
   image-rendering:-webkit-optimize-contrast;
 }
 
+/* 아이폰에서 접속할 때 */
+.imagefile {
+  width: -moz-available;
+  image-rendering: -moz-crisp-edges;
+}
+
+/* main 이미지 css */
+.mainImgDivS {
+  width: -moz-available;
+  position: relative;
+  background-size: cover;
+}
+
+.mainTextS .weddingS{
+  font-family: 'eng';
+  text-align: center;
+  color: #00ADB5;
+  margin: 0;
+  position: absolute;
+  font-size: 2rem; /* 글씨 크기 */
+  font-weight: bold;
+  white-space: nowrap;
+  top: 100px; /* 핵심코드 */
+  left: 290px; /* 핵심코드 */
+  transform: translate( -245px, -50px);
+}
+
+.mainImgS{
+  background-size: cover; /* 핵심코드 */
+  position: relative; /* 핵심코드 */
+  background-repeat :no-repeat;
+}
+
+.mainImgS img{
+  border-radius: 50% 50% 0% 0%;
+  width: -moz-available;
+  image-rendering: -moz-crisp-edges;
+}
+
 /* 사진 슬라이더 영역 */
 
 .imgSliderDiv{
@@ -267,6 +306,17 @@ img {
   justify-self: anchor-center;
   width: auto;
   height: auto;
+}
+
+/* count 아이폰 버전 */
+
+.countAllS {
+  width: -moz-available;
+  display: contents;
+}
+
+.countNumS {
+  display: block ruby;
 }
 
 /* font 적용 영역 */

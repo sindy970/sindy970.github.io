@@ -1,52 +1,32 @@
+import React, {useState, useEffect, useRef} from 'react';
+import { isSafari, isFirefox } from 'react-device-detect';
+import Sun5 from "../sun5.webp"
 
-//함수형 컴포넌트
-
-    import React, {useState, useEffect, useRef} from 'react';
-    import Counter from './Counter'
-    import Numbercount from "./Numbercount";
-    import Music from '../music1.mp3';
-    // import Audio from "./Audio";
-    import Left from '../Default.png';
-    import Right from '../image 2.png';
-    import '../index.css';
-
-    const Home = () => {
-        const [isOpen, setIsOpen] = useState(false);
-        const [showNextComponent, setShowNextComponent] = useState(false);
-
-        const audio = new Audio(Music);
-
-        // const playButton = document.getElementById('play-button');
-        //
-        // playButton.addEventListener('click', function() {
-        //     audio.play();
-        // });
-
-        // useEffect(() => {
-        //     const timer = setTimeout(() => {
-        //         setIsOpen(true);
-        //     }, 1000); // 1초 후 애니메이션 실행
-        //
-        //     return () => clearTimeout(timer); // 컴포넌트 언마운트 시 타이머 정리
-        // }, []);
-        //
-        // // 다른 컴포넌트를 호출하기 위한 effect
-        // useEffect(() => {
-        //     if (isOpen) {
-        //         const nextTimer = setTimeout(() => {
-        //             setShowNextComponent(true);
-        //         }, 2000); // 문 열리는 애니메이션 이후 2초 후 다른 컴포넌트 표시
-        //
-        //         return () => clearTimeout(nextTimer);
-        //     }
-        // }, [isOpen]);
-
-        return (
-                <div>
-                    <audio src={Music} loop autoplay></audio>
+const Home = () => {
+    return (
+        <>
+            {(isSafari || isFirefox) ?
+                <div className="mainImgDivS">
+                    <div className="mainImgS">
+                        <img className="imagefile" src={Sun5} loading="lazy"/>
+                    </div>
+                    <div className="mainTextS">
+                        <h1 className="weddingS">Wedding Ceremony</h1>
+                    </div>
                 </div>
-        );
-    };
+                :
+                <div className="mainImgDiv">
+                    <div className="mainImg">
+                        <img src={Sun5} loading="lazy"/>
+                    </div>
+                    <div className="mainText">
+                        <h1 className="wedding">Wedding Ceremony</h1>
+                    </div>
+                </div>
+            }
+        </>
+    );
+};
 export default Home;
 
 //lo ==> 화살표 함수

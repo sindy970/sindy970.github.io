@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { isSafari, isFirefox } from 'react-device-detect';
 import Sun5 from "../sun5.webp";
 import Sun3 from "../sun3.webp";
 import Sun2 from "../sun2.webp";
@@ -35,7 +36,8 @@ const Imgslider = () => {
     return (
         <div className="imageA">
             <div className="imgbox">
-                <img src={imgArr[currentIndex]} />
+                <img className={isSafari || isFirefox ? "imagefile" : undefined}
+                    src={imgArr[currentIndex]} />
             </div>
             <div className="preNext">
                 <button className="pre" onClick={() => {

@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import {Routes, Route, Link} from "react-router-dom";
+import { isSafari, isFirefox } from 'react-device-detect';
 import Numbercount from "./pages/Numbercount";
+import Home from "./pages/Home";
+import Counter from "./pages/Counter";
 import Audioplay from "./pages/Audio";
 import Sun5 from "./sun5.webp"
 import Snow from "./pages/Snow";
@@ -30,14 +33,17 @@ console.log(accountNumber);
             <Audioplay clickEvent="play" />
             <Snow />
         </div>
-        <div className="mainImgDiv">
-            <div className="mainImg">
-                <img src ={Sun5} loading="lazy" />
-            </div>
-            <div className="mainText">
-                <h1 className="wedding">Wedding Ceremony</h1>
-            </div>
-        </div>
+
+        <Home />
+
+        {/*<div className="mainImgDiv">*/}
+        {/*    <div className="mainImg">*/}
+        {/*        <img src ={Sun5} loading="lazy" />*/}
+        {/*    </div>*/}
+        {/*    <div className="mainText">*/}
+        {/*        <h1 className="wedding">Wedding Ceremony</h1>*/}
+        {/*    </div>*/}
+        {/*</div>*/}
         <div className="text">
             <br/><span>2025.04.12 PM 01:30 </span><br/>
             <span> 한승수 ♥ 김송이 </span><br/><br/>
@@ -54,14 +60,7 @@ console.log(accountNumber);
             <h2 className="gubunLine"> ------------- </h2>
             <h1> 함께한 시간 </h1><br/>
             <div className="countSize">
-                <div className="countAll">
-                    <div className="countNum">
-                        <Numbercount/>
-                    </div>
-                    <div className="countText">
-                        <h1>&nbsp;&nbsp;&nbsp;일</h1>
-                    </div>
-                </div>
+                <Counter />
             </div>
 
             <br/><br/>
