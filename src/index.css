@@ -111,6 +111,7 @@ img {
 
 .imgSliderDiv .imageA .imgbox {
   width: 300px;
+  height: 400px;
 }
 
 /* 계좌번호 영역 */
@@ -119,16 +120,50 @@ img {
   width: -webkit-fill-available;
 }
 
-.accountButton {
-  width: -webkit-fill-available;
+.account{
+  width: 20px;
+  height: 20px;
+}
+
+.accountArea {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+/*.text .accountArea p{*/
+/*  color: #222831;*/
+/*  !*text-align: center;*!*/
+/*  margin: 0;*/
+/*  font-size: small;*/
+/*  font-weight: 400;*/
+/*  white-space: nowrap;*/
+/*}*/
+
+.accountArea .accountMan button{
+  font-sizw: x-small;
   font-family: 'BinggraeSamanco-Bold';
+  background-color: #A1E3F9;
   border: none;
 }
 
-
-.toggleCopy button{
+.accountArea .accountWom button{
+  font-sizw: x-small;
   font-family: 'BinggraeSamanco-Bold';
+  background-color: #FCC6FF;
+  border: none;
 }
+
+/*.accountButton {*/
+/*  width: -webkit-fill-available;*/
+/*  font-family: 'BinggraeSamanco-Bold';*/
+/*  border: none;*/
+/*}*/
+
+
+/*.toggleCopy button{*/
+/*  font-family: 'BinggraeSamanco-Bold';*/
+/*}*/
 
 /* 지도 */
 

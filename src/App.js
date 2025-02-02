@@ -15,6 +15,15 @@ function App() {
     const [isManButtonClick, setIsManButtonClick] = useState(false);
     const [isWomButtonClick, setIsWomButtonClick] = useState(false);
 
+    const handleCopyUrl = (gubun) => {
+        const accountText = document.getElementById(gubun).innerText;
+        const accountNumber = accountText.split(" ")[2]; // 계좌 번호만 추출
+console.log(accountNumber);
+        navigator.clipboard.writeText(accountNumber).then(() => {
+            alert("계좌번호가 복사되었습니다!");
+        });
+    };
+
   return (
     <div className="App">
         <div>
@@ -67,22 +76,53 @@ function App() {
             <br/>
             <br/>
             <h2 className="gubunLine"> ---------------------- </h2>
+
             <h1> 마음 전하실 곳 </h1><br/>
-            <div>
-                <button className="accountButton" onClick={() => {
-                    setIsManButtonClick(!isManButtonClick)
-                }}>{isManButtonClick ? " 신랑측  ▲ " : " 신랑측  ▼ "} </button>
-                <br/>
-                <span className="accountSpen">
-                    {isManButtonClick && <Togglebutton gubun={"man"}/>}
-                </span><br/><br/>
-                <button className="accountButton" onClick={() => {
-                    setIsWomButtonClick(!isWomButtonClick)
-                }}>{isWomButtonClick ? " 신부측  ▲ " : " 신부측  ▼ "} </button>
-                <br/>
-                <span className="accountSpen">
-                    {isWomButtonClick && <Togglebutton gubun={"wom"}/>}
-                </span><br/><br/>
+            <div className="accountArea">
+                <div className="accountMan">
+                    <span> 신랑측 </span><br /><br />
+                    <div>
+                        <p> 신랑 <span> 한승수 </span></p>
+                        <span id="man"> 00은행 &nbsp;&nbsp; 123-456-789  </span><br />
+                        <button onClick={() => { handleCopyUrl("man"); }}>계좌 복사</button><br /><br />
+                        <p> 아버지 <span> 한 철 </span></p>
+                        <span id="manF"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
+                        <button onClick={() => { handleCopyUrl("manF"); }}>계좌 복사</button><br /><br />
+                        <p> 어머니 <span> 김회정 </span></p>
+                        <span id="manM"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
+                        <button onClick={() => { handleCopyUrl("manM"); }}>계좌 복사</button><br /><br />
+                    </div>
+                </div>
+                <div className="accountWom">
+                    <span> 신부측 </span><br /><br />
+                    <div>
+                        <p> 신부 <span> 김송이 </span></p>
+                        <span id="wom"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
+                        <button onClick={() => { handleCopyUrl("wom"); }}>계좌 복사</button><br /><br />
+                        <p> 아버지 <span> 아버님 </span></p>
+                        <span id="womF"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
+                        <button onClick={() => { handleCopyUrl("womF"); }}>계좌 복사</button><br /><br />
+                        <p> 어머니 <span> 어미님 </span></p>
+                        <span id="womM"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br />
+                        <button onClick={() => { handleCopyUrl("womM"); }}>계좌 복사</button><br /><br />
+                    </div>
+
+                </div>
+                {/*<button className="accountButton" onClick={() => {*/}
+                {/*    setIsManButtonClick(!isManButtonClick)*/}
+                {/*}}>{isManButtonClick ? " 신랑측  ▲ " : " 신랑측  ▼ "} </button>*/}
+                {/*<br/>*/}
+                {/*<span className="accountSpen">*/}
+                {/*    {isManButtonClick && <Togglebutton gubun={"man"}/>}*/}
+                {/*</span><br/><br/>*/}
+                {/*<button className="accountButton" onClick={() => {*/}
+                {/*    setIsWomButtonClick(!isWomButtonClick)*/}
+                {/*}}>{isWomButtonClick ? " 신부측  ▲ " : " 신부측  ▼ "} </button>*/}
+                {/*<br/>*/}
+                {/*<span className="accountSpen">*/}
+                {/*    {isWomButtonClick && <Togglebutton gubun={"wom"}/>}*/}
+                {/*</span>*/}
+                <br/><br/>
             </div>
 
             <h2 className="gubunLine"> -------------- </h2>
