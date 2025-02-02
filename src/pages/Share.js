@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LinkImg from "../link.webp";
 import KakaoImg from "../kakao.webp";
 import Sun5 from "../sun5.webp"
@@ -7,6 +7,7 @@ import Sun5 from "../sun5.webp"
 const { Kakao } = window;
 
 const Share = () =>{
+    const imageUrl = "https://raw.githubusercontent.com/sindy970/mobilewedding/refs/heads/main/src/sun5.webp";
     // 배포한 자신의 사이트
     const realUrl = "https://sindy970.github.io/mobilewedding/"
     // 로컬 주소 (localhost 3000 같은거)
@@ -18,8 +19,6 @@ const Share = () =>{
         Kakao.cleanup();
         // 자신의 js 키를 넣어준다.
         Kakao.init('0e6517cf9f05b1a937356f77251bd662');
-        // 잘 적용되면 true 를 뱉는다.
-        console.log(Kakao.isInitialized());
     },[]);
 
     const shareKakao = () =>{
@@ -29,7 +28,7 @@ const Share = () =>{
             content: {
                 title: '우리 결혼해요~♥',
                 description: '새로운 시작을 응원해 주세요~',
-                imageUrl: '../sun5.webp',
+                imageUrl: imageUrl,
                 link: {
                     mobileWebUrl: realUrl,
                 },
