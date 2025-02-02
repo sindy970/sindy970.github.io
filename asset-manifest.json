@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mobilewedding/static/css/main.f69e69db.css",
+    "main.css": "/mobilewedding/static/css/main.c2dee0cb.css",
     "main.js": "/mobilewedding/static/js/main.bbf32ec5.js",
     "static/js/453.b62465ec.chunk.js": "/mobilewedding/static/js/453.b62465ec.chunk.js",
     "static/media/music1.mp3": "/mobilewedding/static/media/music1.40c7e6be01d3a3405e48.mp3",
@@ -20,12 +20,12 @@
     "static/media/kakao.webp": "/mobilewedding/static/media/kakao.92a750f5634bce3e5521.webp",
     "index.html": "/mobilewedding/index.html",
     "static/media/link.webp": "/mobilewedding/static/media/link.c0bbdac141340ceae7ed.webp",
-    "main.f69e69db.css.map": "/mobilewedding/static/css/main.f69e69db.css.map",
+    "main.c2dee0cb.css.map": "/mobilewedding/static/css/main.c2dee0cb.css.map",
     "main.bbf32ec5.js.map": "/mobilewedding/static/js/main.bbf32ec5.js.map",
     "453.b62465ec.chunk.js.map": "/mobilewedding/static/js/453.b62465ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f69e69db.css",
+    "static/css/main.c2dee0cb.css",
     "static/js/main.bbf32ec5.js"
   ]
 }
