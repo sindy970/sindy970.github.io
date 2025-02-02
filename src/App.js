@@ -48,7 +48,7 @@ console.log(accountNumber);
             <span> 두사람 결혼 축하하고 </span><br/>
             <span> 심심해서 그냥 만들어 봤어 </span><br/>
             <span> 수정은 무제한이고 </span><br/>
-            <span> 별로면 안써도 돼 </span><br/><br/>
+            <span> 별로면 안써도 돼 </span><br/>
 
             <br/>
             <h2 className="gubunLine"> ------------- </h2>
