@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react';
-import { isSafari, isFirefox } from 'react-device-detect';
+import { isSafari, isFirefox, isIOS } from 'react-device-detect';
 import Sun5 from "../sun5.webp"
 
 const Home = () => {
     return (
         <>
-            {(isSafari || isFirefox) ?
+            {(isSafari || isFirefox || isIOS) ?
                 <div className="mainImgDivS">
                     <div className="mainImgS">
                         <img className="imagefile" src={Sun5} loading="lazy"/>
