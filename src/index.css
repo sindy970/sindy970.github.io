@@ -55,9 +55,9 @@ img {
   font-size: xx-large; /* 글씨 크기 */
   font-weight: bold;
   white-space: nowrap;
-  top: 100px; /* 핵심코드 */
-  left: 300px; /* 핵심코드 */
-  transform: translate( -245px, -50px);
+  top: 17%; /* 핵심코드 */
+  left: 50%; /* 핵심코드 */
+  transform: translate( -50%, -50%);
 }
 
 .mainImg{
@@ -94,9 +94,9 @@ img {
   font-size: xx-large; /* 글씨 크기 */
   font-weight: bold;
   white-space: nowrap;
-  top: 100px; /* 핵심코드 */
-  left: 290px; /* 핵심코드 */
-  transform: translate( -245px, -50px);
+  top: 17%; /* 핵심코드 */
+  left: 50%; /* 핵심코드 */
+  transform: translate( -50%, -50%);
 }
 
 .mainImgS{
