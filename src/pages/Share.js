@@ -30,14 +30,14 @@ const Share = () =>{
                 description: '새로운 시작을 응원해 주세요~',
                 imageUrl: imageUrl,
                 link: {
-                    mobileWebUrl: realUrl,
+                    mobileWebUrl: resultUrl,
                 },
             },
             buttons: [
                 {
                     title: '자세히 보기',
                     link: {
-                        mobileWebUrl: realUrl,
+                        mobileWebUrl: resultUrl,
                     },
                 },
             ],
@@ -45,7 +45,7 @@ const Share = () =>{
     }
 
     const handleCopyUrl = () => {
-            navigator.clipboard.writeText(realUrl)
+            navigator.clipboard.writeText(resultUrl)
             .then(() => {
                 alert('클립보드에 복사되었습니다');
             })

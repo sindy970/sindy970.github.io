@@ -175,15 +175,6 @@ img {
   height: auto;
 }
 
-/*.text .accountArea p{*/
-/*  color: #222831;*/
-/*  !*text-align: center;*!*/
-/*  margin: 0;*/
-/*  font-size: small;*/
-/*  font-weight: 400;*/
-/*  white-space: nowrap;*/
-/*}*/
-
 .accountArea .accountMan button{
   font-sizw: x-small;
   font-family: 'BinggraeSamanco-Bold';
@@ -198,16 +189,20 @@ img {
   border: none;
 }
 
-/*.accountButton {*/
-/*  width: -webkit-fill-available;*/
-/*  font-family: 'BinggraeSamanco-Bold';*/
-/*  border: none;*/
-/*}*/
+.accountSpenY {
+  width: -webkit-fill-available;
+}
+
+.accountButtonY {
+  width: -webkit-fill-available;
+  font-family: 'BinggraeSamanco-Bold';
+  border: none;
+}
 
 
-/*.toggleCopy button{*/
-/*  font-family: 'BinggraeSamanco-Bold';*/
-/*}*/
+.toggleCopy button{
+  font-family: 'BinggraeSamanco-Bold';
+}
 
 /* 지도 */
 
