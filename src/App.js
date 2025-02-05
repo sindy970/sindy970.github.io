@@ -18,17 +18,19 @@ console.log(accountNumber);
     };
 
   return (
-      <div className="App">
-          <nav>
-              <Link to={"/mobile"} style={{display: "none"}}>Young</Link>
-              <Link to={"/mobileo"} style={{display: "none"}}>Old</Link>
-          </nav>
-          <Routes>
-              <Route path="/mobile" element={<Young/>}/>
-              <Route path="/mobileO" element={<Old/>}/>
-              {/*<Route path="/home" element={<Home />} />*/}
-          </Routes>
-      </div>
+      <Router>
+          <div className="App">
+              <nav>
+                  <Link to={"/mobile"} style={{display: "none"}}>Young</Link>
+                  <Link to={"/mobileo"} style={{display: "none"}}>Old</Link>
+              </nav>
+              <Routes>
+                  <Route path="/mobile" element={<Young/>}/>
+                  <Route path="/mobileO" element={<Old/>}/>
+                  {/*<Route path="/home" element={<Home />} />*/}
+              </Routes>
+          </div>
+      </Router>
       // <div className="App">
       //     <div>
       //         <Audioplay clickEvent="play" />
