@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import {HashRouter as Routes, Route, Link} from "react-router-dom";
+import {HashRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Young from "./pages/Young";
 import Old from "./pages/Old";
 
