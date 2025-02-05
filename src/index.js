@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     // 자바스크립트 엄격 모드를 사용하겠다는 의미
+    // BrowserRouter ==> HashRouter 로 변경 링크에 # 을 붙여준다
   <React.StrictMode>
       <HashRouter>
         <App />
