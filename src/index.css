@@ -176,16 +176,12 @@ img {
 }
 
 .accountArea .accountMan button{
-  font-sizw: x-small;
   font-family: 'BinggraeSamanco-Bold';
-  background-color: #A1E3F9;
   border: none;
 }
 
 .accountArea .accountWom button{
-  font-sizw: x-small;
   font-family: 'BinggraeSamanco-Bold';
-  background-color: #FCC6FF;
   border: none;
 }
 
@@ -199,9 +195,20 @@ img {
   border: none;
 }
 
+.toggleAll {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+}
 
 .toggleCopy button{
   font-family: 'BinggraeSamanco-Bold';
+  border: none;
+}
+
+.toggleCopy img{
+  width: 15px;
+  height: 15px;
 }
 
 /* 지도 */

@@ -8,6 +8,7 @@ import Share from "./Share";
 import Imgslider from "./Imgslider";
 import Message from "../message.webp";
 import Tel from "../tel.webp";
+import Copy from "../copy.webp";
 
 const Old = () => {
 
@@ -75,10 +76,11 @@ const Old = () => {
                                 </a>
                             </p>
 
-                            <span id="man"> 00은행 &nbsp;&nbsp; 123-456-789  </span><br/>
+                            <span id="man"> 00은행 &nbsp;&nbsp; 123-456-789  </span>
                             <button onClick={() => {
                                 handleCopyUrl("man");
-                            }}>계좌 복사
+                            }}>
+                                <img className="phoneNumber" src={Copy} />
                             </button>
                             <br/><br/>
                             <p> 아버지 <span> 한 철 </span>&nbsp;
@@ -89,10 +91,11 @@ const Old = () => {
                                     <img className="phoneNumber" src={Message}/>
                                 </a>
                             </p>
-                            <span id="manF"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br/>
+                            <span id="manF"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
                             <button onClick={() => {
                                 handleCopyUrl("manF");
-                            }}>계좌 복사
+                            }}>
+                                <img className="phoneNumber" src={Copy} />
                             </button>
                             <br/><br/>
                             <p> 어머니 <span> 김회정 </span>&nbsp;
@@ -103,10 +106,11 @@ const Old = () => {
                                     <img className="phoneNumber" src={Message}/>
                                 </a>
                             </p>
-                            <span id="manM"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br/>
+                            <span id="manM"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
                             <button onClick={() => {
                                 handleCopyUrl("manM");
-                            }}>계좌 복사
+                            }}>
+                                <img className="phoneNumber" src={Copy} />
                             </button>
                             <br/><br/>
                         </div>
@@ -122,10 +126,11 @@ const Old = () => {
                                     <img className="phoneNumber" src={Message}/>
                                 </a>
                             </p>
-                            <span id="wom"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br/>
+                            <span id="wom"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
                             <button onClick={() => {
                                 handleCopyUrl("wom");
-                            }}>계좌 복사
+                            }}>
+                                <img className="phoneNumber" src={Copy} />
                             </button>
                             <br/><br/>
                             <p> 아버지 <span> 아버님 </span>&nbsp;
@@ -136,10 +141,11 @@ const Old = () => {
                                     <img className="phoneNumber" src={Message}/>
                                 </a>
                             </p>
-                            <span id="womF"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br/>
+                            <span id="womF"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
                             <button onClick={() => {
                                 handleCopyUrl("womF");
-                            }}>계좌 복사
+                            }}>
+                                <img className="phoneNumber" src={Copy} />
                             </button>
                             <br/><br/>
                             <p> 어머니 <span> 어미님 </span>&nbsp;
@@ -150,10 +156,11 @@ const Old = () => {
                                     <img className="phoneNumber" src={Message}/>
                                 </a>
                             </p>
-                            <span id="womM"> 00은행 &nbsp;&nbsp; 123-456-789 </span><br/>
+                            <span id="womM"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
                             <button onClick={() => {
                                 handleCopyUrl("womM");
-                            }}>계좌 복사
+                            }}>
+                                <img className="phoneNumber" src={Copy} />
                             </button>
                             <br/><br/>
                         </div>

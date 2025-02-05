@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Copy from "../copy.webp"
 
 const Togglebutton = (props) => {
 
@@ -14,13 +15,13 @@ const Togglebutton = (props) => {
     }
 
     const handleCopyUrl = (res) => {
-        // navigator.clipboard.writeText(res)
-        //     .then(() => {
-        //         alert('클립보드에 복사되었습니다');
-        //     })
-        //     .catch((error) => {
-        //         console.error('클립보드 복사 실패!');
-        //     });
+        navigator.clipboard.writeText(res)
+            .then(() => {
+                alert('클립보드에 복사되었습니다');
+            })
+            .catch((error) => {
+                console.error('클립보드 복사 실패!');
+            });
     };
 
 
@@ -31,7 +32,9 @@ const Togglebutton = (props) => {
                     <span>{res2}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{res}</span>
                 </div>
                 <div className="toggleCopy">
-                    <button onClick={handleCopyUrl(res)}>계좌 복사</button>
+                    <button onClick={() => handleCopyUrl(res)}>
+                        &nbsp;&nbsp;<img src={Copy} />
+                    </button>
                 </div>
             </div>
         </>
