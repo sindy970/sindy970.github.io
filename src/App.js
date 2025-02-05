@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import {HashRouter as Router, Routes, Route, Link} from "react-router-dom";
+import { Routes, Route, Link} from "react-router-dom";
 import Young from "./pages/Young";
 import Old from "./pages/Old";
 
@@ -18,7 +18,6 @@ console.log(accountNumber);
     };
 
   return (
-      <Router>
           <div className="App">
               <nav>
                   <Link to={"/mobile"} style={{display: "none"}}>Young</Link>
@@ -30,7 +29,6 @@ console.log(accountNumber);
                   {/*<Route path="/home" element={<Home />} />*/}
               </Routes>
           </div>
-      </Router>
       // <div className="App">
       //     <div>
       //         <Audioplay clickEvent="play" />
