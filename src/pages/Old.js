@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Home from "./Home";
 import Counter from "./Counter";
+import Imgpat from "./Imgpat";
 import Audioplay from "./Audio";
 import Snow from "./Snow";
 import Maps from "./Navermaps";
@@ -51,9 +52,11 @@ const Old = () => {
 
                 <br/><br/>
 
-                <div className="imgSliderDiv">
-                    <Imgslider/>
-                </div>
+                <Imgpat />
+
+                {/*<div className="imgSliderDiv">*/}
+                {/*    <Imgslider/>*/}
+                {/*</div>*/}
                 <br/><br/>
                 <h2 className="gubunLine"> -------------- </h2>
                 <Maps media="mobile_container"/>

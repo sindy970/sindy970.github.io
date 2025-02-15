@@ -25,6 +25,18 @@ code {
   /*opacity: 60%; 투명도 설정 */
 }
 
+.imgArr{
+  width: -webkit-fill-available;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.imgArr img{
+  /* 상우하좌 */
+  padding : 0px 0px 1px 0px ;
+  width : 95%;
+}
+
 .gubunLine {
   color: #112D4E;
 }
