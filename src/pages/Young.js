@@ -47,7 +47,7 @@ const Young = () => {
                 </div>
                 <br/><br/>
                 <h2 className="gubunLine"> -------------- </h2>
-                <Maps media="mobile_container"/>
+                <Maps media="mobile_container" gubun="young"/>
 
                 <br/>
                 <br/>

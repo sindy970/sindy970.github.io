@@ -45,6 +45,17 @@ function Navermaps(props) {
             </div>
             <br/>
             <br/>
+
+            {props.gubun === "old" ?
+                <div>
+                    <span> 웨스턴팰리스웨딩 </span><br/>
+                    <p>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</p>
+                    <br/><br/>
+                </div>
+                    :
+                    <></>
+                }
+
             <div className="mapAll">
                 <div className="mapLeft">
                     <span>대중교통</span><br/>
@@ -64,6 +75,7 @@ function Navermaps(props) {
                 </div>
             </div>
             <br/><br/><br/>
+
             <div>
                 <h1> 주차장 지도 </h1><br/>
                 <img
