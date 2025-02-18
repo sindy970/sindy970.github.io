@@ -191,10 +191,14 @@ img {
 .accountArea .accountMan button{
   font-family: 'BinggraeSamanco-Bold';
   border: none;
+  background-color: #EEEEEE;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 .accountArea .accountWom button{
   font-family: 'BinggraeSamanco-Bold';
+  background-color: #EEEEEE;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   border: none;
 }
 
@@ -206,6 +210,8 @@ img {
   width: -webkit-fill-available;
   font-family: 'BinggraeSamanco-Bold';
   border: none;
+  background-color: #EEEEEE;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 .toggleAll {
@@ -217,6 +223,8 @@ img {
 .toggleCopy button{
   font-family: 'BinggraeSamanco-Bold';
   border: none;
+  background-color: #EEEEEE;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 .toggleCopy img{
@@ -289,6 +297,7 @@ img {
 
 .sns-area{
   background-color: #EEEEEE;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -311,6 +320,7 @@ img {
 .sns-area li button{
   border: none;
   background-color: #EEEEEE;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 /* count */
