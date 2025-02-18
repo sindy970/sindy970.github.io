@@ -22,6 +22,7 @@ code {
 .App{
   padding: 20px;
   background-color: #EEEEEE;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   /*opacity: 60%; 투명도 설정 */
 }
 
