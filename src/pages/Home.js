@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
 import Sun5 from "../sun5.webp"
+import Moon from "../img/moonflwer.webp"
 
 const Home = () => {
     return (
@@ -8,7 +9,7 @@ const Home = () => {
             {(isSafari || isFirefox || isIOS) ?
                 <div className="mainImgDivS">
                     <div className="mainImgS">
-                        <img className="imagefile" src={Sun5} loading="lazy"/>
+                        <img className="imagefile" src={Moon} loading="lazy"/>
                     </div>
                     <div className="mainTextS">
                         <h1 className="weddingS">Wedding Ceremony</h1>
@@ -17,7 +18,7 @@ const Home = () => {
                 :
                 <div className="mainImgDiv">
                     <div className="mainImg">
-                        <img src={Sun5} loading="lazy"/>
+                        <img src={Moon} loading="lazy"/>
                     </div>
                     <div className="mainText">
                         <h1 className="wedding">Wedding Ceremony</h1>

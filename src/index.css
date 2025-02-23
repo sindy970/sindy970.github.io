@@ -39,7 +39,9 @@ code {
 }
 
 .gubunLine {
-  color: #112D4E;
+  color: #9ec0d2bd;
+  font-family: 'eng';
+  margin : 0;
 }
 
 .phoneNumber {

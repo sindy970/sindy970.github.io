@@ -13,6 +13,7 @@
     * 사파리, firefox 에서 css 깨짐 이슈로 설치함
   * npm install firebase
     * firebase 연동 사용 안함..ㅎㅎ
+  * npm i styled-components
 
 결국엔 index.html 파일로 실행함
 src폴더에 코드작업
