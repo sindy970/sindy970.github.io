@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
 import Sun5 from "../sun5.webp"
-import Moon from "../img/moonflwer.webp"
+import Moon from "../img/ring.webp"
 
 const Home = () => {
     return (
@@ -11,18 +11,18 @@ const Home = () => {
                     <div className="mainImgS">
                         <img className="imagefile" src={Moon} loading="lazy"/>
                     </div>
-                    <div className="mainTextS">
-                        <h1 className="weddingS">Wedding Ceremony</h1>
-                    </div>
+                    {/*<div className="mainTextS">*/}
+                    {/*    <h1 className="weddingS">Wedding Ceremony</h1>*/}
+                    {/*</div>*/}
                 </div>
                 :
                 <div className="mainImgDiv">
                     <div className="mainImg">
                         <img src={Moon} loading="lazy"/>
                     </div>
-                    <div className="mainText">
-                        <h1 className="wedding">Wedding Ceremony</h1>
-                    </div>
+                    {/*<div className="mainText">*/}
+                    {/*    <h1 className="wedding">Wedding Ceremony</h1>*/}
+                    {/*</div>*/}
                 </div>
             }
         </>
