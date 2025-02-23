@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
+import Imgmodal from './Imgmodal'
+
 import Baile from "../img/baile.webp";
 import Bailebb from "../img/bailebb.webp";
 import Bb from "../img/bb.webp";
@@ -28,22 +30,36 @@ import Msolor from "../img/msolor.webp";
 const Imgpat = (props) => {
     const imgArrTo = [To, To2, Bailebb, Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, One, Ring, Shy, Sit];
     const imgArrSo = [Wsolor, Wsolor2, Wsolor3, Msolor, Msolor, Msolor];
+    const [modalOpen, setModalOpen] = useState(false);
+    const [modalImg, setModalImg] = useState(null);
 
+    const openModal = (img) => {
+        setModalImg(img);
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+    };
 
     return(
         <>
             <div className="imgArr">
-                {props.gubun == 'to' ?
-                    imgArrTo.map((img, index) => (
-                        <img key={index} src={img} alt={`Sun ${index}`} />
+                {props.gubun === 'to'
+                    ? imgArrTo.map((img, index) => (
+                        <button key={index} onClick={() => openModal(img)}>
+                            <img src={img} />
+                        </button>
                     ))
-                    :
-                    imgArrSo.map((img, index) => (
-                        <img key={index} src={img} alt={`Sun ${index}`} />
-                    ))
-                }
-
+                    : imgArrSo.map((img, index) => (
+                        <button key={index} onClick={() => openModal(img)}>
+                            <img src={img} />
+                        </button>
+                    ))}
             </div>
+            {modalOpen && (
+                <Imgmodal ImgName={modalImg} onClose={closeModal} />
+            )}
         </>
     )
 

@@ -54,6 +54,7 @@ const Old = () => {
                 <br/><br/>
 
                 <h2 className="gubunLine"> G a l l e r y </h2>
+                <br/>
                 <Imgtep />
 
                 {/*<div className="imgSliderDiv">*/}

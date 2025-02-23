@@ -10,7 +10,7 @@ const TabMenu = styled.ul`
     margin-right: auto;
     margin-top: auto;
     text-align: center;
-    font-family: 'BinggraeSamanco-Bold';
+    font-family: 'eng';
     font-size: large;
     display: flex;
     flex-direction: row;
@@ -34,7 +34,6 @@ const TabMenu = styled.ul`
   .focused {
    //선택된 Tabmenu 에만 적용되는 CSS를 구현
     background-color: #00ADB5;
-  ;
     color: #EEEEEE;
   }
 
