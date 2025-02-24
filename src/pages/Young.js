@@ -22,20 +22,20 @@ const Young = () => {
             <Home/>
 
             <div className="text">
-                <br/><span>2025.04.12 PM 01:30 </span><br/>
-                <span> 한승수 ♥ 김송이 </span><br/><br/>
-                <span> 웨스턴팰리스웨딩 </span><br/>
-                <p>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</p><br/><br/>
-                <h2 className="gubunLine"> ------------------- </h2>
-                <h1> 소중한 분들을 초대합니다.</h1><br/>
-                <span> 두사람 결혼 축하하고 </span><br/>
+                <h2 className='mt30'>2025.04.12 PM 01:30 </h2>
+                <h2  className='mt10'> 한승수 ♥ 김송이 </h2>
+                <h4  className='mt10'> 웨스턴팰리스웨딩 </h4>
+                <h4  className=''>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</h4>
+                <p className="gubunLine"> ------------------- </p>
+                <strong> 소중한 분들을 초대합니다.</strong><br/>
+                <p> 두사람 결혼 축하하고 </p><br/>
                 <span> 심심해서 그냥 만들어 봤어 </span><br/>
                 <span> 수정은 무제한이고 </span><br/>
                 <span> 별로면 안써도 돼 </span><br/>
 
                 <br/>
-                <h2 className="gubunLine"> ------------- </h2>
-                <h1> 함께한 시간 </h1><br/>
+                <p className="gubunLine"> ------------- </p>
+                <strong> 함께한 시간 </strong><br/>
                 <div className="countSize">
                     <Counter/>
                 </div>
@@ -46,14 +46,14 @@ const Young = () => {
                     <Imgslider/>
                 </div>
                 <br/><br/>
-                <h2 className="gubunLine"> -------------- </h2>
+                <p className="gubunLine"> -------------- </p>
                 <Maps media="mobile_container" gubun="young"/>
 
                 <br/>
                 <br/>
-                <h2 className="gubunLine"> ---------------------- </h2>
+                <p className="gubunLine"> ---------------------- </p>
 
-                <h1> 마음 전하실 곳 </h1><br/>
+                <strong> 마음 전하실 곳 </strong><br/>
                 <div className="accountAreaY">
                     <button className="accountButtonY" onClick={() => {
                         setIsManButtonClick(!isManButtonClick)
@@ -72,8 +72,8 @@ const Young = () => {
                     <br/><br/>
                 </div>
 
-                <h2 className="gubunLine"> -------------- </h2>
-                <h1> 공유하기 </h1>
+                <p className="gubunLine"> -------------- </p>
+                <strong> 공유하기 </strong>
                 <Share/>
             </div>
         </>

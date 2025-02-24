@@ -62,15 +62,18 @@ function Navermaps(props) {
                     <button
                         onClick={() => window.open('https://map.naver.com/p/directions/-/14106688.7027539,4511257.1399913,%EC%9B%A8%EC%8A%A4%ED%84%B4%ED%8C%B0%EB%A6%AC%EC%8A%A4%EC%9B%A8%EB%94%A9,1832003609,PLACE_POI/-/transit?c=15.00,0,0,0,dh', '_blank')}>
                         <img src={LocationLogo}/>
-                        네이버 빠른길찾기
+                        <br/>
+                        네이버 <br/> 빠른길찾기
                     </button>
                 </div>
                 <div className="mapRight">
                     <span>자가용</span><br/>
                     <button
                         onClick={() => window.open('https://map.naver.com/p/directions/-/14106688.7027539,4511257.1399913,%EC%9B%A8%EC%8A%A4%ED%84%B4%ED%8C%B0%EB%A6%AC%EC%8A%A4%EC%9B%A8%EB%94%A9,1832003609,PLACE_POI/-/car?c=15.00,0,0,0,dh', '_blank')}>
-                        <img src={LocationLogo} />
-                        네이버 빠른길찾기
+                        <img src={LocationLogo}/>
+
+                        <br/>
+                        네이버 <br/> 빠른길찾기
                     </button>
                 </div>
             </div>

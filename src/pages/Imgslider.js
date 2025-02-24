@@ -10,12 +10,12 @@ const Imgslider = () => {
     const imgArr = [Sun, Sun1, Sun2, Sun3, Sun5];
     const [currentIndex, setIndex] = useState(0);
 
-    useEffect(() => {
+   /* useEffect(() => {
         const intervalId = setInterval(() => {
             setIndex((currentIndex + 1) % imgArr.length);
             }, 3000);
         return () => clearInterval(intervalId);
-        }, [currentIndex]);
+        }, [currentIndex]);*/
 
     const mButton = (currentIndex) => {
         if(currentIndex === 0){
