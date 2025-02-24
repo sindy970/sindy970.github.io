@@ -40,7 +40,7 @@ const Imgmodal = (props) => {
             <div className="modal-content">
                 {/* 닫기 버튼 클릭 시 모달 닫기 */}
                 <button className="modal-close-btn" onClick={props.onClose}>
-                    x
+                    X
                 </button>
                 <img src={props.ImgName} alt="Modal content" />
             </div>
