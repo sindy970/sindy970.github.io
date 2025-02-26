@@ -26,7 +26,6 @@ console.log(accountNumber);
               <Routes>
                   <Route path="/mobile" element={<Young/>}/>
                   <Route path="/mobileO" element={<Old/>}/>
-                  {/*<Route path="/home" element={<Home />} />*/}
               </Routes>
           </div>
       // <div className="App">

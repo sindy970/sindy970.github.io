@@ -1,43 +1,80 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, del, em, img, ins, small, strong, sub, sup,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, figcaption,
-footer, header, section, summary, video,input {
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  max-width: 768px;
+  font-size: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   text-align: center;
-  font-family: 'BinggraeSamanco-Bold';
-  font-size: large;
-  color: #222831;
   line-height: 1.4;
+  background-color: #FFF5E0;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-*{
-  margin: 0;
-  padding: 0;
-  border: none;
-}
+/*code {*/
+/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*    monospace;*/
+/*}*/
+/**{*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  border: none;*/
+/*}*/
 button, a{
   border: none;
   background:transparent;
   text-decoration: none;
 }
-#root{
-  width: 100%;
-  max-width: 768px;
+img{
+  width: -webkit-fill-available;
+  image-rendering:-webkit-optimize-contrast;
 }
 
+.beige{
+  color: #FFF5E0;
+}
+.peach{
+  color: #FF6969;
+}
+.red{
+  color: #C70039;
+}
+.navy{
+  color: #141E46;
+}
+
+.mt5{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 .mt10{
   margin-top: 10px;
+  margin-bottom: 0;
 }
 .mt20{
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .mt30{
   margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.kr-font{
+  font-family: 'BinggraeSamanco-Bold';
+}
+.en-font{
+  font-family: 'eng';
 }
 
 h1{
@@ -64,29 +101,19 @@ h6{
   font-size: 20px;
   font-weight: 500;
 }
+h{
+  font-size: 18px;
+  font-weight: 500;
+}
 
 /*
   className = App 인 항목에 css를 적용한다는 의미
 */
-.App{
-  padding: 20px;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-  /*opacity: 60%; 투명도 설정 */
-}
-
 .imgArr{
-  width: -webkit-fill-available;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.imgArr button{
-  font-family: 'BinggraeSamanco-Bold';
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-}
 
 .imgArr img{
   /* 상우하좌 */
@@ -94,39 +121,30 @@ h6{
   width : 95%;
 }
 
-.gubunLine {
-  margin: 30px auto;
-  color: #9ec0d2bd;
-  font-family: 'eng';
-}
+/*.gubunLine {*/
+/*  margin: 30px auto;*/
+/*}*/
 
 .phoneNumber {
   width: 15px;
   height: 15px;
 }
 
-img {
-  width: -webkit-fill-available;
-  image-rendering:-webkit-optimize-contrast;
-}
-
 /* main 이미지 css */
 .mainImgDiv {
-  width: -webkit-fill-available;
   position: relative;
   background-size: cover;
+  min-width: 300px;
+  width: calc(100% - 60px);
+  height: 100%;
 }
 
 .mainText .wedding{
-  font-family: 'eng';
   text-align: center;
-  color: #00ADB5;
   margin: 0;
   position: absolute;
-  font-size: xx-large; /* 글씨 크기 */
-  font-weight: bold;
   white-space: nowrap;
-  top: 17%; /* 핵심코드 */
+  top: 5%; /* 핵심코드 */
   left: 50%; /* 핵심코드 */
   transform: translate( -50%, -50%);
 }
@@ -138,9 +156,8 @@ img {
 }
 
 .mainImg img{
-  border-radius: 50% 50% 0% 0%;
-  width: -webkit-fill-available;
-  image-rendering:-webkit-optimize-contrast;
+  border-radius: 50% 50% 50% 50%;
+  object-fit: cover;
 }
 
 /* 아이폰에서 접속할 때 */
@@ -157,7 +174,6 @@ img {
 }
 
 .mainTextS .weddingS{
-  font-family: 'eng';
   text-align: center;
   color: #00ADB5;
   margin: 0;
@@ -185,7 +201,6 @@ img {
 /* 사진 슬라이더 영역 */
 
 .imgSliderDiv{
-  width: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,10 +261,6 @@ img {
 
 /* 계좌번호 영역 */
 
-.accountSpen {
-  width: -webkit-fill-available;
-}
-
 .account{
   width: 20px;
   height: 20px;
@@ -261,43 +272,10 @@ img {
   height: auto;
 }
 
-.accountArea .accountMan button{
-  font-family: 'BinggraeSamanco-Bold';
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-}
-
-.accountArea .accountWom button{
-  font-family: 'BinggraeSamanco-Bold';
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-  border: none;
-}
-
-.accountSpenY {
-  width: -webkit-fill-available;
-}
-
-.accountButtonY {
-  width: -webkit-fill-available;
-  font-family: 'BinggraeSamanco-Bold';
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-}
-
 .toggleAll {
   display: inline-flex;
   width: auto;
   height: auto;
-}
-
-.toggleCopy button{
-  font-family: 'BinggraeSamanco-Bold';
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 .toggleCopy img{
@@ -325,12 +303,7 @@ img {
   display: flow;
 }
 
-.mapAll button{
-  font-family: 'BinggraeSamanco-Bold';
-}
-
 .mapAll img{
-  image-rendering:-webkit-optimize-contrast;
   width: 12px;
   height: 12px;
 }
@@ -338,28 +311,28 @@ img {
 
 /* 글자 설정 */
 
-.text > span{
-  color: #222831;
-  text-align: center;
-  font-weight: 400;
-  margin: 0;
-  font-size: 20px;
-}
+/*.text > span{*/
+/*  color: #222831;*/
+/*  text-align: center;*/
+/*  font-weight: 400;*/
+/*  margin: 0;*/
+/*  font-size: 20px;*/
+/*}*/
 
-.text p{
-  color: #222831;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-}
+/*.text p{*/
+/*  color: #222831;*/
+/*  text-align: center;*/
+/*  font-size: 16px;*/
+/*  font-weight: 400;*/
+/*}*/
 
-.text strong{
-  display: block;
-  color: #00ADB5;
-  text-align: center;
-  font-size: x-large;
-  font-weight: 700;
-}
+/*.text strong{*/
+/*  display: block;*/
+/*  color: #00ADB5;*/
+/*  text-align: center;*/
+/*  font-size: x-large;*/
+/*  font-weight: 700;*/
+/*}*/
 
 .text pre{
   margin: 0;
@@ -368,8 +341,6 @@ img {
 /* 공유하기 */
 
 .sns-area{
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -387,12 +358,6 @@ img {
 .sns-area li{
   list-style-type: none;
   align-items: center;
-}
-
-.sns-area li button{
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 /* count */
@@ -418,6 +383,8 @@ img {
 .countText{
   flex: 0 0;
   margin: 0;
+  margin-bottom: 35px;
+  padding-left: 10px;
   line-height: 1;
   align-self: center;
 }
@@ -470,6 +437,24 @@ img {
   font-size: 15px;
   border:none;
 }
+
+
+.slider-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  bottom: 10px;
+}
+
 /* font 적용 영역 */
 
 @font-face {
