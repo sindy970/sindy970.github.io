@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Home from "./Home";
 import Counter from "./Counter";
 import Audioplay from "./Audio";
 import Snow from "./Snow";
-import Imgslick from "./Imgslick";
+import CustomPaging from "./Imgslick";
 import Maps from "./Navermaps";
 import Share from "./Share";
 import Imgslider from "./Imgslider";
@@ -44,7 +45,7 @@ const Young = () => {
 
                 <div className="mt30 imgSliderDiv">
                     {/*<Imgslider/>*/}
-                    <Imgslick/>
+                    <CustomPaging/>
                 </div>
 
                 <h2 className="mt30 peach"> ------------------- </h2>
