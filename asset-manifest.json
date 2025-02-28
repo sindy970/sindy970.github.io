@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding_invitation/static/css/main.ae34889e.css",
-    "main.js": "/wedding_invitation/static/js/main.c429f888.js",
+    "main.js": "/wedding_invitation/static/js/main.aff32be7.js",
     "static/js/453.aaa7e828.chunk.js": "/wedding_invitation/static/js/453.aaa7e828.chunk.js",
     "static/media/DAY6 데이식스 Welcome to the Show.mp3": "/wedding_invitation/static/media/DAY6 데이식스 Welcome to the Show.261331c896039e3286de.mp3",
     "static/media/top.jpg": "/wedding_invitation/static/media/top.11c80b814551ef3b3c3b.jpg",
@@ -51,11 +51,11 @@
     "static/media/slick.woff": "/wedding_invitation/static/media/slick.295183786cd8a1389865.woff",
     "static/media/link.webp": "/wedding_invitation/static/media/link.c0bbdac141340ceae7ed.webp",
     "main.ae34889e.css.map": "/wedding_invitation/static/css/main.ae34889e.css.map",
-    "main.c429f888.js.map": "/wedding_invitation/static/js/main.c429f888.js.map",
+    "main.aff32be7.js.map": "/wedding_invitation/static/js/main.aff32be7.js.map",
     "453.aaa7e828.chunk.js.map": "/wedding_invitation/static/js/453.aaa7e828.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae34889e.css",
-    "static/js/main.c429f888.js"
+    "static/js/main.aff32be7.js"
   ]
 }
