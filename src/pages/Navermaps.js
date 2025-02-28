@@ -49,7 +49,7 @@ function Navermaps(props) {
             {props.gubun === "old" ?
                 <div>
                     <span> 웨스턴팰리스웨딩 </span><br/>
-                    <p>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</p>
+                    <p>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스 웨스턴 홀 7층</p>
                     <br/><br/>
                 </div>
                     :

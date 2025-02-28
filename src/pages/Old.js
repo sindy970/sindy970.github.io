@@ -33,11 +33,10 @@ const Old = () => {
             <Home/>
 
             <div className="kr-font">
-                <h2 className='mt40 title-font red'>2025.04.12 PM 01:30 </h2>
+                <h2 className='mt40 title-font red'>2025.04.12 PM 01:10 </h2>
                 <h2 className='mt10 navy'> 한승수 ♥ 김송이 </h2>
-                <h4 className='mt5 navy'> 웨스턴팰리스웨딩 </h4>
+                <h4 className='mt5 navy'>웨스턴팰리스 웨스턴 홀</h4>
                 <h4 className='mt5 navy'>인천 부평구 부평대로278번길 16</h4>
-                <h4 className='mt5 navy'>웨스턴팰리스</h4>
                 <h1 className='mt40 title-font red'> 소중한 분들을 초대합니다.</h1>
                 <h4 className='mt30 navy'>승수 그리고 송이 결혼합니다.</h4>
                 <h4 className='mt5 navy'>함께 있을때 가장 나다운 모습이 되고</h4>
