@@ -28,7 +28,7 @@ import Top from "../img/top.jpg"
 import White from "../img/white.jpg"
 
 const Imgslider = () => {
-    const imgArr = [Moon, Moon2, Baile, Bailebb, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, One, Ring, Shy, Sit, To, To2, Smile, Smile2, Step, Toflower, Top, White];
+    const imgArr = [Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, Ring, Shy, Sit, To2, Bailebb];
     const [currentIndex, setIndex] = useState(0);
 
    useEffect(() => {

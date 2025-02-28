@@ -33,32 +33,30 @@ const Old = () => {
             <Home/>
 
             <div className="kr-font">
-                <h2 className='mt30 red'>2025.04.12 PM 01:30 </h2>
+                <h2 className='mt40 title-font red'>2025.04.12 PM 01:30 </h2>
                 <h2 className='mt10 navy'> 한승수 ♥ 김송이 </h2>
                 <h4 className='mt5 navy'> 웨스턴팰리스웨딩 </h4>
                 <h4 className='mt5 navy'>인천 부평구 부평대로278번길 16</h4>
                 <h4 className='mt5 navy'>웨스턴팰리스</h4>
-                <h6 className="mt30 en-font peach"> i n v i t e </h6>
-                <h1 className='mt20 red'> 소중한 분들을 초대합니다.</h1>
-                <h4 className='mt5 navy'> 두사람 결혼 축하하고 </h4>
-                <h4 className='mt5 navy'> 심심해서 그냥 만들어 봤어 </h4>
-                <h4 className='mt5 navy'> 수정은 무제한이고 </h4>
-                <h4 className='mt5 navy'> 별로면 안써도 돼 </h4>
+                <h1 className='mt40 title-font red'> 소중한 분들을 초대합니다.</h1>
+                <h4 className='mt30 navy'>승수 그리고 송이 결혼합니다.</h4>
+                <h4 className='mt5 navy'>함께 있을때 가장 나다운 모습이 되고</h4>
+                <h4 className='mt5 navy'>함께 있을때 미래를 꿈꾸게 하는 사람을 만나</h4>
+                <h4 className='mt5 navy'>함께한지 일곱번째 봄, 결혼합니다.</h4>
+                <h4 className='mt5 navy'>지금처럼 서로의 가장 친한친구가 되어</h4>
+                <h4 className='mt5 navy'>예쁘고 행복하게 잘 살겠습니다.</h4>
+                <h4 className='mt5 navy'>저희의 새로운 시작을 함께 축복해주세요.</h4>
 
                 
-                <h6 className="mt30 en-font peach"> T o g e t h e r </h6>
-                <h1 className='mt20 red'> 함께한 시간 </h1>
+                <h1 className='mt40 red'> 함께한 시간 </h1>
                 <div className="countSize peach">
                     <Counter/>
                 </div>
 
-                <h6 className="mt40 en-font peach"> G a l l e r y </h6>
-                <Imgtep />
+                <Imgslider />
 
-                <h6 className="mt30 en-font peach"> D i r e c t i o n s </h6>
                 <Maps media="mobile_container" gubun="old"/>
 
-                <h2 className="mt30 en-font peach"> A c c o u n t </h2>
 
                 <h1 className='mt20 red'> 마음 전하실 곳 </h1>
                 <div className="mt20 accountArea">
@@ -167,7 +165,6 @@ const Old = () => {
                     
                 </div>
 
-                <h6 className="mt30 en-font peach"> S h a r e </h6>
                 <h1 className="red"> 공유하기 </h1>
                 <Share/>
             </div>

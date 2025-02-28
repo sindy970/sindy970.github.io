@@ -28,7 +28,7 @@ import Msolor from "../img/msolor.jpg";
 
 
 const Imgpat = (props) => {
-    const imgArrTo = [To, To2, Bailebb, Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, One, Ring, Shy, Sit];
+    const imgArrTo = [To2, Bailebb, Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, Ring, Shy, Sit];
     const imgArrSo = [Wsolor, Wsolor2, Wsolor3, Msolor, Msolor, Msolor];
     const [modalOpen, setModalOpen] = useState(false);
     const [modalImg, setModalImg] = useState(null);

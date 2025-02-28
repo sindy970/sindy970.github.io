@@ -14,10 +14,10 @@ const Counter = () => {
                 </div>
                 :
                 <div className="countAll">
-                    <div className="countNum">
+                    <div className="countNum navy1">
                             <Numbercount/>
                     </div>
-                    <div className="kr-font countText">
+                    <div className="kr-font countText navy1">
                         <h1>일</h1>
                     </div>
                 </div>

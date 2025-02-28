@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
 import Moon from "../img/moon.jpg"
-// import Moon2 from "../img/moon2.jpg"
+import Moon2 from "../img/moon2.jpg"
 // import Baile from "../img/baile.jpg";
 // import Bailebb from "../img/bailebb.jpg";
-import Bb from "../img/bb.jpg";
+// import Bb from "../img/bb.jpg";
 // import Bb2 from "../img/bb2.jpg";
 // import Ber from "../img/ber.jpg";
 // import Black from "../img/black.jpg";
@@ -13,7 +13,7 @@ import Bb from "../img/bb.jpg";
 // import Gg from "../img/gg.jpg";
 // import Gg2 from "../img/gg2.jpg";
 // import Gg3 from "../img/gg3.jpg";
-// import Moonflwer from "../img/moonflwer.jpg";
+import Bb from "../img/moonflwer.jpg";
 // import One from "../img/one.jpg";
 // import Ring from "../img/ring.jpg";
 // import Shy from "../img/shy.jpg";
@@ -43,11 +43,11 @@ const Home = () => {
                 :
                 <div className="mt30 mainImgDiv">
                     <div className="mainImg">
-                        <img src={Bb} loading="lazy"/>
+                        <img src={Moon} loading="lazy"/>
                     </div>
-                    <div className="mainText">
-                        <h1 className="en-font peach wedding">Wedding Ceremony</h1>
-                    </div>
+                    {/*<div className="mainText">*/}
+                    {/*    <h1 className="en-font peach wedding">Wedding Ceremony</h1>*/}
+                    {/*</div>*/}
                 </div>
             }
         </>

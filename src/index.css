@@ -18,7 +18,7 @@ time, mark, audio, video {
   margin-top: auto;
   text-align: center;
   line-height: 1.4;
-  background-color: #FFF5E0;
+  background-color: #FFFFFF;
   background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 /*code {*/
@@ -41,17 +41,21 @@ img{
 }
 
 .beige{
-  color: #FFF5E0;
+  color: #FFFFFF;
 }
 .peach{
   color: #FF6969;
 }
 .red{
-  color: #C70039;
+  color: #E195AB;
 }
 .navy{
   color: #141E46;
 }
+.navy1{
+  color: #578FCA;
+}
+
 
 .mt5{
   margin-top: 5px;
@@ -76,6 +80,9 @@ img{
 
 .kr-font{
   font-family: 'BinggraeSamanco-Bold';
+}
+.title-font{
+  font-family: 'title';
 }
 .en-font{
   font-family: 'eng';
@@ -468,7 +475,14 @@ h{
 
 @font-face {
   font-family: 'BinggraeSamanco-Bold';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
+  src: url('./Eulyoo1945-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'title';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
