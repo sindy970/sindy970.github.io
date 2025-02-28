@@ -20,11 +20,10 @@ function Navermaps(props) {
                         lat: 37.51583698541007,
                         lng: 126.72252151890174,
                     }}
-                    // style={{
-                    //     // 지도의 크기
-                    //     width: "100%",
-                    //     height: "100%",
-                    // }}
+                    style={{
+                        width: '300px',
+                        height: '200px',
+                    }}
                     level={3} // 지도의 확대 레벨
                 >
                     <MapMarker // 마커를 생성합니다

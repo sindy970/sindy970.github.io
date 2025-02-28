@@ -24,8 +24,9 @@ const Young = () => {
             <div className="kr-font">
                 <h2 className='mt30 red'>2025.04.12 PM 01:30 </h2>
                 <h2 className='mt10 navy'> 한승수 ♥ 김송이 </h2>
-                <h4 className='mt5 navy'> 웨스턴팰리스웨딩 </h4>
-                <h4 className='mt5 navy'>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</h4>
+                <h4 className='mt5 navy'>인천 부평구 부평대로278번길 16</h4>
+                <h4 className='mt5 navy'>웨스턴 팰리스 웨딩</h4>
+                <h4 className='mt5 navy'>블랙 홀</h4>
                 <h2 className="mt30 peach"> ------------------- </h2>
                 <h1 className='mt20 red'> 소중한 분들을 초대합니다.</h1>
                 <h4 className='mt5 navy'> 두사람 결혼 축하하고 </h4>
