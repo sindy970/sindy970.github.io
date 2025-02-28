@@ -69,6 +69,10 @@ img{
   margin-top: 30px;
   margin-bottom: 0;
 }
+.mt40{
+  margin-top: 60px;
+  margin-bottom: 0;
+}
 
 .kr-font{
   font-family: 'BinggraeSamanco-Bold';
@@ -217,7 +221,6 @@ h{
   text-align: center;
   border: none;
   background: none;
-  color:#00ADB5;
 }
 
 .imgSliderDiv .imageA {
@@ -237,7 +240,6 @@ h{
   text-align: center;
   border: none;
   background: none;
-  color:#00ADB5;
 }
 
 .imgSliderDiv .imageA .imgbox {
@@ -299,13 +301,13 @@ h{
   text-align: right;
 }
 
-.mapAll span {
-  display: flow;
+.mapAll h2 {
+  text-align: center;
 }
 
 .mapAll img{
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
 }
 
 

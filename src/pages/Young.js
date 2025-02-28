@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Home from "./Home";
 import Counter from "./Counter";
 import Audioplay from "./Audio";
@@ -44,8 +42,8 @@ const Young = () => {
 
 
                 <div className="mt30 imgSliderDiv">
-                    {/*<Imgslider/>*/}
-                    <CustomPaging/>
+                    <Imgslider/>
+                    {/*<CustomPaging/>*/}
                 </div>
 
                 <h2 className="mt30 peach"> ------------------- </h2>

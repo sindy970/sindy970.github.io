@@ -16,7 +16,7 @@ const TabMenu = styled.ul`
     flex-direction: row;
     align-items: center;
     list-style: none;
-    color: #222831;
+    color: #FF6969;
 
   .submenu {
   // 기본 Tabmenu 에 대한 CSS를 구현
@@ -26,15 +26,15 @@ const TabMenu = styled.ul`
     heigth: 30px; */
     width: calc(100% /3);
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.5s;
     border-radius: 10px 10px 0px 0px;
   }
 
   .focused {
    //선택된 Tabmenu 에만 적용되는 CSS를 구현
-    background-color: #00ADB5;
-    color: #EEEEEE;
+    background-color: #C70039;
+    color: #141E46;
   }
 
   & div.desc {
@@ -61,7 +61,7 @@ const Imgtep = () => {
 
     return (
         <>
-            <div>
+            <div className="mt30">
                 <TabMenu>
                     {menuArr.map((el,index) => (
                         <li className={index === currentTab ? "submenu focused" : "submenu" }

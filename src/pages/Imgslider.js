@@ -61,10 +61,10 @@ const Imgslider = () => {
                     src={imgArr[currentIndex]} />
             </div>
             <div className="preNext">
-                <button className="pre" onClick={() => {
+                <button className="pre peach" onClick={() => {
                     mButton(currentIndex)
                 }}> ◀ </button>
-                <button className="next" onClick={() => {
+                <button className="next peach" onClick={() => {
                     pButton(currentIndex)
                 }}> ▶ </button>
             </div>

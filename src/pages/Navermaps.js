@@ -3,6 +3,7 @@ import { Map, MapMarker } from "react-kakao-maps-sdk"
 import Lovelocation from "../lovelocation.webp";
 import Car from "../car.webp"
 import LocationLogo from "../locationLogo.webp"
+import NaverMap from "../img/navermap2-min.jpg"
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
 
 function Navermaps(props) {
@@ -10,7 +11,7 @@ function Navermaps(props) {
     return (
         <>
             <div>
-                <h1> 오시는 길<br/></h1><br/><br/>
+                <h1 className="mt30 red"> 오시는 길</h1>
             </div>
             <div className={props.media}>
                 <Map // 지도를 표시할 Container
@@ -19,11 +20,11 @@ function Navermaps(props) {
                         lat: 37.51583698541007,
                         lng: 126.72252151890174,
                     }}
-                    style={{
-                        // 지도의 크기
-                        width: "300px",
-                        height: "240px",
-                    }}
+                    // style={{
+                    //     // 지도의 크기
+                    //     width: "100%",
+                    //     height: "100%",
+                    // }}
                     level={3} // 지도의 확대 레벨
                 >
                     <MapMarker // 마커를 생성합니다
@@ -58,33 +59,30 @@ function Navermaps(props) {
 
             <div className="mapAll">
                 <div className="mapLeft">
-                    <span>대중교통</span><br/>
-                    <button
+                    <h2 className="mt10 peach">대중교통</h2>
+                    <button className="navy kr-font"
                         onClick={() => window.open('https://map.naver.com/p/directions/-/14106688.7027539,4511257.1399913,%EC%9B%A8%EC%8A%A4%ED%84%B4%ED%8C%B0%EB%A6%AC%EC%8A%A4%EC%9B%A8%EB%94%A9,1832003609,PLACE_POI/-/transit?c=15.00,0,0,0,dh', '_blank')}>
-                        <img src={LocationLogo}/>
-                        <br/>
-                        네이버 <br/> 빠른길찾기
+                        <h3 className="mt10 navy">
+                            <img className="mt20" src={NaverMap}/> 길찾기
+                        </h3>
                     </button>
                 </div>
                 <div className="mapRight">
-                    <span>자가용</span><br/>
-                    <button
+                    <h2 className="mt10 peach">자가용</h2>
+                    <button className="navy kr-font"
                         onClick={() => window.open('https://map.naver.com/p/directions/-/14106688.7027539,4511257.1399913,%EC%9B%A8%EC%8A%A4%ED%84%B4%ED%8C%B0%EB%A6%AC%EC%8A%A4%EC%9B%A8%EB%94%A9,1832003609,PLACE_POI/-/car?c=15.00,0,0,0,dh', '_blank')}>
-                        <img src={LocationLogo}/>
-
-                        <br/>
-                        네이버 <br/> 빠른길찾기
+                        <h3 className="mt10 navy">
+                            <img className="mt20" src={NaverMap}/> 길찾기
+                        </h3>
                     </button>
                 </div>
             </div>
-            <br/><br/><br/>
 
             <div>
-                <h1> 주차장 지도 </h1><br/>
+                <h1 className="mt30 red"> 주차장 지도 </h1>
                 <img
                     className={isSafari || isFirefox || isIOS ? "imagefile" : undefined}
                     src={Car}/>
-
             </div>
         </>
     )
