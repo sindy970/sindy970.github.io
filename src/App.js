@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { Routes, Route, Link} from "react-router-dom";
 import Young from "./pages/Young";
 import Old from "./pages/Old";
+import CustomPaging from "./pages/Custompaging";
 
 
 function App() {
@@ -22,6 +23,7 @@ console.log(accountNumber);
               <nav>
                   <Link to={"/mobile"} style={{display: "none"}}>Young</Link>
                   <Link to={"/mobileo"} style={{display: "none"}}>Old</Link>
+                  <CustomPaging />
               </nav>
               <Routes>
                   <Route path="/mobile" element={<Young/>}/>

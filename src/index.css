@@ -444,21 +444,31 @@ h6{
 }
 
 
-.slider-container {
-  width: 100%;
-  margin: 0 auto;
-}
+/*.slider-container {*/
+/*  position: relative;*/
+/*  min-width: 300px;*/
+/*  width: calc(100% - 60px);*/
+/*  height: 500px;*/
+/*  outline: #141E46;*/
+/*}*/
 
-.slick-slide img {
-  width: 100%;
-  height: auto;
-}
+/*.slick-slide img {*/
+/*  object-fit: cover;*/
+/*  display: inline-block;*/
+/*  background-color: #FF6969;*/
+/*}*/
+/*.slick-track{*/
+/*  object-fit: cover;*/
+/*  display: inline-block;*/
+/*  min-width: 300px;*/
+/*  width: calc(100% - 60px) !important;*/
+/*}*/
 
-.slick-dots {
-  display: flex !important;
-  justify-content: center;
-  bottom: 10px;
-}
+/*.slick-dots {*/
+/*  position: absolute;*/
+/*  justify-content: center;*/
+/*  bottom: 10px;*/
+/*}*/
 
 /* font 적용 영역 */
 

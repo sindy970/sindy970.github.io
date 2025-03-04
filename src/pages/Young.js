@@ -43,8 +43,8 @@ const Young = () => {
 
 
                 <div className="mt30 imgSliderDiv">
-                    <Imgslider/>
-                    {/*<CustomPaging/>*/}
+                    {/*<Imgslider/>*/}
+                    <CustomPaging/>
                 </div>
 
                 <h2 className="mt30 peach"> ------------------- </h2>
