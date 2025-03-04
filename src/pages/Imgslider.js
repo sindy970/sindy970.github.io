@@ -1,21 +1,42 @@
 import React, { useEffect, useState } from "react";
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
-import Sun5 from "../sun5.webp";
-import Sun3 from "../sun3.webp";
-import Sun2 from "../sun2.webp";
-import Sun1 from "../sun1.webp";
-import Sun from "../sun.webp";
+import Moon from "../img/moon.jpg"
+import Moon2 from "../img/moon2.jpg"
+import Baile from "../img/baile.jpg";
+import Bailebb from "../img/bailebb.jpg";
+import Bb from "../img/bb.jpg";
+import Bb2 from "../img/bb2.jpg";
+import Ber from "../img/ber.jpg";
+import Black from "../img/black.jpg";
+import Black2 from "../img/black2.jpg";
+import Defuale from "../img/defuale.jpg";
+import Gg from "../img/gg.jpg";
+import Gg2 from "../img/gg2.jpg";
+import Gg3 from "../img/gg3.jpg";
+import Moonflwer from "../img/moonflwer.jpg";
+import One from "../img/one.jpg";
+import Ring from "../img/ring.jpg";
+import Shy from "../img/shy.jpg";
+import Sit from "../img/sit.jpg";
+import To from "../img/to.jpg";
+import To2 from "../img/to2.jpg";
+import Smile from "../img/smile.jpg";
+import Smile2 from "../img/smile2.jpg";
+import Step from "../img/step.jpg"
+import Toflower from "../img/toflower.jpg"
+import Top from "../img/top.jpg"
+import White from "../img/white.jpg"
 
 const Imgslider = () => {
-    const imgArr = [Sun, Sun1, Sun2, Sun3, Sun5];
+    const imgArr = [Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, Ring, Shy, Sit, To2, Bailebb];
     const [currentIndex, setIndex] = useState(0);
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setIndex((currentIndex + 1) % imgArr.length);
-            }, 3000);
-        return () => clearInterval(intervalId);
-        }, [currentIndex]);
+   useEffect(() => {
+    const intervalId = setInterval(() => {
+        setIndex((currentIndex + 1) % imgArr.length);
+        }, 3000);
+    return () => clearInterval(intervalId);
+    }, [currentIndex]);
 
     const mButton = (currentIndex) => {
         if(currentIndex === 0){
@@ -40,10 +61,10 @@ const Imgslider = () => {
                     src={imgArr[currentIndex]} />
             </div>
             <div className="preNext">
-                <button className="pre" onClick={() => {
+                <button className="pre peach" onClick={() => {
                     mButton(currentIndex)
                 }}> ◀ </button>
-                <button className="next" onClick={() => {
+                <button className="next peach" onClick={() => {
                     pButton(currentIndex)
                 }}> ▶ </button>
             </div>

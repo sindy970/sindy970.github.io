@@ -3,6 +3,7 @@ import Home from "./Home";
 import Counter from "./Counter";
 import Audioplay from "./Audio";
 import Snow from "./Snow";
+import CustomPaging from "./Imgslick";
 import Maps from "./Navermaps";
 import Share from "./Share";
 import Imgslider from "./Imgslider";
@@ -16,64 +17,63 @@ const Young = () => {
         <>
             <div>
                 <Audioplay clickEvent="play"/>
-                <Snow/>
             </div>
 
             <Home/>
 
-            <div className="text">
-                <br/><span>2025.04.12 PM 01:30 </span><br/>
-                <span> 한승수 ♥ 김송이 </span><br/><br/>
-                <span> 웨스턴팰리스웨딩 </span><br/>
-                <p>인천 부평구 부평대로278번길 16 부평 웨스턴팰리스</p><br/><br/>
-                <h2 className="gubunLine"> ------------------- </h2>
-                <h1> 소중한 분들을 초대합니다.</h1><br/>
-                <span> 두사람 결혼 축하하고 </span><br/>
-                <span> 심심해서 그냥 만들어 봤어 </span><br/>
-                <span> 수정은 무제한이고 </span><br/>
-                <span> 별로면 안써도 돼 </span><br/>
+            <div className="kr-font">
+                <h2 className='mt30 red'>2025.04.12 PM 01:30 </h2>
+                <h2 className='mt10 navy'> 한승수 ♥ 김송이 </h2>
+                <h4 className='mt5 navy'>인천 부평구 부평대로278번길 16</h4>
+                <h4 className='mt5 navy'>웨스턴 팰리스 웨딩</h4>
+                <h4 className='mt5 navy'>블랙 홀</h4>
+                <h2 className="mt30 peach"> ------------------- </h2>
+                <h1 className='mt20 red'> 소중한 분들을 초대합니다.</h1>
+                <h4 className='mt5 navy'> 두사람 결혼 축하하고 </h4>
+                <h4 className='mt5 navy'> 심심해서 그냥 만들어 봤어 </h4>
+                <h4 className='mt5 navy'> 수정은 무제한이고 </h4>
+                <h4 className='mt5 navy'> 별로면 안써도 돼 </h4>
 
-                <br/>
-                <h2 className="gubunLine"> ------------- </h2>
-                <h1> 함께한 시간 </h1><br/>
-                <div className="countSize">
+
+                <h2 className="mt30 peach"> ------------------- </h2>
+                <h1 className='mt20 red'> 함께한 시간 </h1>
+                <div className="countSize peach">
                     <Counter/>
                 </div>
 
-                <br/><br/>
 
-                <div className="imgSliderDiv">
-                    <Imgslider/>
+                <div className="mt30 imgSliderDiv">
+                    {/*<Imgslider/>*/}
+                    <CustomPaging/>
                 </div>
-                <br/><br/>
-                <h2 className="gubunLine"> -------------- </h2>
+
+                <h2 className="mt30 peach"> ------------------- </h2>
                 <Maps media="mobile_container" gubun="young"/>
 
-                <br/>
-                <br/>
-                <h2 className="gubunLine"> ---------------------- </h2>
 
-                <h1> 마음 전하실 곳 </h1><br/>
-                <div className="accountAreaY">
-                    <button className="accountButtonY" onClick={() => {
+                <h2 className="mt30 peach"> ------------------- </h2>
+
+                <h1 className='mt20 red'> 마음 전하실 곳 </h1>
+                <div className="mt20 accountAreaY">
+                    <button className="mt10 accountButtonY peach" onClick={() => {
                         setIsManButtonClick(!isManButtonClick)
                     }}>{isManButtonClick ? " 신랑측  ▲ " : " 신랑측  ▼ "} </button>
-                    <br/>
-                    <span className="accountSpenY">
+
+                    <h6 className="mt20 accountSpenY navy">
                         {isManButtonClick && <Togglebutton gubun={"man"}/>}
-                    </span><br/><br/>
-                    <button className="accountButtonY" onClick={() => {
+                    </h6>
+                    <button className="mt20 accountButtonY peach" onClick={() => {
                         setIsWomButtonClick(!isWomButtonClick)
                     }}>{isWomButtonClick ? " 신부측  ▲ " : " 신부측  ▼ "} </button>
-                    <br/>
-                    <span className="accountSpenY">
+
+                    <h6 className="mt20 accountSpenY navy">
                         {isWomButtonClick && <Togglebutton gubun={"wom"}/>}
-                    </span>
-                    <br/><br/>
+                    </h6>
+
                 </div>
 
-                <h2 className="gubunLine"> -------------- </h2>
-                <h1> 공유하기 </h1>
+                <h2 className="mt30 peach"> ------------------- </h2>
+                <h1 className='mt20 red'> 공유하기 </h1>
                 <Share/>
             </div>
         </>

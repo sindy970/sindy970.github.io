@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import LinkImg from "../link.webp";
 import KakaoImg from "../kakao.webp";
-import Sun5 from "../sun5.webp"
+import Sun5 from "../img/black2.jpg"
 
 // kakao 기능 동작을 위해 넣어준다.
 const { Kakao } = window;

@@ -5,7 +5,8 @@ const Numbercount = () => {
 
     const numCount = {
         fontSize: 45,
-        color: "#80BCBD",
+        color: "#578FCA",
+        fontFamily: "BinggraeSamanco-Bold",
     }
     const count = useMotionValue(0)
     // 19.03.04 ~

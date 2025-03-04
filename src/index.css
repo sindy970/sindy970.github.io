@@ -1,36 +1,126 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, del, em, img, ins, small, strong, sub, sup,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, figcaption,
-footer, header, section, summary, video,input {
-  max-width: 400px;
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  max-width: 768px;
+  font-size: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   text-align: center;
-  font-family: 'BinggraeSamanco-Bold';
-  font-size: large;
-  color: #222831;
+  line-height: 1.4;
+  background-color: #FFFFFF;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+/*code {*/
+/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*    monospace;*/
+/*}*/
+/**{*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  border: none;*/
+/*}*/
+button, a{
+  border: none;
+  background:transparent;
+  text-decoration: none;
+}
+img{
+  width: -webkit-fill-available;
+  image-rendering:-webkit-optimize-contrast;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.beige{
+  color: #FFFFFF;
+}
+.peach{
+  color: #FF6969;
+}
+.red{
+  color: #E195AB;
+}
+.navy{
+  color: #141E46;
+}
+.navy1{
+  color: #578FCA;
+}
+
+
+.mt5{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.mt10{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.mt20{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.mt30{
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.mt40{
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.kr-font{
+  font-family: 'BinggraeSamanco-Bold';
+}
+.title-font{
+  font-family: 'title';
+}
+.en-font{
+  font-family: 'eng';
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 700;
+}
+h2{
+  font-size: 22px;
+  font-weight: 500;
+}
+h3{
+  font-size: 20px;
+  font-weight: 500;
+}
+h4{
+  font-size: 18px;
+  font-weight: 500;
+}
+h5{
+  font-size: 16px;
+  font-weight: 500;
+}
+h6{
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*
   className = App 인 항목에 css를 적용한다는 의미
 */
-.App{
-  padding: 20px;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-  /*opacity: 60%; 투명도 설정 */
-}
-
 .imgArr{
-  width: -webkit-fill-available;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 
 .imgArr img{
   /* 상우하좌 */
@@ -38,37 +128,30 @@ code {
   width : 95%;
 }
 
-.gubunLine {
-  color: #112D4E;
-}
+/*.gubunLine {*/
+/*  margin: 30px auto;*/
+/*}*/
 
 .phoneNumber {
   width: 15px;
   height: 15px;
 }
 
-img {
-  width: -webkit-fill-available;
-  image-rendering:-webkit-optimize-contrast;
-}
-
 /* main 이미지 css */
 .mainImgDiv {
-  width: -webkit-fill-available;
   position: relative;
   background-size: cover;
+  min-width: 300px;
+  width: calc(100% - 60px);
+  height: 100%;
 }
 
 .mainText .wedding{
-  font-family: 'eng';
   text-align: center;
-  color: #00ADB5;
   margin: 0;
   position: absolute;
-  font-size: xx-large; /* 글씨 크기 */
-  font-weight: bold;
   white-space: nowrap;
-  top: 17%; /* 핵심코드 */
+  top: 5%; /* 핵심코드 */
   left: 50%; /* 핵심코드 */
   transform: translate( -50%, -50%);
 }
@@ -80,9 +163,8 @@ img {
 }
 
 .mainImg img{
-  border-radius: 50% 50% 0% 0%;
-  width: -webkit-fill-available;
-  image-rendering:-webkit-optimize-contrast;
+  border-radius: 50% 50% 50% 50%;
+  object-fit: cover;
 }
 
 /* 아이폰에서 접속할 때 */
@@ -99,7 +181,6 @@ img {
 }
 
 .mainTextS .weddingS{
-  font-family: 'eng';
   text-align: center;
   color: #00ADB5;
   margin: 0;
@@ -127,17 +208,9 @@ img {
 /* 사진 슬라이더 영역 */
 
 .imgSliderDiv{
-  width: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.imgSliderDiv .imageA {
-  position: relative;
-  width: 800px;
-  height: 450px;
-  overflow: hidden;
 }
 
 .imgSliderDiv .imageA .preNext .pre{
@@ -151,6 +224,12 @@ img {
   text-align: center;
   border: none;
   background: none;
+}
+
+.imgSliderDiv .imageA {
+  position: relative;
+  width:100%;
+  overflow: hidden;
 }
 
 .imgSliderDiv .imageA .preNext .next{
@@ -167,15 +246,25 @@ img {
 }
 
 .imgSliderDiv .imageA .imgbox {
-  width: 300px;
-  height: 400px;
+  position: relative;
+  min-width: 300px;
+  width: calc(100% - 60px);
+  height: 500px;
+
+}
+
+
+.imgSliderDiv .imageA .imgbox img{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* 계좌번호 영역 */
-
-.accountSpen {
-  width: -webkit-fill-available;
-}
 
 .account{
   width: 20px;
@@ -188,43 +277,10 @@ img {
   height: auto;
 }
 
-.accountArea .accountMan button{
-  font-family: 'BinggraeSamanco-Bold';
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-}
-
-.accountArea .accountWom button{
-  font-family: 'BinggraeSamanco-Bold';
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-  border: none;
-}
-
-.accountSpenY {
-  width: -webkit-fill-available;
-}
-
-.accountButtonY {
-  width: -webkit-fill-available;
-  font-family: 'BinggraeSamanco-Bold';
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-}
-
 .toggleAll {
   display: inline-flex;
   width: auto;
   height: auto;
-}
-
-.toggleCopy button{
-  font-family: 'BinggraeSamanco-Bold';
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 .toggleCopy img{
@@ -248,46 +304,40 @@ img {
   text-align: right;
 }
 
-.mapAll span {
-  display: flow;
-}
-
-.mapAll button{
-  font-family: 'BinggraeSamanco-Bold';
+.mapAll h2 {
+  text-align: center;
 }
 
 .mapAll img{
-  image-rendering:-webkit-optimize-contrast;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
 }
 
 
 /* 글자 설정 */
 
-.text spen{
-  color: #222831;
-  text-align: center;
-  font-size: medium;
-  font-weight: 400;
-  margin: 0;
-}
+/*.text > span{*/
+/*  color: #222831;*/
+/*  text-align: center;*/
+/*  font-weight: 400;*/
+/*  margin: 0;*/
+/*  font-size: 20px;*/
+/*}*/
 
-.text p{
-  color: #222831;
-  text-align: center;
-  margin: 0;
-  font-size: small;
-  font-weight: 400;
-}
+/*.text p{*/
+/*  color: #222831;*/
+/*  text-align: center;*/
+/*  font-size: 16px;*/
+/*  font-weight: 400;*/
+/*}*/
 
-.text h1{
-  color: #00ADB5;
-  text-align: center;
-  margin: 0;
-  font-size: x-large;
-  font-weight: 700;
-}
+/*.text strong{*/
+/*  display: block;*/
+/*  color: #00ADB5;*/
+/*  text-align: center;*/
+/*  font-size: x-large;*/
+/*  font-weight: 700;*/
+/*}*/
 
 .text pre{
   margin: 0;
@@ -296,8 +346,6 @@ img {
 /* 공유하기 */
 
 .sns-area{
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -317,12 +365,6 @@ img {
   align-items: center;
 }
 
-.sns-area li button{
-  border: none;
-  background-color: #EEEEEE;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-}
-
 /* count */
 
 .countSize {
@@ -333,11 +375,24 @@ img {
 .countAll {
   position: absolute;
   display: flex;
-  justify-self: anchor-center;
-  width: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
   height: auto;
 }
-
+.countNum{
+  flex: 0 0;
+  margin: 0;
+}
+.countText{
+  flex: 0 0;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-left: 10px;
+  line-height: 1;
+  align-self: center;
+}
 /* count 아이폰 버전 */
 
 .countAllS {
@@ -348,6 +403,72 @@ img {
 .countNumS {
   display: block ruby;
 }
+
+/* 모달창 */
+.modal-container {
+  position: fixed;        /* 페이지 내 모든 요소 위에 고정 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 어둡게 처리 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;          /* 다른 요소보다 위에 표시 */
+
+}
+
+.modal-content {
+  position: absolute;
+  background-color: transparent;
+  width: 75%;
+  height: auto;
+}
+
+.modal-content img{
+  display: flex;
+}
+
+
+.modal-content .modal-close-btn{
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  border:none;
+}
+
+
+/*.slider-container {*/
+/*  position: relative;*/
+/*  min-width: 300px;*/
+/*  width: calc(100% - 60px);*/
+/*  height: 500px;*/
+/*  outline: #141E46;*/
+/*}*/
+
+/*.slick-slide img {*/
+/*  object-fit: cover;*/
+/*  display: inline-block;*/
+/*  background-color: #FF6969;*/
+/*}*/
+/*.slick-track{*/
+/*  object-fit: cover;*/
+/*  display: inline-block;*/
+/*  min-width: 300px;*/
+/*  width: calc(100% - 60px) !important;*/
+/*}*/
+
+/*.slick-dots {*/
+/*  position: absolute;*/
+/*  justify-content: center;*/
+/*  bottom: 10px;*/
+/*}*/
 
 /* font 적용 영역 */
 
@@ -360,7 +481,14 @@ img {
 
 @font-face {
   font-family: 'BinggraeSamanco-Bold';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
+  src: url('./Eulyoo1945-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'title';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

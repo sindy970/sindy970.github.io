@@ -9,16 +9,16 @@ const Counter = () => {
             {isSafari || isFirefox || isIOS ?
                 <div className="countAllS">
                     <div className="countNumS">
-                        <Numbercount/><h1>&nbsp;&nbsp;&nbsp;일</h1>
+                        <Numbercount/><h1>일</h1>
                     </div>
                 </div>
                 :
                 <div className="countAll">
-                    <div className="countNum">
+                    <div className="countNum navy1">
                             <Numbercount/>
                     </div>
-                    <div className="countText">
-                        <h1>&nbsp;&nbsp;&nbsp;일</h1>
+                    <div className="kr-font countText navy1">
+                        <h1>일</h1>
                     </div>
                 </div>
             }

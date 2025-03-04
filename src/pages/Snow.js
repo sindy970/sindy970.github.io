@@ -16,8 +16,10 @@ const Snow = () => {
         <Snowfall
             style={{
                 position: 'fixed',
-                // width: '100vw',
-                // height: '100vh',
+                alignContent: 'center',
+                width: 'auto',
+                height: 'auto',
+                // background: 'transparent',
             }}
             snowflakeCount={200}
             images={images}
