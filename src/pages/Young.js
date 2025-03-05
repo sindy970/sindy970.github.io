@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Home from "./Home";
 import Counter from "./Counter";
 import Audioplay from "./Audio";
-import Snow from "./Snow";
 import CustomPaging from "./Imgslick";
 import Maps from "./Navermaps";
 import Share from "./Share";

@@ -3,10 +3,9 @@ import Home from "./Home";
 import Counter from "./Counter";
 import Imgpat from "./Imgpat";
 import Audioplay from "./Audio";
-import Snow from "./Snow";
 import Maps from "./Navermaps";
 import Share from "./Share";
-import Imgslider from "./Imgslider";
+import Custompaging from "./Custompaging";
 import Imgtep from "./Imgtep";
 import Message from "../message.webp";
 import Tel from "../tel.webp";
@@ -17,7 +16,6 @@ const Old = () => {
     const handleCopyUrl = (gubun) => {
         const accountText = document.getElementById(gubun).innerText;
         const accountNumber = accountText.split(" ")[2]; // 계좌 번호만 추출
-        console.log(accountNumber);
         navigator.clipboard.writeText(accountNumber).then(() => {
             alert("계좌번호가 복사되었습니다!");
         });
@@ -51,7 +49,9 @@ const Old = () => {
                     <Counter/>
                 </div>
 
-                <Imgslider />
+                <div className="mt30">
+                    <Custompaging />
+                </div>
 
                 <Maps />
 

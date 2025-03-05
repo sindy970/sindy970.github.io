@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
 import Imgmodal from './Imgmodal'
 
@@ -26,43 +26,30 @@ import Wsolor2 from "../img/wsolor2.jpg";
 import Wsolor3 from "../img/wsolor3.jpg";
 import Msolor from "../img/msolor.jpg";
 
+const imgArrTo = [To2, Bailebb, Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, Ring, Shy, Sit];
 
-const Imgpat = (props) => {
-    const imgArrTo = [To2, Bailebb, Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, Ring, Shy, Sit];
-    const imgArrSo = [Wsolor, Wsolor2, Wsolor3, Msolor, Msolor, Msolor];
-    const [modalOpen, setModalOpen] = useState(false);
-    const [modalImg, setModalImg] = useState(null);
+const Imagepat = () => {
+    const images = [To2, Bailebb, Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, Gg2, Gg3, Moonflwer, Ring, Shy, Sit];
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    const openModal = (img) => {
-        setModalImg(img);
-        setModalOpen(true);
+    // 이미지 변경 함수
+    const goToNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
-    const closeModal = () => {
-        setModalOpen(false);
-    };
+    // 3초마다 이미지 변경
+    useEffect(() => {
+        const interval = setInterval(goToNext, 3000);
+        return () => clearInterval(interval); // 컴포넌트가 언마운트 될 때 interval을 제거
+    }, []);
 
-    return(
-        <>
-            <div className="imgArr">
-                {props.gubun === 'to'
-                    ? imgArrTo.map((img, index) => (
-                        <button key={index} onClick={() => openModal(img)}>
-                            <img src={img} />
-                        </button>
-                    ))
-                    : imgArrSo.map((img, index) => (
-                        <button key={index} onClick={() => openModal(img)}>
-                            <img src={img} />
-                        </button>
-                    ))}
+    return (
+        <div className="carousel-container">
+            <div className="thumbnails">
+                <img src={images[currentIndex]} alt={`Thumbnail ${currentIndex + 1}`} className="thumbnail" />
             </div>
-            {modalOpen && (
-                <Imgmodal ImgName={modalImg} onClose={closeModal} />
-            )}
-        </>
-    )
+        </div>
+    );
+};
 
-}
-
-export default Imgpat;
+export default Imagepat;

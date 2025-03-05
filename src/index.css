@@ -21,15 +21,7 @@ time, mark, audio, video {
   background-color: #FFFFFF;
   background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
-/*code {*/
-/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
-/*    monospace;*/
-/*}*/
-/**{*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  border: none;*/
-/*}*/
+
 button, a{
   border: none;
   background:transparent;
@@ -81,9 +73,6 @@ img{
 .ml5{
   margin-left: 5px;
 }
-.ml20{
-  margin-left: 20px;
-}
 
 .kr-font{
   font-family: 'BinggraeSamanco-Bold';
@@ -127,17 +116,17 @@ spen{
 /*
   className = App 인 항목에 css를 적용한다는 의미
 */
-.imgArr{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
+/*.imgArr{*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(3, 1fr);*/
+/*}*/
 
 
-.imgArr img{
-  /* 상우하좌 */
-  padding : 0px 0px 5px 0px ;
-  width : 95%;
-}
+/*.imgArr img{*/
+/*  !* 상우하좌 *!*/
+/*  padding : 0px 0px 5px 0px ;*/
+/*  width : 95%;*/
+/*}*/
 
 /*.gubunLine {*/
 /*  margin: 30px auto;*/
@@ -157,21 +146,21 @@ spen{
   height: 100%;
 }
 
-.mainText .wedding{
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  white-space: nowrap;
-  top: 5%; /* 핵심코드 */
-  left: 50%; /* 핵심코드 */
-  transform: translate( -50%, -50%);
-}
+/*.mainText .wedding{*/
+/*  text-align: center;*/
+/*  margin: 0;*/
+/*  position: absolute;*/
+/*  white-space: nowrap;*/
+/*  top: 5%; !* 핵심코드 *!*/
+/*  left: 50%; !* 핵심코드 *!*/
+/*  transform: translate( -50%, -50%);*/
+/*}*/
 
-.mainImg{
-  background-size: cover; /* 핵심코드 */
-  position: relative; /* 핵심코드 */
-  background-repeat :no-repeat;
-}
+/*.mainImg{*/
+/*  background-size: cover; !* 핵심코드 *!*/
+/*  position: relative; !* 핵심코드 *!*/
+/*  background-repeat :no-repeat;*/
+/*}*/
 
 .mainImg img{
   border-radius: 50% 50% 50% 50%;
@@ -191,24 +180,24 @@ spen{
   background-size: cover;
 }
 
-.mainTextS .weddingS{
-  text-align: center;
-  color: #00ADB5;
-  margin: 0;
-  position: absolute;
-  font-size: xx-large; /* 글씨 크기 */
-  font-weight: bold;
-  white-space: nowrap;
-  top: 17%; /* 핵심코드 */
-  left: 50%; /* 핵심코드 */
-  transform: translate( -50%, -50%);
-}
+/*.mainTextS .weddingS{*/
+/*  text-align: center;*/
+/*  color: #00ADB5;*/
+/*  margin: 0;*/
+/*  position: absolute;*/
+/*  font-size: xx-large; !* 글씨 크기 *!*/
+/*  font-weight: bold;*/
+/*  white-space: nowrap;*/
+/*  top: 17%; !* 핵심코드 *!*/
+/*  left: 50%; !* 핵심코드 *!*/
+/*  transform: translate( -50%, -50%);*/
+/*}*/
 
-.mainImgS{
-  background-size: cover; /* 핵심코드 */
-  position: relative; /* 핵심코드 */
-  background-repeat :no-repeat;
-}
+/*.mainImgS{*/
+/*  background-size: cover; !* 핵심코드 *!*/
+/*  position: relative; !* 핵심코드 *!*/
+/*  background-repeat :no-repeat;*/
+/*}*/
 
 .mainImgS img{
   border-radius: 50% 50% 0% 0%;
@@ -217,44 +206,124 @@ spen{
 }
 
 /* 사진 슬라이더 영역 */
-
-.imgSliderDiv{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imgSliderDiv .imageA .preNext .pre{
-  position: absolute;
-  top: 45%;
-  left: -5%;
-  transform:  translateY(-55%);
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border: none;
-  background: none;
-}
-
-.imgSliderDiv .imageA {
+/* 슬라이더 전체 컨테이너 */
+.slider-container {
   position: relative;
-  width:100%;
+  width: 100%;
+  max-width: 800px;
   overflow: hidden;
+  margin: 0 auto;
+  touch-action: pan-y; /* iOS에서 부드러운 스와이프 */
 }
 
-.imgSliderDiv .imageA .preNext .next{
-  position: absolute;
-  top: 45%;
-  right: -5%;
-  transform:  translateY(-55%);
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border: none;
-  background: none;
+/* 슬라이드 래퍼 */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
 }
+
+/* 개별 슬라이드 */
+.slide {
+  width: 100%;
+  height: 50vw; /* 반응형 크기 설정 */
+  max-height: 400px;
+  flex-shrink: 0;
+  user-select: none;
+  object-fit: contain; /* 이미지 전체 표시 */
+}
+
+/* 페이징 (썸네일) */
+.pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px; /* 이미지 바로 아래 배치 */
+  overflow-x: auto; /* 작은 화면에서도 가로 스크롤 지원 */
+  padding-bottom: 10px; /* 하단 여백 추가 */
+}
+
+/* 썸네일 이미지 */
+.thumbnail {
+  width: 12vw; /* 반응형 크기 */
+  max-width: 60px;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s, transform 0.3s;
+  border-radius: 6px;
+  object-fit: contain; /* 썸네일도 전체 표시 */
+}
+
+/* 현재 선택된 썸네일 */
+.thumbnail.active {
+  opacity: 1;
+  transform: scale(1.2);
+  border: 2px solid white;
+}
+
+/* ✅ 반응형 스타일 적용 */
+@media (max-width: 768px) {
+  .slide {
+    height: 55vw;
+    max-height: 300px;
+  }
+
+  .pagination {
+    gap: 6px;
+  }
+
+  .thumbnail {
+    width: 15vw;
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    height: 60vw;
+    max-height: 250px;
+  }
+
+  .pagination {
+    gap: 5px;
+  }
+
+  .thumbnail {
+    width: 18vw;
+    max-width: 40px;
+  }
+}
+
+
+
+
+
+/*.imgSliderDiv .imageA .preNext .pre{*/
+/*  position: absolute;*/
+/*  top: 45%;*/
+/*  left: -5%;*/
+/*  transform:  translateY(-55%);*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  line-height: 50px;*/
+/*  text-align: center;*/
+/*  border: none;*/
+/*  background: none;*/
+/*}*/
+
+/*.imgSliderDiv .imageA .preNext .next{*/
+/*  position: absolute;*/
+/*  top: 45%;*/
+/*  right: -5%;*/
+/*  transform:  translateY(-55%);*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  line-height: 50px;*/
+/*  text-align: center;*/
+/*  border: none;*/
+/*  background: none;*/
+/*}*/
 
 .imgSliderDiv .imageA .imgbox {
   position: relative;
@@ -414,73 +483,44 @@ spen{
 }
 
 /* 모달창 */
-.modal-container {
-  position: fixed;        /* 페이지 내 모든 요소 위에 고정 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% ,-50%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 배경 어둡게 처리 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;          /* 다른 요소보다 위에 표시 */
+/*.modal-container {*/
+/*  position: fixed;        !* 페이지 내 모든 요소 위에 고정 *!*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50% ,-50%);*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background-color: rgba(0, 0, 0, 0.5); !* 배경 어둡게 처리 *!*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  z-index: 9999;          !* 다른 요소보다 위에 표시 *!*/
 
-}
+/*}*/
 
-.modal-content {
-  position: absolute;
-  background-color: transparent;
-  width: 75%;
-  height: auto;
-}
+/*.modal-content {*/
+/*  position: absolute;*/
+/*  background-color: transparent;*/
+/*  width: 75%;*/
+/*  height: auto;*/
+/*}*/
 
-.modal-content img{
-  display: flex;
-}
+/*.modal-content img{*/
+/*  display: flex;*/
+/*}*/
 
 
-.modal-content .modal-close-btn{
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  right:0;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-  border:none;
-}
+/*.modal-content .modal-close-btn{*/
+/*  background-color: transparent;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  right:0;*/
+/*  width: 30px;*/
+/*  height: 30px;*/
+/*  font-size: 15px;*/
+/*  border:none;*/
+/*}*/
 
-.container {
-  position: relative;
-  background-size: cover;
-  min-width: 300px;
-  width: calc(100% - 60px);
-  height: 100%;
-  background-color: #475569; /* slate-600 */
-}
-
-.slider-wrapper {
-  position: absolute;
-  width: 100%;
-}
-
-.slick-dots{
-  width: 100%;
-  height: 40px;
-  margin: 20px 20px 20px 20px;
-}
-
-.slide {
-  background-color: white;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
 /*.slider-container {*/
 /*  position: relative;*/

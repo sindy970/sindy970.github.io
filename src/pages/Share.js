@@ -3,14 +3,10 @@ import LinkImg from "../link.webp";
 import KakaoImg from "../kakao.webp";
 import Sun5 from "../img/black2.jpg"
 
-// kakao 기능 동작을 위해 넣어준다.
 const { Kakao } = window;
 
 const Share = () =>{
-    const imageUrl = "https://raw.githubusercontent.com/sindy970/mobilewedding/refs/heads/main/src/sun5.webp";
-    // 배포한 자신의 사이트
-    const realUrl = "https://sindy970.github.io/mobilewedding/"
-    // 로컬 주소 (localhost 3000 같은거)
+    const imageUrl = "https://raw.githubusercontent.com/sindy970/mobilewedding/refs/heads/main/src/img/black2.jpg";
     const resultUrl = window.location.href;
 
     // 재랜더링시에 실행되게 해준다.
@@ -58,11 +54,17 @@ const Share = () =>{
         <>
             <div className="sns-area">
                 <ul>
-                    <li><button type="button" className='grey-btn'
+                    <li>
+                        <button type="button" className='grey-btn'
                                 onClick={() => {
                                     shareKakao()
-                                }}><img src={KakaoImg} /></button></li>
-                    <li><button type="button" onClick={handleCopyUrl} ><img src={LinkImg} /></button></li>
+                                }}><img src={KakaoImg} />
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" onClick={handleCopyUrl} ><img src={LinkImg} />
+                        </button>
+                    </li>
                 </ul>
             </div>
         </>
