@@ -27,7 +27,6 @@ const Old = () => {
         <>
             <div>
                 <Audioplay clickEvent="play"/>
-                <Snow/>
             </div>
 
             <Home/>
@@ -47,124 +46,121 @@ const Old = () => {
                 <h4 className='mt5 navy'>저희의 새로운 시작을 함께 축복해주세요.</h4>
 
                 
-                <h1 className='mt40 red'> 함께한 시간 </h1>
+                <h1 className='mt40 title-font red'> 함께한 시간 </h1>
                 <div className="countSize peach">
                     <Counter/>
                 </div>
 
                 <Imgslider />
 
-                <Maps media="mobile_container" gubun="old"/>
+                <Maps />
 
-
-                <h1 className='mt20 red'> 마음 전하실 곳 </h1>
-                <div className="mt20 accountArea">
+                <h1 className="mt20 title-font red"> 마음 전하실 곳 </h1>
+                <div className="accountArea">
                     <div className="mt20 accountMan">
-                        <span> 신랑측 </span>
+                        <h2 className="navy1"> 신랑 측 </h2>
                         <div>
-                            <p> 신랑 <span> 한승수 </span>&nbsp;
+                            <h3> 신랑 <spen> 한승수 </spen>
                                 <a href="tel:전화번호">
-                                    <img className="phoneNumber" src={Tel}/>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a href="sms:전화번호">
-                                    <img className="phoneNumber" src={Message}/>
+                                    <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                            </p>
+                                <a href="sms:전화번호">
+                                    <img className="ml5 phoneNumber" src={Message}/>
+                                </a>
+                            </h3>
 
-                            <span id="man"> 00은행 &nbsp;&nbsp; 123-456-789  </span>
+                            <h4 className="account_num" id="man">00은행 123-456-789
                             <button onClick={() => {
                                 handleCopyUrl("man");
                             }}>
-                                <img className="phoneNumber" src={Copy} />
+                                <img className="ml5 phoneNumber" src={Copy} />
                             </button>
-                            
-                            <p> 아버지 <span> 한 철 </span>&nbsp;
+                            </h4>
+                            <h3> 아버지 <spen> 한 철 </spen>
                                 <a href="tel:전화번호">
-                                    <img className="phoneNumber" src={Tel}/>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a href="sms:전화번호">
-                                    <img className="phoneNumber" src={Message}/>
+                                    <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                            </p>
-                            <span id="manF"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
+                                <a href="sms:전화번호">
+                                    <img className="ml5 phoneNumber" src={Message}/>
+                                </a>
+                            </h3>
+                            <h4 className="account_num" id="manF">00은행 123-456-789
                             <button onClick={() => {
                                 handleCopyUrl("manF");
                             }}>
-                                <img className="phoneNumber" src={Copy} />
+                                <img className="ml5 phoneNumber" src={Copy} />
                             </button>
-                            
-                            <p> 어머니 <span> 김회정 </span>&nbsp;
+                            </h4>
+                            <h3> 어머니 <spen> 김회정 </spen>
                                 <a href="tel:전화번호">
-                                    <img className="phoneNumber" src={Tel}/>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a href="sms:전화번호">
-                                    <img className="phoneNumber" src={Message}/>
+                                    <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                            </p>
-                            <span id="manM"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
+                                <a href="sms:전화번호">
+                                    <img className="ml5 phoneNumber" src={Message}/>
+                                </a>
+                            </h3>
+                            <h4 className="account_num" id="manM">00은행 123-456-789
                             <button onClick={() => {
                                 handleCopyUrl("manM");
                             }}>
-                                <img className="phoneNumber" src={Copy} />
+                                <img className="ml5 phoneNumber" src={Copy} />
                             </button>
-                            
+                            </h4>
                         </div>
                     </div>
                     <div className="accountWom">
-                        <span> 신부측 </span>
+                        <h2 className="navy1"> 신부 측 </h2>
                         <div>
-                            <p> 신부 <span> 김송이 </span>&nbsp;
+                            <h3> 신부 <spen> 김송이 </spen>
                                 <a href="tel:전화번호">
-                                    <img className="phoneNumber" src={Tel}/>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a href="sms:전화번호">
-                                    <img className="phoneNumber" src={Message}/>
+                                    <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                            </p>
-                            <span id="wom"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
+                                <a href="sms:전화번호">
+                                    <img className="ml5 phoneNumber" src={Message}/>
+                                </a>
+                            </h3>
+                            <h4 className="account_num" id="wom">00은행 123-456-789
                             <button onClick={() => {
                                 handleCopyUrl("wom");
                             }}>
-                                <img className="phoneNumber" src={Copy} />
+                                <img className="ml5 phoneNumber" src={Copy} />
                             </button>
-                            
-                            <p> 아버지 <span> 아버님 </span>&nbsp;
+                            </h4>
+                            <h3> 아버지 <spen> 아버님 </spen>
                                 <a href="tel:전화번호">
-                                    <img className="phoneNumber" src={Tel}/>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a href="sms:전화번호">
-                                    <img className="phoneNumber" src={Message}/>
+                                    <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                            </p>
-                            <span id="womF"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
+                                <a href="sms:전화번호">
+                                    <img className="ml5 phoneNumber" src={Message}/>
+                                </a>
+                            </h3>
+                            <h4 className="account_num" id="womF">00은행 123-456-789
                             <button onClick={() => {
                                 handleCopyUrl("womF");
                             }}>
-                                <img className="phoneNumber" src={Copy} />
+                                <img className="ml5 phoneNumber" src={Copy} />
                             </button>
-                            
-                            <p> 어머니 <span> 어미님 </span>&nbsp;
+                            </h4>
+                            <h3> 어머니 <spen> 어미님 </spen>
                                 <a href="tel:전화번호">
-                                    <img className="phoneNumber" src={Tel}/>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a href="sms:전화번호">
-                                    <img className="phoneNumber" src={Message}/>
+                                    <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                            </p>
-                            <span id="womM"> 00은행 &nbsp;&nbsp; 123-456-789 </span>
+                                <a href="sms:전화번호">
+                                    <img className="ml5 phoneNumber" src={Message}/>
+                                </a>
+                            </h3>
+                            <h4 className="account_num" id="womM">00은행 123-456-789
                             <button onClick={() => {
                                 handleCopyUrl("womM");
                             }}>
-                                <img className="phoneNumber" src={Copy} />
+                                <img className="ml5 phoneNumber" src={Copy} />
                             </button>
-                            
+                            </h4>
                         </div>
-
                     </div>
-                    
                 </div>
 
-                <h1 className="red"> 공유하기 </h1>
+                <h1 className="title-font red"> 공유하기 </h1>
                 <Share/>
             </div>
         </>
