@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wedding_invitation/static/css/main.6940bdcf.css",
-    "main.js": "/wedding_invitation/static/js/main.8b438d5f.js",
+    "main.css": "/wedding_invitation/static/css/main.a1b1f5d8.css",
+    "main.js": "/wedding_invitation/static/js/main.1a4570de.js",
     "static/js/453.aaa7e828.chunk.js": "/wedding_invitation/static/js/453.aaa7e828.chunk.js",
     "static/media/Eulyoo1945-Regular.ttf": "/wedding_invitation/static/media/Eulyoo1945-Regular.22154b183d5ef3de225d.ttf",
     "static/media/DAY6 데이식스 Welcome to the Show.mp3": "/wedding_invitation/static/media/DAY6 데이식스 Welcome to the Show.261331c896039e3286de.mp3",
@@ -35,28 +35,26 @@
     "static/media/Permatha Signature.otf": "/wedding_invitation/static/media/Permatha Signature.8037420ac0e372274d0d.otf",
     "static/media/bb.jpg": "/wedding_invitation/static/media/bb.d3a4f74aaecfbda5e036.jpg",
     "static/media/ring.jpg": "/wedding_invitation/static/media/ring.044188ad1b73a1827a1e.jpg",
-    "static/media/bloom1.webp": "/wedding_invitation/static/media/bloom1.11f85196b626de947f56.webp",
     "static/media/wsolor2.jpg": "/wedding_invitation/static/media/wsolor2.279ade203cac342076f2.jpg",
     "static/media/message.webp": "/wedding_invitation/static/media/message.a3e9c7f6077a68f7b55c.webp",
     "static/media/car.webp": "/wedding_invitation/static/media/car.143e92cba149a04cf32f.webp",
     "static/media/tel.webp": "/wedding_invitation/static/media/tel.360d7fa4829ec4c9e07d.webp",
     "static/media/locationLogo.webp": "/wedding_invitation/static/media/locationLogo.b16a6ea2448f22172a8f.webp",
-    "static/media/bloom2.webp": "/wedding_invitation/static/media/bloom2.cd08020cd08a52246f2c.webp",
     "static/media/lovelocation.webp": "/wedding_invitation/static/media/lovelocation.285952e9c1aa1af35006.webp",
     "static/media/copy.webp": "/wedding_invitation/static/media/copy.0154e921f6121cabd5b9.webp",
     "static/media/slick.svg": "/wedding_invitation/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/wedding_invitation/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/wedding_invitation/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "index.html": "/wedding_invitation/index.html",
     "static/media/kakao.webp": "/wedding_invitation/static/media/kakao.92a750f5634bce3e5521.webp",
+    "index.html": "/wedding_invitation/index.html",
     "static/media/slick.woff": "/wedding_invitation/static/media/slick.295183786cd8a1389865.woff",
     "static/media/link.webp": "/wedding_invitation/static/media/link.c0bbdac141340ceae7ed.webp",
-    "main.6940bdcf.css.map": "/wedding_invitation/static/css/main.6940bdcf.css.map",
-    "main.8b438d5f.js.map": "/wedding_invitation/static/js/main.8b438d5f.js.map",
+    "main.a1b1f5d8.css.map": "/wedding_invitation/static/css/main.a1b1f5d8.css.map",
+    "main.1a4570de.js.map": "/wedding_invitation/static/js/main.1a4570de.js.map",
     "453.aaa7e828.chunk.js.map": "/wedding_invitation/static/js/453.aaa7e828.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6940bdcf.css",
-    "static/js/main.8b438d5f.js"
+    "static/css/main.a1b1f5d8.css",
+    "static/js/main.1a4570de.js"
   ]
 }
