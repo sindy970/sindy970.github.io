@@ -151,22 +151,6 @@ spen{
   height: 100%;
 }
 
-/*.mainText .wedding{*/
-/*  text-align: center;*/
-/*  margin: 0;*/
-/*  position: absolute;*/
-/*  white-space: nowrap;*/
-/*  top: 5%; !* 핵심코드 *!*/
-/*  left: 50%; !* 핵심코드 *!*/
-/*  transform: translate( -50%, -50%);*/
-/*}*/
-
-/*.mainImg{*/
-/*  background-size: cover; !* 핵심코드 *!*/
-/*  position: relative; !* 핵심코드 *!*/
-/*  background-repeat :no-repeat;*/
-/*}*/
-
 .mainImg img{
   border-radius: 50% 50% 50% 50%;
   object-fit: cover;
@@ -180,9 +164,17 @@ spen{
 
 /* main 이미지 css */
 .mainImgDivS {
-  width: -moz-available;
   position: relative;
   background-size: cover;
+  min-width: 300px;
+  width: calc(100% - 60px);
+  height: 100%;
+}
+
+.mainImgS img{
+  margin: 20px 0 0 0;
+  border-radius: 50% 50% 50% 50%;
+  object-fit: cover;
 }
 
 /*.mainTextS .weddingS{*/
@@ -203,12 +195,6 @@ spen{
 /*  position: relative; !* 핵심코드 *!*/
 /*  background-repeat :no-repeat;*/
 /*}*/
-
-.mainImgS img{
-  border-radius: 50% 50% 0% 0%;
-  width: -moz-available;
-  image-rendering: -moz-crisp-edges;
-}
 
 /* 사진 슬라이더 영역 */
 /* 슬라이더 전체 컨테이너 */
