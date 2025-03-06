@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import Baile from "../img/baile.jpg";
 import Bailebb from "../img/bailebb.jpg";
 import Bb from "../img/bb.jpg";
@@ -11,11 +11,9 @@ import Gg from "../img/gg.jpg";
 import Gg2 from "../img/gg2.jpg";
 import Gg3 from "../img/gg3.jpg";
 import Moonflwer from "../img/moonflwer.jpg";
-import One from "../img/one.jpg";
 import Ring from "../img/ring.jpg";
 import Shy from "../img/shy.jpg";
 import Sit from "../img/sit.jpg";
-import To from "../img/to.jpg";
 import To2 from "../img/to2.jpg";
 
 import Wsolor from "../img/wsolor.jpg";
@@ -28,10 +26,9 @@ const images = [To2, Bailebb, Baile, Bb, Bb2, Ber, Black, Black2, Defuale, Gg, G
 
 export default function Custompaging() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [currentPage, setCurrentPage] = useState(0);
+    const [currentPageItems, setCurrentPageItems] = useState([]);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
-    const thumbnailRefs = useRef([]);
     const itemsPerPage = 5;
 
     // 터치 시작
@@ -49,41 +46,33 @@ export default function Custompaging() {
         const deltaX = touchStartX.current - touchEndX.current;
 
         if (deltaX > 50) {
-            // 왼쪽 스와이프 -> 다음 슬라이드
             setCurrentIndex((prev) => (prev + 1) % images.length);
         } else if (deltaX < -50) {
-            // 오른쪽 스와이프 -> 이전 슬라이드
             setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
         }
     };
 
-    // 페이지 업데이트 (슬라이드 이동 시)
+    // 클릭한 이미지를 기준으로 앞뒤 2개 포함 총 5개 출력
     const calculatePageIndexes = (index) => {
-        // 현재 슬라이드 인덱스를 기준으로 5개씩 페이징 버튼 계산
-        const pageStartIndex = Math.floor(index / itemsPerPage) * itemsPerPage;
-        const pageEndIndex = pageStartIndex + itemsPerPage;
+        let startIndex = Math.max(0, index - 2);
+        let endIndex = Math.min(images.length, startIndex + itemsPerPage);
 
-        return images.slice(pageStartIndex, pageEndIndex);
+        // 만약 마지막 인덱스가 부족하면 앞에서 채우기
+        if (endIndex - startIndex < itemsPerPage) {
+            startIndex = Math.max(0, endIndex - itemsPerPage);
+        }
+
+        return images.slice(startIndex, endIndex);
     };
 
-    // 슬라이드 이동 후 자동으로 페이징 업데이트
+    // `currentIndex`가 변경될 때마다 `currentPageItems` 업데이트
     useEffect(() => {
-        const newPage = Math.floor(currentIndex / itemsPerPage);
-        setCurrentPage(newPage); // 새로운 페이지로 업데이트
+        setCurrentPageItems(calculatePageIndexes(currentIndex));
     }, [currentIndex]);
-
-    let currentPageItems = calculatePageIndexes(currentIndex);
 
     // 커스텀 페이징 버튼 클릭 시 슬라이드 이동
     const handleThumbnailClick = (index) => {
         setCurrentIndex(index);
-        currentPageItems = calculatePageIndexes(currentIndex);
-    };
-
-    // 슬라이드의 이동에 맞게 커스텀 페이징 이동
-    const getPaginationTranslateX = () => {
-        const pageOffset = (currentPage * itemsPerPage * 60); // 60은 썸네일의 너비와 margin 합
-        return `translateX(-${pageOffset}px)`;
     };
 
     return (
@@ -107,19 +96,13 @@ export default function Custompaging() {
             <div className="pagination-container">
                 <div className="pagination">
                     <div className="thumbnail-container">
-                        <div
-                            className="thumbnail-wrapper"
-                            style={{
-                                transform: getPaginationTranslateX(), // 페이지 번호에 따라 이동
-                            }}
-                        >
+                        <div className="thumbnail-wrapper">
                             {currentPageItems.map((src, index) => (
                                 <img
                                     key={index}
-                                    ref={(el) => (thumbnailRefs.current[index] = el)}
                                     src={src}
-                                    className={`thumbnail ${currentIndex === index ? "active" : ""}`}
-                                    onClick={() => handleThumbnailClick(index)}
+                                    className={`thumbnail ${images[currentIndex] === src ? "active" : ""}`}
+                                    onClick={() => handleThumbnailClick(images.indexOf(src))}
                                 />
                             ))}
                         </div>
@@ -129,6 +112,8 @@ export default function Custompaging() {
         </div>
     );
 }
+
+
 
 
 

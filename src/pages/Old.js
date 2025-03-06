@@ -1,12 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import Home from "./Home";
 import Counter from "./Counter";
-import Imgpat from "./Imgpat";
 import Audioplay from "./Audio";
 import Maps from "./Navermaps";
 import Share from "./Share";
 import Custompaging from "./Custompaging";
-import Imgtep from "./Imgtep";
 import Message from "../message.webp";
 import Tel from "../tel.webp";
 import Copy from "../copy.webp";

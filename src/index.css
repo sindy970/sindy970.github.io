@@ -201,12 +201,12 @@ spen{
 .thumbnail {
   width: 12vw; /* 반응형 크기 */
   max-width: 60px;
-  height: auto;
+  height: 40px;
   cursor: pointer;
   opacity: 0.5;
   transition: opacity 0.3s, transform 0.3s;
   border-radius: 6px;
-  object-fit: contain; /* 썸네일도 전체 표시 */
+  object-fit: cover; /* 썸네일도 전체 표시 */
 }
 
 /* 현재 선택된 썸네일 */

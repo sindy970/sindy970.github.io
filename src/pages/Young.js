@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Home from "./Home";
 import Counter from "./Counter";
 import Audioplay from "./Audio";
-import CustomPaging from "./Imgslick";
 import Maps from "./Navermaps";
 import Share from "./Share";
-import Imgslider from "./Imgslider";
 import Togglebutton from "./Togglebutton";
 
 const Young = () => {
@@ -42,8 +40,6 @@ const Young = () => {
 
 
                 <div className="mt30 imgSliderDiv">
-                    {/*<Imgslider/>*/}
-                    <CustomPaging/>
                 </div>
 
                 <h2 className="mt30 peach"> ------------------- </h2>

@@ -28,8 +28,8 @@ function Navermaps() {
                         lng: 126.72252151890174,
                     }}
                     style={{
-                        width: "400px",
-                        height: "300px",
+                        width: "300px",
+                        height: "200px",
                     }}
                     level={2} // 지도의 확대 레벨
                 >
