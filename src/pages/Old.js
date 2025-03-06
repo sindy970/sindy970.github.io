@@ -15,7 +15,7 @@ const Old = () => {
 
     const handleCopyUrl = (gubun) => {
         const accountText = document.getElementById(gubun).innerText;
-        const accountNumber = accountText.split(" ")[2]; // 계좌 번호만 추출
+        const accountNumber = accountText.split(" ")[1]; // 계좌 번호만 추출
         navigator.clipboard.writeText(accountNumber).then(() => {
             alert("계좌번호가 복사되었습니다!");
         });
@@ -63,15 +63,15 @@ const Old = () => {
                         <h2 className="navy1"> 신랑 측 </h2>
                         <div>
                             <h3> 신랑 <spen> 한승수 </spen>
-                                <a href="tel:전화번호">
+                                <a href="tel:010-6471-5872">
                                     <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                                <a href="sms:전화번호">
+                                <a href="sms:010-6471-5872">
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
 
-                            <h4 className="account_num" id="man">00은행 123-456-789
+                            <h4 className="account_num" id="man">국민은행 903802-01-191037
                             <button onClick={() => {
                                 handleCopyUrl("man");
                             }}>
@@ -79,14 +79,14 @@ const Old = () => {
                             </button>
                             </h4>
                             <h3> 아버지 <spen> 한 철 </spen>
-                                <a href="tel:전화번호">
+                                <a href="tel:010-2231-9488">
                                     <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                                <a href="sms:전화번호">
+                                <a href="sms:010-2231-9488">
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="manF">00은행 123-456-789
+                            <h4 className="account_num" id="manF">신한은행 110-029-759749
                             <button onClick={() => {
                                 handleCopyUrl("manF");
                             }}>
@@ -94,14 +94,14 @@ const Old = () => {
                             </button>
                             </h4>
                             <h3> 어머니 <spen> 김회정 </spen>
-                                <a href="tel:전화번호">
+                                <a href="tel:010-6331-7833">
                                     <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                                <a href="sms:전화번호">
+                                <a href="sms:010-6331-7833">
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="manM">00은행 123-456-789
+                            <h4 className="account_num" id="manM">우리은행 1002-932-880-772
                             <button onClick={() => {
                                 handleCopyUrl("manM");
                             }}>
@@ -114,14 +114,14 @@ const Old = () => {
                         <h2 className="navy1"> 신부 측 </h2>
                         <div>
                             <h3> 신부 <spen> 김송이 </spen>
-                                <a href="tel:전화번호">
+                                <a href="tel:010-5242-4766">
                                     <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                                <a href="sms:전화번호">
+                                <a href="sms:010-5242-4766">
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="wom">00은행 123-456-789
+                            <h4 className="account_num" id="wom">국민은행 903802-01-222607
                             <button onClick={() => {
                                 handleCopyUrl("wom");
                             }}>

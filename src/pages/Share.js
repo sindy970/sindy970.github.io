@@ -52,19 +52,17 @@ const Share = () =>{
     return(
         <>
             <div className="sns-area">
-                <ul>
-                    <li>
-                        <button type="button" className='grey-btn'
-                                onClick={() => {
-                                    shareKakao()
-                                }}><img src={KakaoImg} />
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" onClick={handleCopyUrl} ><img src={LinkImg} />
-                        </button>
-                    </li>
-                </ul>
+                <div className="sns-kakao">
+                    <button type="button" className='grey-btn'
+                            onClick={() => {
+                                shareKakao()
+                            }}><img src={KakaoImg} />
+                    </button>
+                </div>
+                <div className="sns-url">
+                    <button type="button" onClick={handleCopyUrl} ><img src={LinkImg} />
+                    </button>
+                </div>
             </div>
         </>
     )

@@ -33,6 +33,11 @@ img{
   width: -webkit-fill-available;
   image-rendering:-webkit-optimize-contrast;
 }
+/* 아이폰에서 접속할 때 */
+.imagefile {
+  width: -moz-available;
+  image-rendering: -moz-crisp-edges;
+}
 
 .beige{
   color: #FFFFFF;
@@ -49,7 +54,6 @@ img{
 .navy1{
   color: #578FCA;
 }
-
 
 .mt5{
   margin-top: 5px;
@@ -121,22 +125,6 @@ spen{
 /*
   className = App 인 항목에 css를 적용한다는 의미
 */
-/*.imgArr{*/
-/*  display: grid;*/
-/*  grid-template-columns: repeat(3, 1fr);*/
-/*}*/
-
-
-/*.imgArr img{*/
-/*  !* 상우하좌 *!*/
-/*  padding : 0px 0px 5px 0px ;*/
-/*  width : 95%;*/
-/*}*/
-
-/*.gubunLine {*/
-/*  margin: 30px auto;*/
-/*}*/
-
 .phoneNumber {
   width: 15px;
   height: 15px;
@@ -156,12 +144,6 @@ spen{
   object-fit: cover;
 }
 
-/* 아이폰에서 접속할 때 */
-.imagefile {
-  width: -moz-available;
-  image-rendering: -moz-crisp-edges;
-}
-
 /* main 이미지 css */
 .mainImgDivS {
   position: relative;
@@ -176,25 +158,6 @@ spen{
   border-radius: 50% 50% 50% 50%;
   object-fit: cover;
 }
-
-/*.mainTextS .weddingS{*/
-/*  text-align: center;*/
-/*  color: #00ADB5;*/
-/*  margin: 0;*/
-/*  position: absolute;*/
-/*  font-size: xx-large; !* 글씨 크기 *!*/
-/*  font-weight: bold;*/
-/*  white-space: nowrap;*/
-/*  top: 17%; !* 핵심코드 *!*/
-/*  left: 50%; !* 핵심코드 *!*/
-/*  transform: translate( -50%, -50%);*/
-/*}*/
-
-/*.mainImgS{*/
-/*  background-size: cover; !* 핵심코드 *!*/
-/*  position: relative; !* 핵심코드 *!*/
-/*  background-repeat :no-repeat;*/
-/*}*/
 
 /* 사진 슬라이더 영역 */
 /* 슬라이더 전체 컨테이너 */
@@ -287,9 +250,6 @@ spen{
 }
 
 
-
-
-
 /*.imgSliderDiv .imageA .preNext .pre{*/
 /*  position: absolute;*/
 /*  top: 45%;*/
@@ -323,7 +283,6 @@ spen{
   height: 500px;
 
 }
-
 
 .imgSliderDiv .imageA .imgbox img{
   position: absolute;
@@ -364,6 +323,7 @@ spen{
 .map_title{
   display: flex;
   flex: 0 0;
+  /*  !* 상우하좌 *!*/
   margin: 20px 20px 0 55px;
   text-align: right;
   width: auto;
@@ -418,29 +378,24 @@ spen{
 }
 
 /* 공유하기 */
-
-.sns-area{
+.sns-area {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 5.3% 12%;
+  width: auto;
+  height: auto;
 }
 
-
-.sns-area ul{
-  display: contents;
-  align-items: center;
-  gap: max(min(3.4vw, 22px), 14px);
-  justify-content: flex-end;
+.sns-kakao{
+  display: flex;
+  align-items: right;
 }
 
-.sns-area li{
-  list-style-type: none;
-  align-items: center;
+.sns-url{
+  display: flex;
+  align-items: left;
 }
 
 /* count */
-
 .countSize {
   position: relative;
   height: 50px;
