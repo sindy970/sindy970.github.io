@@ -75,6 +75,9 @@ img{
 .ml5{
   margin-left: 5px;
 }
+.ml10{
+  margin-left: 10px;
+}
 
 .kr-font{
   font-family: 'BinggraeSamanco-Bold';
@@ -375,7 +378,7 @@ spen{
 .map_title{
   display: flex;
   flex: 0 0;
-  margin: 20px 20px 0 40px;
+  margin: 20px 20px 0 55px;
   text-align: right;
   width: auto;
   height: auto;
@@ -384,7 +387,7 @@ spen{
 .map_content{
   display: flex;
   flex: 0 0;
-  margin: 10px 0 0 50px;
+  margin: 10px 0 0 65px;
   text-align: right;
   width: auto;
   height: auto;
