@@ -71,7 +71,7 @@ const Old = () => {
                                 </a>
                             </h3>
 
-                            <h4 className="account_num" id="man">국민은행 903802-01-191037
+                            <h4 className="account_num" id="man">국민 903802-01-191037
                             <button onClick={() => {
                                 handleCopyUrl("man");
                             }}>
@@ -86,7 +86,7 @@ const Old = () => {
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="manF">신한은행 110-029-759749
+                            <h4 className="account_num" id="manF">신한 110-029-759749
                             <button onClick={() => {
                                 handleCopyUrl("manF");
                             }}>
@@ -101,7 +101,7 @@ const Old = () => {
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="manM">우리은행 1002-932-880-772
+                            <h4 className="account_num" id="manM">우리 1002-932-880-772
                             <button onClick={() => {
                                 handleCopyUrl("manM");
                             }}>
@@ -121,7 +121,7 @@ const Old = () => {
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="wom">국민은행 903802-01-222607
+                            <h4 className="account_num" id="wom">국민 903802-01-222607
                             <button onClick={() => {
                                 handleCopyUrl("wom");
                             }}>
