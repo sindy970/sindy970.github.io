@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import LinkImg from "../link.webp";
 import KakaoImg from "../kakao.webp";
-import Sun5 from "../img/black2.jpg"
 
 const { Kakao } = window;
 
@@ -14,7 +13,7 @@ const Share = () =>{
         // init 해주기 전에 clean up 을 해준다.
         Kakao.cleanup();
         // 자신의 js 키를 넣어준다.
-        Kakao.init('0e6517cf9f05b1a937356f77251bd662');
+        Kakao.init('8e920bbf27080912d8dc732f62f6cd1a');
     },[]);
 
     const shareKakao = () =>{

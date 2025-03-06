@@ -72,11 +72,12 @@ export default function Custompaging() {
         setCurrentPage(newPage); // 새로운 페이지로 업데이트
     }, [currentIndex]);
 
-    const currentPageItems = calculatePageIndexes(currentIndex);
+    let currentPageItems = calculatePageIndexes(currentIndex);
 
     // 커스텀 페이징 버튼 클릭 시 슬라이드 이동
     const handleThumbnailClick = (index) => {
         setCurrentIndex(index);
+        currentPageItems = calculatePageIndexes(currentIndex);
     };
 
     // 슬라이드의 이동에 맞게 커스텀 페이징 이동

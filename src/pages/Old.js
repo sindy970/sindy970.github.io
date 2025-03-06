@@ -53,7 +53,9 @@ const Old = () => {
                     <Custompaging />
                 </div>
 
-                <Maps />
+                <div className="mt30">
+                    <Maps />
+                </div>
 
                 <h1 className="mt20 title-font red"> 마음 전하실 곳 </h1>
                 <div className="accountArea">

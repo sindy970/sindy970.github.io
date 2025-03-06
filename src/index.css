@@ -18,8 +18,10 @@ time, mark, audio, video {
   margin-top: auto;
   text-align: center;
   line-height: 1.4;
-  background-color: #FFFFFF;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+
+body{
+  background: #FFFFFF url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 button, a{
@@ -387,6 +389,11 @@ spen{
   width: auto;
   height: auto;
 }
+
+.map-css{
+  background: none
+}
+
 
 /* 지도 */
 

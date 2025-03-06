@@ -2,8 +2,6 @@ import React from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk"
 import Lovelocation from "../lovelocation.webp";
 import Car from "../car.webp"
-import LocationLogo from "../locationLogo.webp"
-import NaverMap from "../img/navermap2-min.jpg"
 import Arrow from "../arrow.png"
 import { isSafari, isFirefox, isIOS } from 'react-device-detect';
 
@@ -23,16 +21,17 @@ function Navermaps() {
 
             <div>
                 <Map // 지도를 표시할 Container
+                    className="mt20"
                     center={{
                         // 지도의 중심좌표
                         lat: 37.51583698541007,
                         lng: 126.72252151890174,
                     }}
                     style={{
-                        width: '300px',
-                        height: '200px',
+                        width: "450px",
+                        height: "300px",
                     }}
-                    level={3} // 지도의 확대 레벨
+                    level={2} // 지도의 확대 레벨
                 >
                     <MapMarker // 마커를 생성합니다
                         position={{
@@ -51,6 +50,7 @@ function Navermaps() {
                     />
                 </Map>
             </div>
+
 
             <div className="mt30 kr-fonf navy">
                 <spen className="map_title mt20">주 소</spen><h5 className="map_content"> 인천 부평구 부평대로 278번길16</h5>
@@ -88,7 +88,7 @@ function Navermaps() {
             <div>
                 <h1 className="mt30 title-font red"> 주차장 지도 </h1>
                 <img
-                    className={isSafari || isFirefox || isIOS ? "imagefile" : undefined}
+                    className={isSafari || isFirefox || isIOS ? "mt20 imagefile" : "mt20"}
                     src={Car}/>
             </div>
         </>
