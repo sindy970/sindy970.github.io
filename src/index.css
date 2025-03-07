@@ -324,7 +324,7 @@ spen{
   display: flex;
   flex: 0 0;
   /*  !* 상우하좌 *!*/
-  margin: 20px 20px 0 55px;
+  margin: 20px 20px 0 30px;
   text-align: right;
   width: auto;
   height: auto;
@@ -333,7 +333,7 @@ spen{
 .map_content{
   display: flex;
   flex: 0 0;
-  margin: 10px 0 0 65px;
+  margin: 10px 0 0 45px;
   text-align: right;
   width: auto;
   height: auto;

@@ -53,15 +53,15 @@ function Navermaps() {
 
 
             <div className="mt30 kr-fonf navy">
-                <spen className="map_title mt20">주 소</spen><h5 className="map_content">인천 부평구 부평대로 278번길16</h5>
-                <spen className="map_title mt10">지하철</spen><h5 className="map_content">인천 1호선 갈산역 2번출구 ( 도보1분 )</h5>
-                <h5 className="map_content">1호선(인천방면) 부평역 하차 후 인천 1호선 환승(귤현 계양방면)</h5>
-                <spen className="map_title mt10">버 스</spen><h5 className="map_content">갈산역(40601)정류장 또는 한국지엠기술교육원(40570)정류장 하차</h5>
-                <spen className="map_title mt10">주차장</spen><h5 className="map_content">웨딩홀 맞은편 공영주차장 이용</h5>
-                <h5 className="map_content">(인천 부평구 부평대로 283)</h5>
-                <h5 className="map_content">우림 라이온스밸리 A동 지하2층</h5>
-                <h5 className="map_content">기둥번호(05)주변 주차후 갈산역 만남의광장으로 이동</h5>
-                <h5 className="map_content">-> 갈산역 2번 출구로 나오세요</h5>
+                <spen className="map_title mt20">주 소</spen><h6 className="map_content">인천 부평구 부평대로 278번길16</h6>
+                <spen className="map_title mt10">지하철</spen><h6 className="map_content">인천 1호선 갈산역 2번출구 ( 도보1분 )</h6>
+                <h6 className="map_content">1호선(인천방면) 부평역 하차 후 인천 1호선 환승(귤현 계양방면)</h6>
+                <spen className="map_title mt10">버 스</spen><h6 className="map_content">갈산역(40601)정류장 또는 한국지엠기술교육원(40570)정류장 하차</h6>
+                <spen className="map_title mt10">주차장</spen><h6 className="map_content">웨딩홀 맞은편 공영주차장 이용</h6>
+                <h6 className="map_content">(인천 부평구 부평대로 283)</h6>
+                <h6 className="map_content">우림 라이온스밸리 A동 지하2층</h6>
+                <h6 className="map_content">기둥번호(05)주변 주차후 갈산역 만남의광장으로 이동</h6>
+                <h6 className="map_content">-> 갈산역 2번 출구로 나오세요</h6>
             </div>
 
             <div className="mapAll mt30">
