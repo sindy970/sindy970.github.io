@@ -388,11 +388,13 @@ spen{
 .sns-kakao{
   display: flex;
   align-items: right;
+  margin-bottom: 20px;
 }
 
 .sns-url{
   display: flex;
   align-items: left;
+  margin-bottom: 20px;
 }
 
 /* count */
