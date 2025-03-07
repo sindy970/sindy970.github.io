@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import LinkImg from "../link.png";
-import KakaoImg from "../kakao.png";
+import { isSafari, isFirefox, isIOS } from 'react-device-detect';
+import Linkimg from "../link.png"
+import Kakaoimg from "../kakao.png"
 
 const { Kakao } = window;
 
@@ -56,11 +57,17 @@ const Share = () =>{
                     <button type="button" className='grey-btn'
                             onClick={() => {
                                 shareKakao()
-                            }}><img src={KakaoImg} />
+                            }}>
+                        <img
+                            className={isSafari || isFirefox || isIOS ? "imagefile" : ""}
+                            src={Kakaoimg} />
                     </button>
                 </div>
                 <div className="sns-url">
-                    <button type="button" onClick={handleCopyUrl} ><img src={LinkImg} />
+                    <button type="button" onClick={handleCopyUrl} >
+                        <img
+                            className={isSafari || isFirefox || isIOS ? "imagefile" : ""}
+                            src={Linkimg} />
                     </button>
                 </div>
             </div>
