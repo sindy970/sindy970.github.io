@@ -5,7 +5,7 @@ import KakaoImg from "../kakao.webp";
 const { Kakao } = window;
 
 const Share = () =>{
-    const imageUrl = "https://raw.githubusercontent.com/sindy970/mobilewedding/refs/heads/main/src/img/ber.jpg";
+    const imageUrl = "https://raw.githubusercontent.com/sindy970/sindy970.github.io/refs/heads/main/src/img/ber.jpg";
     const resultUrl = window.location.href;
 
     // 재랜더링시에 실행되게 해준다.
