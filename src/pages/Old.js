@@ -126,30 +126,30 @@ const Old = () => {
                                 <img className="ml5 phoneNumber" src={Copy} />
                             </button>
                             </h4>
-                            <h3> 아버지 <spen> 아버님 </spen>
-                                <a href="tel:전화번호">
+                            <h3> 아버지 <spen> 김중식 </spen>
+                                <a href="tel:010-3041-4766">
                                     <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                                <a href="sms:전화번호">
+                                <a href="sms:010-3041-4766">
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="womF">00은행 123-456-789
+                            <h4 className="account_num" id="womF">하나 122890-72-490307
                             <button onClick={() => {
                                 handleCopyUrl("womF");
                             }}>
                                 <img className="ml5 phoneNumber" src={Copy} />
                             </button>
                             </h4>
-                            <h3> 어머니 <spen> 어미님 </spen>
-                                <a href="tel:전화번호">
+                            <h3> 어머니 <spen> 신미경 </spen>
+                                <a href="tel:010-5121-4766">
                                     <img className="ml5 phoneNumber" src={Tel}/>
                                 </a>
-                                <a href="sms:전화번호">
+                                <a href="sms:010-5121-4766">
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="womM">00은행 123-456-789
+                            <h4 className="account_num" id="womM">신협 132-051-659816
                             <button onClick={() => {
                                 handleCopyUrl("womM");
                             }}>
