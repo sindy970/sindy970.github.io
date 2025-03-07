@@ -170,8 +170,11 @@ function App() {
                     </div>
                 </div>
 
-                <h1 className="title-font red"> 공유하기 </h1>
-                <Share/>
+                <div>
+                    <h1 className="title-font red"> 공유하기 </h1>
+                    <Share/>
+                </div>
+                <div className="mt10"></div>
             </div>
         </>
     );
