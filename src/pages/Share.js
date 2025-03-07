@@ -56,11 +56,11 @@ const Share = () =>{
                     <button type="button" className='grey-btn'
                             onClick={() => {
                                 shareKakao()
-                            }}><img src={KakaoImg} />
+                            }}><img className="imagefile" src={KakaoImg} />
                     </button>
                 </div>
                 <div className="sns-url">
-                    <button type="button" onClick={handleCopyUrl} ><img src={LinkImg} />
+                    <button type="button" onClick={handleCopyUrl} ><img className="imagefile" src={LinkImg} />
                     </button>
                 </div>
             </div>
