@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import LinkImg from "../link.png";
-import KakaoImg from "../kakao.png";
+import LinkImg from "../link.png?v=2";
+import KakaoImg from "../kakao.png?v=2";
 
 const { Kakao } = window;
 
@@ -56,11 +56,11 @@ const Share = () =>{
                     <button type="button" className='grey-btn'
                             onClick={() => {
                                 shareKakao()
-                            }}><img className="imagefile" src={KakaoImg} />
+                            }}><img src={KakaoImg} />
                     </button>
                 </div>
                 <div className="sns-url">
-                    <button type="button" onClick={handleCopyUrl} ><img className="imagefile" src={LinkImg} />
+                    <button type="button" onClick={handleCopyUrl} ><img src={LinkImg} />
                     </button>
                 </div>
             </div>
