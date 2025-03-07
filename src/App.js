@@ -65,6 +65,12 @@ function App() {
                     <Maps />
                 </div>
 
+                <div>
+                    <h1 className="title-font red"> 공유하기 </h1>
+                    <Share/>
+                </div>
+                <div className="mt40"></div>
+
                 <h1 className="mt20 title-font red"> 마음 전하실 곳 </h1>
                 <div className="accountArea">
                     <div className="mt20 accountMan">
@@ -170,11 +176,7 @@ function App() {
                     </div>
                 </div>
 
-                <div>
-                    <h1 className="title-font red"> 공유하기 </h1>
-                    <Share/>
-                </div>
-                <div className="mt40"></div>
+
             </div>
         </>
     );
