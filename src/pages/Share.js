@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import LinkImg from "../link.png?v=2";
-import KakaoImg from "../kakao.png?v=2";
+import LinkImg from "../link.png";
+import KakaoImg from "../kakao.png";
 
 const { Kakao } = window;
 
