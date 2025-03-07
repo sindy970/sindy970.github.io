@@ -99,7 +99,7 @@ const Old = () => {
                                     <img className="ml5 phoneNumber" src={Message}/>
                                 </a>
                             </h3>
-                            <h4 className="account_num" id="manM">우리 1002-932-880-772
+                            <h4 className="account_num" id="manM">우리 1002-932-880772
                             <button onClick={() => {
                                 handleCopyUrl("manM");
                             }}>
