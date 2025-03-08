@@ -59,14 +59,14 @@ const Share = () =>{
                                 shareKakao()
                             }}>
                         <img
-                            className={isSafari || isFirefox || isIOS ? "imagefile" : ""}
+                            className={isSafari || isFirefox || isIOS ? "sns-img" : ""}
                             src={Kakaoimg} />
                     </button>
                 </div>
                 <div className="sns-url">
                     <button type="button" onClick={handleCopyUrl} >
                         <img
-                            className={isSafari || isFirefox || isIOS ? "imagefile" : ""}
+                            className={isSafari || isFirefox || isIOS ? "sns-img" : ""}
                             src={Linkimg} />
                     </button>
                 </div>

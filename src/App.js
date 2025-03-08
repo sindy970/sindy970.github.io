@@ -10,16 +10,6 @@ import Copy from "./copy.webp";
 import Share from "./pages/Share";
 
 function App() {
-          // <div className="App">
-          //     <nav>
-          //         <Link to={"/mobile"} style={{display: "none"}}>Young</Link>
-          //         <Link to={"/mobileo"} style={{display: "none"}}>Old</Link>
-          //     </nav>
-          //     <Routes>
-          //         <Route path="/mobile" element={<Young/>}/>
-          //         <Route path="/mobileO" element={<Old/>}/>
-          //     </Routes>
-          // </div>
 
     const handleCopyUrl = (gubun) => {
         const accountText = document.getElementById(gubun).innerText;
